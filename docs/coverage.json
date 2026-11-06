@@ -1,0 +1,3309 @@
+{
+  "date": "2026-11-06",
+  "baseline": "docs/inventory.json (immutable original rows)",
+  "referenceVersions": {
+    "@radix-ui/themes": "3.3.0",
+    "@radix-ui/colors": "3.0.0",
+    "@base-ui/react": "1.9.0",
+    "shadcn": "4.23.0"
+  },
+  "radix": [
+    {
+      "id": "alert-dialog",
+      "title": "Alert Dialog",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#alert-dialog",
+      "targets": [
+        "alert-dialog"
+      ],
+      "variants": [],
+      "sizes": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "states": [
+        "closed",
+        "open",
+        "cancel",
+        "action",
+        "focus restoration"
+      ],
+      "classification": "direct visual mapping",
+      "result": "implemented",
+      "differences": "Explicit action closes via Base public Close composition; cancellation is keyboard accessible.",
+      "evidence": [
+        "evidence/gallery/alert-dialog-light-reference.png",
+        "evidence/gallery/alert-dialog-light-implementation.png",
+        "evidence/gallery/alert-dialog-light-diff.png",
+        "evidence/gallery/alert-dialog-dark-reference.png",
+        "evidence/gallery/alert-dialog-dark-implementation.png",
+        "evidence/gallery/alert-dialog-dark-diff.png"
+      ]
+    },
+    {
+      "id": "aspect-ratio",
+      "title": "Aspect Ratio",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#aspect-ratio",
+      "targets": [
+        "aspect-ratio"
+      ],
+      "variants": [],
+      "sizes": [],
+      "states": [
+        "default",
+        "local color where applicable",
+        "high contrast where applicable"
+      ],
+      "classification": "direct visual mapping",
+      "result": "implemented",
+      "differences": "Uses shared Radix design tokens and original Base/native semantics. No Radix API compatibility layer.",
+      "evidence": [
+        "evidence/gallery/aspect-ratio-light-reference.png",
+        "evidence/gallery/aspect-ratio-light-implementation.png",
+        "evidence/gallery/aspect-ratio-light-diff.png",
+        "evidence/gallery/aspect-ratio-dark-reference.png",
+        "evidence/gallery/aspect-ratio-dark-implementation.png",
+        "evidence/gallery/aspect-ratio-dark-diff.png"
+      ]
+    },
+    {
+      "id": "avatar",
+      "title": "Avatar",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#avatar",
+      "targets": [
+        "avatar"
+      ],
+      "variants": [
+        "solid",
+        "soft"
+      ],
+      "sizes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "states": [
+        "image",
+        "fallback",
+        "image loading"
+      ],
+      "classification": "direct visual mapping",
+      "result": "implemented",
+      "differences": "Base image/fallback lifecycle, inherited fallback font, no duplicate alpha background or circular border from the initial shadcn source.",
+      "evidence": [
+        "evidence/gallery/avatar-light-reference.png",
+        "evidence/gallery/avatar-light-implementation.png",
+        "evidence/gallery/avatar-light-diff.png",
+        "evidence/gallery/avatar-dark-reference.png",
+        "evidence/gallery/avatar-dark-implementation.png",
+        "evidence/gallery/avatar-dark-diff.png"
+      ]
+    },
+    {
+      "id": "badge",
+      "title": "Badge",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#badge",
+      "targets": [
+        "badge"
+      ],
+      "variants": [
+        "solid",
+        "soft",
+        "surface",
+        "outline"
+      ],
+      "sizes": [
+        1,
+        2,
+        3
+      ],
+      "states": [
+        "default",
+        "local color where applicable",
+        "high contrast where applicable"
+      ],
+      "classification": "direct visual mapping",
+      "result": "implemented",
+      "differences": "Uses shared Radix design tokens and original Base/native semantics. No Radix API compatibility layer.",
+      "evidence": [
+        "evidence/gallery/badge-light-reference.png",
+        "evidence/gallery/badge-light-implementation.png",
+        "evidence/gallery/badge-light-diff.png",
+        "evidence/gallery/badge-dark-reference.png",
+        "evidence/gallery/badge-dark-implementation.png",
+        "evidence/gallery/badge-dark-diff.png"
+      ]
+    },
+    {
+      "id": "blockquote",
+      "title": "Blockquote",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#blockquote",
+      "targets": [
+        "typography"
+      ],
+      "variants": [],
+      "sizes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "states": [
+        "default",
+        "local color where applicable",
+        "high contrast where applicable"
+      ],
+      "classification": "composition",
+      "result": "implemented",
+      "differences": "Uses shared Radix design tokens and original Base/native semantics. No Radix API compatibility layer.",
+      "evidence": [
+        "evidence/gallery/blockquote-light-reference.png",
+        "evidence/gallery/blockquote-light-implementation.png",
+        "evidence/gallery/blockquote-light-diff.png",
+        "evidence/gallery/blockquote-dark-reference.png",
+        "evidence/gallery/blockquote-dark-implementation.png",
+        "evidence/gallery/blockquote-dark-diff.png"
+      ]
+    },
+    {
+      "id": "button",
+      "title": "Button",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#button",
+      "targets": [
+        "button"
+      ],
+      "variants": [
+        "classic",
+        "solid",
+        "soft",
+        "surface",
+        "outline",
+        "ghost"
+      ],
+      "sizes": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "states": [
+        "default",
+        "hover",
+        "active",
+        "focus-visible",
+        "disabled",
+        "loading"
+      ],
+      "classification": "direct visual mapping",
+      "result": "implemented",
+      "differences": "Uses shared Radix design tokens and original Base/native semantics. No Radix API compatibility layer.",
+      "evidence": [
+        "evidence/gallery/button-light-reference.png",
+        "evidence/gallery/button-light-implementation.png",
+        "evidence/gallery/button-light-diff.png",
+        "evidence/gallery/button-dark-reference.png",
+        "evidence/gallery/button-dark-implementation.png",
+        "evidence/gallery/button-dark-diff.png"
+      ]
+    },
+    {
+      "id": "callout",
+      "title": "Callout",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#callout",
+      "targets": [
+        "adaptations"
+      ],
+      "variants": [
+        "soft",
+        "surface",
+        "outline"
+      ],
+      "sizes": [
+        1,
+        2,
+        3
+      ],
+      "states": [
+        "default",
+        "local color where applicable",
+        "high contrast where applicable"
+      ],
+      "classification": "composition",
+      "result": "implemented",
+      "differences": "Uses shared Radix design tokens and original Base/native semantics. No Radix API compatibility layer.",
+      "evidence": [
+        "evidence/gallery/callout-light-reference.png",
+        "evidence/gallery/callout-light-implementation.png",
+        "evidence/gallery/callout-light-diff.png",
+        "evidence/gallery/callout-dark-reference.png",
+        "evidence/gallery/callout-dark-implementation.png",
+        "evidence/gallery/callout-dark-diff.png"
+      ]
+    },
+    {
+      "id": "card",
+      "title": "Card",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#card",
+      "targets": [
+        "card"
+      ],
+      "variants": [
+        "surface",
+        "classic",
+        "ghost"
+      ],
+      "sizes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "states": [
+        "default",
+        "local color where applicable",
+        "high contrast where applicable"
+      ],
+      "classification": "direct visual mapping",
+      "result": "implemented",
+      "differences": "Uses shared Radix design tokens and original Base/native semantics. No Radix API compatibility layer.",
+      "evidence": [
+        "evidence/gallery/card-light-reference.png",
+        "evidence/gallery/card-light-implementation.png",
+        "evidence/gallery/card-light-diff.png",
+        "evidence/gallery/card-dark-reference.png",
+        "evidence/gallery/card-dark-implementation.png",
+        "evidence/gallery/card-dark-diff.png"
+      ]
+    },
+    {
+      "id": "checkbox",
+      "title": "Checkbox",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#checkbox",
+      "targets": [
+        "checkbox"
+      ],
+      "variants": [
+        "classic",
+        "surface",
+        "soft"
+      ],
+      "sizes": [
+        1,
+        2,
+        3
+      ],
+      "states": [
+        "unchecked",
+        "checked",
+        "indeterminate",
+        "disabled",
+        "read-only",
+        "invalid",
+        "focus-visible"
+      ],
+      "classification": "direct visual mapping",
+      "result": "implemented",
+      "differences": "Uses shared Radix design tokens and original Base/native semantics. No Radix API compatibility layer.",
+      "evidence": [
+        "evidence/gallery/checkbox-light-reference.png",
+        "evidence/gallery/checkbox-light-implementation.png",
+        "evidence/gallery/checkbox-light-diff.png",
+        "evidence/gallery/checkbox-dark-reference.png",
+        "evidence/gallery/checkbox-dark-implementation.png",
+        "evidence/gallery/checkbox-dark-diff.png"
+      ]
+    },
+    {
+      "id": "checkbox-group",
+      "title": "Checkbox Group",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#checkbox-group",
+      "targets": [
+        "checkbox-group",
+        "checkbox"
+      ],
+      "variants": [
+        "classic",
+        "surface",
+        "soft"
+      ],
+      "sizes": [
+        1,
+        2,
+        3
+      ],
+      "states": [
+        "selection",
+        "disabled",
+        "invalid",
+        "form submission"
+      ],
+      "classification": "composition",
+      "result": "implemented",
+      "differences": "Uses shared Radix design tokens and original Base/native semantics. No Radix API compatibility layer.",
+      "evidence": [
+        "evidence/gallery/checkbox-group-light-reference.png",
+        "evidence/gallery/checkbox-group-light-implementation.png",
+        "evidence/gallery/checkbox-group-light-diff.png",
+        "evidence/gallery/checkbox-group-dark-reference.png",
+        "evidence/gallery/checkbox-group-dark-implementation.png",
+        "evidence/gallery/checkbox-group-dark-diff.png"
+      ]
+    },
+    {
+      "id": "checkbox-cards",
+      "title": "Checkbox Cards",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#checkbox-cards",
+      "targets": [
+        "adaptations",
+        "checkbox"
+      ],
+      "variants": [
+        "surface",
+        "classic"
+      ],
+      "sizes": [
+        1,
+        2,
+        3
+      ],
+      "states": [
+        "default",
+        "local color where applicable",
+        "high contrast where applicable"
+      ],
+      "classification": "composition",
+      "result": "implemented",
+      "differences": "Native Base checkbox composition with a right-hand indicator and clickable label. Classic material uses shared card shadows.",
+      "evidence": [
+        "evidence/gallery/checkbox-cards-light-reference.png",
+        "evidence/gallery/checkbox-cards-light-implementation.png",
+        "evidence/gallery/checkbox-cards-light-diff.png",
+        "evidence/gallery/checkbox-cards-dark-reference.png",
+        "evidence/gallery/checkbox-cards-dark-implementation.png",
+        "evidence/gallery/checkbox-cards-dark-diff.png"
+      ]
+    },
+    {
+      "id": "code",
+      "title": "Code",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#code",
+      "targets": [
+        "typography"
+      ],
+      "variants": [
+        "solid",
+        "soft",
+        "outline",
+        "ghost"
+      ],
+      "sizes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "states": [
+        "default",
+        "local color where applicable",
+        "high contrast where applicable"
+      ],
+      "classification": "composition",
+      "result": "implemented",
+      "differences": "Uses shared Radix design tokens and original Base/native semantics. No Radix API compatibility layer.",
+      "evidence": [
+        "evidence/gallery/code-light-reference.png",
+        "evidence/gallery/code-light-implementation.png",
+        "evidence/gallery/code-light-diff.png",
+        "evidence/gallery/code-dark-reference.png",
+        "evidence/gallery/code-dark-implementation.png",
+        "evidence/gallery/code-dark-diff.png"
+      ]
+    },
+    {
+      "id": "context-menu",
+      "title": "Context Menu",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#context-menu",
+      "targets": [
+        "context-menu"
+      ],
+      "variants": [
+        "solid",
+        "soft"
+      ],
+      "sizes": [
+        1,
+        2
+      ],
+      "states": [
+        "closed",
+        "open",
+        "right-click",
+        "keyboard",
+        "highlighted",
+        "disabled",
+        "exit"
+      ],
+      "classification": "direct visual mapping",
+      "result": "implemented",
+      "differences": "Base collision placement, focus and submenu lifecycle retained. Size/variant through public data-scale/data-variant on content.",
+      "evidence": [
+        "evidence/gallery/context-menu-light-reference.png",
+        "evidence/gallery/context-menu-light-implementation.png",
+        "evidence/gallery/context-menu-light-diff.png",
+        "evidence/gallery/context-menu-dark-reference.png",
+        "evidence/gallery/context-menu-dark-implementation.png",
+        "evidence/gallery/context-menu-dark-diff.png"
+      ]
+    },
+    {
+      "id": "data-list",
+      "title": "Data List",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#data-list",
+      "targets": [
+        "adaptations"
+      ],
+      "variants": [],
+      "sizes": [
+        1,
+        2,
+        3
+      ],
+      "states": [
+        "default",
+        "local color where applicable",
+        "high contrast where applicable"
+      ],
+      "classification": "composition",
+      "result": "implemented",
+      "differences": "Uses shared Radix design tokens and original Base/native semantics. No Radix API compatibility layer.",
+      "evidence": [
+        "evidence/gallery/data-list-light-reference.png",
+        "evidence/gallery/data-list-light-implementation.png",
+        "evidence/gallery/data-list-light-diff.png",
+        "evidence/gallery/data-list-dark-reference.png",
+        "evidence/gallery/data-list-dark-implementation.png",
+        "evidence/gallery/data-list-dark-diff.png"
+      ]
+    },
+    {
+      "id": "dialog",
+      "title": "Dialog",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#dialog",
+      "targets": [
+        "dialog"
+      ],
+      "variants": [],
+      "sizes": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "states": [
+        "closed",
+        "open",
+        "enter",
+        "exit",
+        "focus trap",
+        "focus restoration",
+        "scroll"
+      ],
+      "classification": "direct visual mapping",
+      "result": "implemented",
+      "differences": "Base focus guards redirect on the next animation frame. Public Portal.container and CSS transitions preserve exit; no hand-written focus loop. Content scrolls within the viewport.",
+      "evidence": [
+        "evidence/gallery/dialog-light-reference.png",
+        "evidence/gallery/dialog-light-implementation.png",
+        "evidence/gallery/dialog-light-diff.png",
+        "evidence/gallery/dialog-dark-reference.png",
+        "evidence/gallery/dialog-dark-implementation.png",
+        "evidence/gallery/dialog-dark-diff.png"
+      ]
+    },
+    {
+      "id": "dropdown-menu",
+      "title": "Dropdown Menu",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#dropdown-menu",
+      "targets": [
+        "dropdown-menu"
+      ],
+      "variants": [
+        "solid",
+        "soft"
+      ],
+      "sizes": [
+        1,
+        2
+      ],
+      "states": [
+        "closed",
+        "open",
+        "highlighted",
+        "checked",
+        "radio selection",
+        "disabled",
+        "submenu",
+        "keyboard",
+        "exit"
+      ],
+      "classification": "direct visual mapping",
+      "result": "implemented",
+      "differences": "Base Menu keyboard/typeahead/submenu semantics retained; public state attributes mapped to solid/soft and size 1/2.",
+      "evidence": [
+        "evidence/gallery/dropdown-menu-light-reference.png",
+        "evidence/gallery/dropdown-menu-light-implementation.png",
+        "evidence/gallery/dropdown-menu-light-diff.png",
+        "evidence/gallery/dropdown-menu-dark-reference.png",
+        "evidence/gallery/dropdown-menu-dark-implementation.png",
+        "evidence/gallery/dropdown-menu-dark-diff.png"
+      ]
+    },
+    {
+      "id": "em",
+      "title": "Em",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#em",
+      "targets": [
+        "typography"
+      ],
+      "variants": [],
+      "sizes": [],
+      "states": [
+        "default",
+        "local color where applicable",
+        "high contrast where applicable"
+      ],
+      "classification": "composition",
+      "result": "implemented",
+      "differences": "Uses shared Radix design tokens and original Base/native semantics. No Radix API compatibility layer.",
+      "evidence": [
+        "evidence/gallery/em-light-reference.png",
+        "evidence/gallery/em-light-implementation.png",
+        "evidence/gallery/em-light-diff.png",
+        "evidence/gallery/em-dark-reference.png",
+        "evidence/gallery/em-dark-implementation.png",
+        "evidence/gallery/em-dark-diff.png"
+      ]
+    },
+    {
+      "id": "heading",
+      "title": "Heading",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#heading",
+      "targets": [
+        "typography"
+      ],
+      "variants": [],
+      "sizes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "states": [
+        "default",
+        "local color where applicable",
+        "high contrast where applicable"
+      ],
+      "classification": "composition",
+      "result": "implemented",
+      "differences": "Uses shared Radix design tokens and original Base/native semantics. No Radix API compatibility layer.",
+      "evidence": [
+        "evidence/gallery/heading-light-reference.png",
+        "evidence/gallery/heading-light-implementation.png",
+        "evidence/gallery/heading-light-diff.png",
+        "evidence/gallery/heading-dark-reference.png",
+        "evidence/gallery/heading-dark-implementation.png",
+        "evidence/gallery/heading-dark-diff.png"
+      ]
+    },
+    {
+      "id": "hover-card",
+      "title": "Hover Card",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#hover-card",
+      "targets": [
+        "hover-card"
+      ],
+      "variants": [],
+      "sizes": [
+        1,
+        2,
+        3
+      ],
+      "states": [
+        "hover",
+        "open",
+        "closed"
+      ],
+      "classification": "direct visual mapping",
+      "result": "implemented",
+      "differences": "Base PreviewCard timing and focus semantics retained; Radix surface/shadow rules applied.",
+      "evidence": [
+        "evidence/gallery/hover-card-light-reference.png",
+        "evidence/gallery/hover-card-light-implementation.png",
+        "evidence/gallery/hover-card-light-diff.png",
+        "evidence/gallery/hover-card-dark-reference.png",
+        "evidence/gallery/hover-card-dark-implementation.png",
+        "evidence/gallery/hover-card-dark-diff.png"
+      ]
+    },
+    {
+      "id": "icon-button",
+      "title": "Icon Button",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#icon-button",
+      "targets": [
+        "button"
+      ],
+      "variants": [
+        "classic",
+        "solid",
+        "soft",
+        "surface",
+        "outline",
+        "ghost"
+      ],
+      "sizes": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "states": [
+        "default",
+        "hover",
+        "active",
+        "focus-visible",
+        "disabled",
+        "loading"
+      ],
+      "classification": "direct visual mapping",
+      "result": "implemented",
+      "differences": "Uses shared Radix design tokens and original Base/native semantics. No Radix API compatibility layer.",
+      "evidence": [
+        "evidence/gallery/icon-button-light-reference.png",
+        "evidence/gallery/icon-button-light-implementation.png",
+        "evidence/gallery/icon-button-light-diff.png",
+        "evidence/gallery/icon-button-dark-reference.png",
+        "evidence/gallery/icon-button-dark-implementation.png",
+        "evidence/gallery/icon-button-dark-diff.png"
+      ]
+    },
+    {
+      "id": "inset",
+      "title": "Inset",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#inset",
+      "targets": [
+        "adaptations"
+      ],
+      "variants": [],
+      "sizes": [],
+      "states": [
+        "default",
+        "local color where applicable",
+        "high contrast where applicable"
+      ],
+      "classification": "composition",
+      "result": "implemented",
+      "differences": "Uses shared Radix design tokens and original Base/native semantics. No Radix API compatibility layer.",
+      "evidence": [
+        "evidence/gallery/inset-light-reference.png",
+        "evidence/gallery/inset-light-implementation.png",
+        "evidence/gallery/inset-light-diff.png",
+        "evidence/gallery/inset-dark-reference.png",
+        "evidence/gallery/inset-dark-implementation.png",
+        "evidence/gallery/inset-dark-diff.png"
+      ]
+    },
+    {
+      "id": "kbd",
+      "title": "Kbd",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#kbd",
+      "targets": [
+        "kbd"
+      ],
+      "variants": [
+        "classic",
+        "soft"
+      ],
+      "sizes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "states": [
+        "default",
+        "local color where applicable",
+        "high contrast where applicable"
+      ],
+      "classification": "direct visual mapping",
+      "result": "implemented",
+      "differences": "Classic keycap shadow and size adjustment (0.8× explicit font scale), soft material supported.",
+      "evidence": [
+        "evidence/gallery/kbd-light-reference.png",
+        "evidence/gallery/kbd-light-implementation.png",
+        "evidence/gallery/kbd-light-diff.png",
+        "evidence/gallery/kbd-dark-reference.png",
+        "evidence/gallery/kbd-dark-implementation.png",
+        "evidence/gallery/kbd-dark-diff.png"
+      ]
+    },
+    {
+      "id": "link",
+      "title": "Link",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#link",
+      "targets": [
+        "typography"
+      ],
+      "variants": [],
+      "sizes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "states": [
+        "default",
+        "local color where applicable",
+        "high contrast where applicable"
+      ],
+      "classification": "composition",
+      "result": "implemented",
+      "differences": "Uses shared Radix design tokens and original Base/native semantics. No Radix API compatibility layer.",
+      "evidence": [
+        "evidence/gallery/link-light-reference.png",
+        "evidence/gallery/link-light-implementation.png",
+        "evidence/gallery/link-light-diff.png",
+        "evidence/gallery/link-dark-reference.png",
+        "evidence/gallery/link-dark-implementation.png",
+        "evidence/gallery/link-dark-diff.png"
+      ]
+    },
+    {
+      "id": "popover",
+      "title": "Popover",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#popover",
+      "targets": [
+        "popover"
+      ],
+      "variants": [],
+      "sizes": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "states": [
+        "default",
+        "local color where applicable",
+        "high contrast where applicable"
+      ],
+      "classification": "direct visual mapping",
+      "result": "implemented",
+      "differences": "Uses shared Radix design tokens and original Base/native semantics. No Radix API compatibility layer.",
+      "evidence": [
+        "evidence/gallery/popover-light-reference.png",
+        "evidence/gallery/popover-light-implementation.png",
+        "evidence/gallery/popover-light-diff.png",
+        "evidence/gallery/popover-dark-reference.png",
+        "evidence/gallery/popover-dark-implementation.png",
+        "evidence/gallery/popover-dark-diff.png"
+      ]
+    },
+    {
+      "id": "progress",
+      "title": "Progress",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#progress",
+      "targets": [
+        "progress"
+      ],
+      "variants": [
+        "classic",
+        "surface",
+        "soft"
+      ],
+      "sizes": [
+        1,
+        2,
+        3
+      ],
+      "states": [
+        "determinate",
+        "indeterminate"
+      ],
+      "classification": "direct visual mapping",
+      "result": "implemented",
+      "differences": "Base Progress supports determinate and indeterminate semantics. Fixed 5s grow + delayed fade/pulse/shine adapts the Radix motion.",
+      "evidence": [
+        "evidence/gallery/progress-light-reference.png",
+        "evidence/gallery/progress-light-implementation.png",
+        "evidence/gallery/progress-light-diff.png",
+        "evidence/gallery/progress-dark-reference.png",
+        "evidence/gallery/progress-dark-implementation.png",
+        "evidence/gallery/progress-dark-diff.png"
+      ]
+    },
+    {
+      "id": "quote",
+      "title": "Quote",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#quote",
+      "targets": [
+        "typography"
+      ],
+      "variants": [],
+      "sizes": [],
+      "states": [
+        "default",
+        "local color where applicable",
+        "high contrast where applicable"
+      ],
+      "classification": "composition",
+      "result": "implemented",
+      "differences": "Uses shared Radix design tokens and original Base/native semantics. No Radix API compatibility layer.",
+      "evidence": [
+        "evidence/gallery/quote-light-reference.png",
+        "evidence/gallery/quote-light-implementation.png",
+        "evidence/gallery/quote-light-diff.png",
+        "evidence/gallery/quote-dark-reference.png",
+        "evidence/gallery/quote-dark-implementation.png",
+        "evidence/gallery/quote-dark-diff.png"
+      ]
+    },
+    {
+      "id": "radio",
+      "title": "Radio",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#radio",
+      "targets": [
+        "radio-group"
+      ],
+      "variants": [
+        "classic",
+        "surface",
+        "soft"
+      ],
+      "sizes": [
+        1,
+        2,
+        3
+      ],
+      "states": [
+        "checked",
+        "unchecked",
+        "disabled",
+        "read-only",
+        "invalid",
+        "focus-visible"
+      ],
+      "classification": "direct visual mapping",
+      "result": "implemented",
+      "differences": "Uses shared Radix design tokens and original Base/native semantics. No Radix API compatibility layer.",
+      "evidence": [
+        "evidence/gallery/radio-light-reference.png",
+        "evidence/gallery/radio-light-implementation.png",
+        "evidence/gallery/radio-light-diff.png",
+        "evidence/gallery/radio-dark-reference.png",
+        "evidence/gallery/radio-dark-implementation.png",
+        "evidence/gallery/radio-dark-diff.png"
+      ]
+    },
+    {
+      "id": "radio-group",
+      "title": "Radio Group",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#radio-group",
+      "targets": [
+        "radio-group"
+      ],
+      "variants": [
+        "classic",
+        "surface",
+        "soft"
+      ],
+      "sizes": [
+        1,
+        2,
+        3
+      ],
+      "states": [
+        "checked",
+        "unchecked",
+        "disabled",
+        "keyboard selection",
+        "invalid"
+      ],
+      "classification": "direct visual mapping",
+      "result": "implemented",
+      "differences": "Uses shared Radix design tokens and original Base/native semantics. No Radix API compatibility layer.",
+      "evidence": [
+        "evidence/gallery/radio-group-light-reference.png",
+        "evidence/gallery/radio-group-light-implementation.png",
+        "evidence/gallery/radio-group-light-diff.png",
+        "evidence/gallery/radio-group-dark-reference.png",
+        "evidence/gallery/radio-group-dark-implementation.png",
+        "evidence/gallery/radio-group-dark-diff.png"
+      ]
+    },
+    {
+      "id": "radio-cards",
+      "title": "Radio Cards",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#radio-cards",
+      "targets": [
+        "adaptations",
+        "radio-group"
+      ],
+      "variants": [
+        "surface",
+        "classic"
+      ],
+      "sizes": [
+        1,
+        2,
+        3
+      ],
+      "states": [
+        "default",
+        "local color where applicable",
+        "high contrast where applicable"
+      ],
+      "classification": "composition",
+      "result": "implemented",
+      "differences": "Visually hidden Base radio inside a label; native keyboard/group semantics and parent focus-visible outline retained.",
+      "evidence": [
+        "evidence/gallery/radio-cards-light-reference.png",
+        "evidence/gallery/radio-cards-light-implementation.png",
+        "evidence/gallery/radio-cards-light-diff.png",
+        "evidence/gallery/radio-cards-dark-reference.png",
+        "evidence/gallery/radio-cards-dark-implementation.png",
+        "evidence/gallery/radio-cards-dark-diff.png"
+      ]
+    },
+    {
+      "id": "scroll-area",
+      "title": "Scroll Area",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#scroll-area",
+      "targets": [
+        "scroll-area"
+      ],
+      "variants": [],
+      "sizes": [
+        1,
+        2,
+        3
+      ],
+      "states": [
+        "default",
+        "local color where applicable",
+        "high contrast where applicable"
+      ],
+      "classification": "direct visual mapping",
+      "result": "implemented",
+      "differences": "Base viewport and auto scrollbar lifecycle retained; sRGB fixtures normalize external box sizing on both adapters.",
+      "evidence": [
+        "evidence/gallery/scroll-area-light-reference.png",
+        "evidence/gallery/scroll-area-light-implementation.png",
+        "evidence/gallery/scroll-area-light-diff.png",
+        "evidence/gallery/scroll-area-dark-reference.png",
+        "evidence/gallery/scroll-area-dark-implementation.png",
+        "evidence/gallery/scroll-area-dark-diff.png"
+      ]
+    },
+    {
+      "id": "select",
+      "title": "Select",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#select",
+      "targets": [
+        "select"
+      ],
+      "variants": [
+        "classic",
+        "surface",
+        "soft",
+        "ghost"
+      ],
+      "sizes": [
+        1,
+        2,
+        3
+      ],
+      "states": [
+        "closed",
+        "open",
+        "highlighted",
+        "selected",
+        "disabled",
+        "focus-visible",
+        "typeahead",
+        "scroll"
+      ],
+      "classification": "direct visual mapping",
+      "result": "implemented",
+      "differences": "Base item alignment, scroll arrows and collision behavior differ from Radix. Public alignItemWithTrigger retained. Indicator moved to the left; 32px items and themed selected/highlighted states.",
+      "evidence": [
+        "evidence/gallery/select-light-reference.png",
+        "evidence/gallery/select-light-implementation.png",
+        "evidence/gallery/select-light-diff.png",
+        "evidence/gallery/select-dark-reference.png",
+        "evidence/gallery/select-dark-implementation.png",
+        "evidence/gallery/select-dark-diff.png"
+      ]
+    },
+    {
+      "id": "separator",
+      "title": "Separator",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#separator",
+      "targets": [
+        "separator"
+      ],
+      "variants": [],
+      "sizes": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "states": [
+        "default",
+        "local color where applicable",
+        "high contrast where applicable"
+      ],
+      "classification": "direct visual mapping",
+      "result": "implemented",
+      "differences": "Uses shared Radix design tokens and original Base/native semantics. No Radix API compatibility layer.",
+      "evidence": [
+        "evidence/gallery/separator-light-reference.png",
+        "evidence/gallery/separator-light-implementation.png",
+        "evidence/gallery/separator-light-diff.png",
+        "evidence/gallery/separator-dark-reference.png",
+        "evidence/gallery/separator-dark-implementation.png",
+        "evidence/gallery/separator-dark-diff.png"
+      ]
+    },
+    {
+      "id": "segmented-control",
+      "title": "\n\t\t\t\t\t\t\t\tSegmented Control\n\t\t\t\t\t\t\t",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#segmented-control",
+      "targets": [
+        "tabs"
+      ],
+      "variants": [
+        "surface",
+        "classic"
+      ],
+      "sizes": [
+        1,
+        2,
+        3
+      ],
+      "states": [
+        "selected",
+        "disabled",
+        "keyboard"
+      ],
+      "classification": "composition",
+      "result": "implemented",
+      "differences": "Uses shared Radix design tokens and original Base/native semantics. No Radix API compatibility layer.",
+      "evidence": [
+        "evidence/gallery/segmented-control-light-reference.png",
+        "evidence/gallery/segmented-control-light-implementation.png",
+        "evidence/gallery/segmented-control-light-diff.png",
+        "evidence/gallery/segmented-control-dark-reference.png",
+        "evidence/gallery/segmented-control-dark-implementation.png",
+        "evidence/gallery/segmented-control-dark-diff.png"
+      ]
+    },
+    {
+      "id": "skeleton",
+      "title": "Skeleton",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#skeleton",
+      "targets": [
+        "skeleton"
+      ],
+      "variants": [],
+      "sizes": [],
+      "states": [
+        "loading",
+        "reduced-motion"
+      ],
+      "classification": "direct visual mapping",
+      "result": "implemented",
+      "differences": "1000ms background step 3→4 pulse, alternate-reverse; children hidden while placeholder stays in layout.",
+      "evidence": [
+        "evidence/gallery/skeleton-light-reference.png",
+        "evidence/gallery/skeleton-light-implementation.png",
+        "evidence/gallery/skeleton-light-diff.png",
+        "evidence/gallery/skeleton-dark-reference.png",
+        "evidence/gallery/skeleton-dark-implementation.png",
+        "evidence/gallery/skeleton-dark-diff.png"
+      ]
+    },
+    {
+      "id": "slider",
+      "title": "Slider",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#slider",
+      "targets": [
+        "slider"
+      ],
+      "variants": [
+        "classic",
+        "surface",
+        "soft"
+      ],
+      "sizes": [
+        1,
+        2,
+        3
+      ],
+      "states": [
+        "value",
+        "range",
+        "disabled",
+        "keyboard",
+        "pointer",
+        "focus-visible"
+      ],
+      "classification": "direct visual mapping",
+      "result": "implemented",
+      "differences": "Uses shared Radix design tokens and original Base/native semantics. No Radix API compatibility layer.",
+      "evidence": [
+        "evidence/gallery/slider-light-reference.png",
+        "evidence/gallery/slider-light-implementation.png",
+        "evidence/gallery/slider-light-diff.png",
+        "evidence/gallery/slider-dark-reference.png",
+        "evidence/gallery/slider-dark-implementation.png",
+        "evidence/gallery/slider-dark-diff.png"
+      ]
+    },
+    {
+      "id": "spinner",
+      "title": "Spinner",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#spinner",
+      "targets": [
+        "spinner"
+      ],
+      "variants": [],
+      "sizes": [
+        1,
+        2,
+        3
+      ],
+      "states": [
+        "default",
+        "local color where applicable",
+        "high contrast where applicable"
+      ],
+      "classification": "direct visual mapping",
+      "result": "implemented",
+      "differences": "SVG with eight fading leaves, 800ms staggered opacity, 12/16/20px sizes; no interaction dependency.",
+      "evidence": [
+        "evidence/gallery/spinner-light-reference.png",
+        "evidence/gallery/spinner-light-implementation.png",
+        "evidence/gallery/spinner-light-diff.png",
+        "evidence/gallery/spinner-dark-reference.png",
+        "evidence/gallery/spinner-dark-implementation.png",
+        "evidence/gallery/spinner-dark-diff.png"
+      ]
+    },
+    {
+      "id": "strong",
+      "title": "Strong",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#strong",
+      "targets": [
+        "typography"
+      ],
+      "variants": [],
+      "sizes": [],
+      "states": [
+        "default",
+        "local color where applicable",
+        "high contrast where applicable"
+      ],
+      "classification": "composition",
+      "result": "implemented",
+      "differences": "Uses shared Radix design tokens and original Base/native semantics. No Radix API compatibility layer.",
+      "evidence": [
+        "evidence/gallery/strong-light-reference.png",
+        "evidence/gallery/strong-light-implementation.png",
+        "evidence/gallery/strong-light-diff.png",
+        "evidence/gallery/strong-dark-reference.png",
+        "evidence/gallery/strong-dark-implementation.png",
+        "evidence/gallery/strong-dark-diff.png"
+      ]
+    },
+    {
+      "id": "switch",
+      "title": "Switch",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#switch",
+      "targets": [
+        "switch"
+      ],
+      "variants": [
+        "classic",
+        "surface",
+        "soft"
+      ],
+      "sizes": [
+        1,
+        2,
+        3
+      ],
+      "states": [
+        "unchecked",
+        "checked",
+        "disabled",
+        "read-only",
+        "invalid",
+        "focus-visible"
+      ],
+      "classification": "direct visual mapping",
+      "result": "implemented",
+      "differences": "Uses shared Radix design tokens and original Base/native semantics. No Radix API compatibility layer.",
+      "evidence": [
+        "evidence/gallery/switch-light-reference.png",
+        "evidence/gallery/switch-light-implementation.png",
+        "evidence/gallery/switch-light-diff.png",
+        "evidence/gallery/switch-dark-reference.png",
+        "evidence/gallery/switch-dark-implementation.png",
+        "evidence/gallery/switch-dark-diff.png"
+      ]
+    },
+    {
+      "id": "table",
+      "title": "Table",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#table",
+      "targets": [
+        "table"
+      ],
+      "variants": [
+        "surface",
+        "ghost"
+      ],
+      "sizes": [
+        1,
+        2,
+        3
+      ],
+      "states": [
+        "default",
+        "local color where applicable",
+        "high contrast where applicable"
+      ],
+      "classification": "direct visual mapping",
+      "result": "implemented",
+      "differences": "Native table semantics, shared sizes and surface/ghost data variants. Responsive overflow supplied by the official local wrapper.",
+      "evidence": [
+        "evidence/gallery/table-light-reference.png",
+        "evidence/gallery/table-light-implementation.png",
+        "evidence/gallery/table-light-diff.png",
+        "evidence/gallery/table-dark-reference.png",
+        "evidence/gallery/table-dark-implementation.png",
+        "evidence/gallery/table-dark-diff.png"
+      ]
+    },
+    {
+      "id": "tabs",
+      "title": "Tabs",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#tabs",
+      "targets": [
+        "tabs"
+      ],
+      "variants": [],
+      "sizes": [
+        1,
+        2
+      ],
+      "states": [
+        "selected",
+        "disabled",
+        "keyboard",
+        "panel change"
+      ],
+      "classification": "direct visual mapping",
+      "result": "implemented",
+      "differences": "Base Tabs.List activateOnFocus enabled. Segmented variant uses the same semantic tab model.",
+      "evidence": [
+        "evidence/gallery/tabs-light-reference.png",
+        "evidence/gallery/tabs-light-implementation.png",
+        "evidence/gallery/tabs-light-diff.png",
+        "evidence/gallery/tabs-dark-reference.png",
+        "evidence/gallery/tabs-dark-implementation.png",
+        "evidence/gallery/tabs-dark-diff.png"
+      ]
+    },
+    {
+      "id": "tab-nav",
+      "title": "Tab Nav",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#tab-nav",
+      "targets": [
+        "tab-nav"
+      ],
+      "variants": [],
+      "sizes": [
+        1,
+        2
+      ],
+      "states": [
+        "default",
+        "local color where applicable",
+        "high contrast where applicable"
+      ],
+      "classification": "composition",
+      "result": "implemented",
+      "differences": "Uses shared Radix design tokens and original Base/native semantics. No Radix API compatibility layer.",
+      "evidence": [
+        "evidence/gallery/tab-nav-light-reference.png",
+        "evidence/gallery/tab-nav-light-implementation.png",
+        "evidence/gallery/tab-nav-light-diff.png",
+        "evidence/gallery/tab-nav-dark-reference.png",
+        "evidence/gallery/tab-nav-dark-implementation.png",
+        "evidence/gallery/tab-nav-dark-diff.png"
+      ]
+    },
+    {
+      "id": "text",
+      "title": "Text",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#text",
+      "targets": [
+        "typography"
+      ],
+      "variants": [],
+      "sizes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "states": [
+        "default",
+        "local color where applicable",
+        "high contrast where applicable"
+      ],
+      "classification": "composition",
+      "result": "implemented",
+      "differences": "Uses shared Radix design tokens and original Base/native semantics. No Radix API compatibility layer.",
+      "evidence": [
+        "evidence/gallery/text-light-reference.png",
+        "evidence/gallery/text-light-implementation.png",
+        "evidence/gallery/text-light-diff.png",
+        "evidence/gallery/text-dark-reference.png",
+        "evidence/gallery/text-dark-implementation.png",
+        "evidence/gallery/text-dark-diff.png"
+      ]
+    },
+    {
+      "id": "text-area",
+      "title": "Text Area",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#text-area",
+      "targets": [
+        "textarea"
+      ],
+      "variants": [
+        "classic",
+        "surface",
+        "soft"
+      ],
+      "sizes": [
+        1,
+        2,
+        3
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus-visible",
+        "disabled",
+        "invalid",
+        "read-only"
+      ],
+      "classification": "direct visual mapping",
+      "result": "implemented",
+      "differences": "Uses shared Radix design tokens and original Base/native semantics. No Radix API compatibility layer.",
+      "evidence": [
+        "evidence/gallery/text-area-light-reference.png",
+        "evidence/gallery/text-area-light-implementation.png",
+        "evidence/gallery/text-area-light-diff.png",
+        "evidence/gallery/text-area-dark-reference.png",
+        "evidence/gallery/text-area-dark-implementation.png",
+        "evidence/gallery/text-area-dark-diff.png"
+      ]
+    },
+    {
+      "id": "text-field",
+      "title": "Text Field",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#text-field",
+      "targets": [
+        "input",
+        "input-group"
+      ],
+      "variants": [
+        "classic",
+        "surface",
+        "soft"
+      ],
+      "sizes": [
+        1,
+        2,
+        3
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus-visible",
+        "disabled",
+        "invalid",
+        "read-only"
+      ],
+      "classification": "direct visual mapping",
+      "result": "implemented",
+      "differences": "Uses shared Radix design tokens and original Base/native semantics. No Radix API compatibility layer.",
+      "evidence": [
+        "evidence/gallery/text-field-light-reference.png",
+        "evidence/gallery/text-field-light-implementation.png",
+        "evidence/gallery/text-field-light-diff.png",
+        "evidence/gallery/text-field-dark-reference.png",
+        "evidence/gallery/text-field-dark-implementation.png",
+        "evidence/gallery/text-field-dark-diff.png"
+      ]
+    },
+    {
+      "id": "tooltip",
+      "title": "Tooltip",
+      "source": "https://github.com/radix-ui/website/blob/402e749613ab2e7ab7139c65b0029842b0360f07/app/themes/playground/page.client.tsx#tooltip",
+      "targets": [
+        "tooltip"
+      ],
+      "variants": [],
+      "sizes": [],
+      "states": [
+        "hover",
+        "focus",
+        "delayed-open",
+        "closed",
+        "reduced-motion"
+      ],
+      "classification": "direct visual mapping",
+      "result": "implemented",
+      "differences": "Added role/description association using React useId and public props; 700ms provider delay, 140ms entry, triangle arrow. No library-generated IDs are inspected.",
+      "evidence": [
+        "evidence/gallery/tooltip-light-reference.png",
+        "evidence/gallery/tooltip-light-implementation.png",
+        "evidence/gallery/tooltip-light-diff.png",
+        "evidence/gallery/tooltip-dark-reference.png",
+        "evidence/gallery/tooltip-dark-implementation.png",
+        "evidence/gallery/tooltip-dark-diff.png"
+      ]
+    }
+  ],
+  "create": [
+    {
+      "id": "trace-example",
+      "title": "Trace",
+      "source": "apps/v4/registry/bases/base/examples/trace-example.tsx",
+      "sha256": "d43fc53306f5eea26323f225e733c7d8d4c53ba20c17de3758be6b6a29052069",
+      "kind": "component",
+      "target": "src/examples/trace-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Chat",
+        "Rows",
+        "Tool Calls",
+        "Reasoning",
+        "Chain of Thought",
+        "Task",
+        "Sources",
+        "Whole Turn"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "tooltip-example",
+      "title": "Tooltip",
+      "source": "apps/v4/registry/bases/base/examples/tooltip-example.tsx",
+      "sha256": "c60557bd5445d1f6bf7065764d0323fe903d9ee49df702d7c56b2b3a16435d12",
+      "kind": "component",
+      "target": "src/examples/tooltip-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Basic",
+        "Sides",
+        "With Icon",
+        "Long Content",
+        "Disabled",
+        "With Keyboard Shortcut",
+        "On Link",
+        "Formatted Content"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "toggle-group-example",
+      "title": "Toggle Group",
+      "source": "apps/v4/registry/bases/base/examples/toggle-group-example.tsx",
+      "sha256": "a8408862275ace9b42e45199b2aaab45e5aa48134b36d52a5e84d6b4d5baecee",
+      "kind": "component",
+      "target": "src/examples/toggle-group-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Basic",
+        "Outline",
+        "Outline With Icons",
+        "Sizes",
+        "With Spacing",
+        "With Icons",
+        "Filter",
+        "Date Range",
+        "Sort",
+        "With Input and Select",
+        "Vertical",
+        "Vertical Outline",
+        "Vertical Outline With Icons",
+        "Font Weight Selector",
+        "Vertical With Spacing"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "toggle-example",
+      "title": "Toggle",
+      "source": "apps/v4/registry/bases/base/examples/toggle-example.tsx",
+      "sha256": "8033aa988070b03a9692aca63329ffbfe7f848960fbc63652ba9361295d8d64d",
+      "kind": "component",
+      "target": "src/examples/toggle-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Basic",
+        "Outline",
+        "Sizes",
+        "With Button Text",
+        "With Button Icon",
+        "With Button Icon + Text",
+        "Disabled",
+        "With Icon"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "toast-example",
+      "title": "Toast",
+      "source": "apps/v4/registry/bases/base/examples/toast-example.tsx",
+      "sha256": "664bf58972f6779baa3e6ed383ca5759392b7824dac44cc09b74be55070f3e6a",
+      "kind": "component",
+      "target": "src/examples/toast-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Basic",
+        "With Action",
+        "Promise"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "textarea-example",
+      "title": "Textarea",
+      "source": "apps/v4/registry/bases/base/examples/textarea-example.tsx",
+      "sha256": "3199a0816889450768a891d9c3c97ca7618d7d03eca0867cf359bb2d3c9b30d9",
+      "kind": "component",
+      "target": "src/examples/textarea-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Basic",
+        "Invalid",
+        "With Label",
+        "With Description",
+        "Disabled"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "tabs-example",
+      "title": "Tabs",
+      "source": "apps/v4/registry/bases/base/examples/tabs-example.tsx",
+      "sha256": "8df264574f17761f00573bca98bf77823506fe60abfb887a2a9f8ee6ea8c8eaa",
+      "kind": "component",
+      "target": "src/examples/tabs-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Basic",
+        "Line",
+        "Variants Alignment",
+        "Disabled",
+        "With Icons",
+        "Icon Only",
+        "Multiple",
+        "With Content",
+        "Line With Content",
+        "Line Disabled",
+        "With Dropdown",
+        "Vertical",
+        "With Input and Button"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "table-example",
+      "title": "Table",
+      "source": "apps/v4/registry/bases/base/examples/table-example.tsx",
+      "sha256": "dcfd2fa9f630c6fc5440f1f0af57e8c8b9062a31879e1fc0be29ee8621ccf0c2",
+      "kind": "component",
+      "target": "src/examples/table-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Basic",
+        "With Footer",
+        "Simple",
+        "With Badges",
+        "With Actions",
+        "With Select",
+        "With Input"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "switch-example",
+      "title": "Switch",
+      "source": "apps/v4/registry/bases/base/examples/switch-example.tsx",
+      "sha256": "ccff0a0d4b1b1bb1e91471f53e421e0831bd578dbe41844eb9f4da5cc77bb2f1",
+      "kind": "component",
+      "target": "src/examples/switch-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Basic",
+        "With Label",
+        "With Description",
+        "Disabled",
+        "Sizes"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "spinner-example",
+      "title": "Spinner",
+      "source": "apps/v4/registry/bases/base/examples/spinner-example.tsx",
+      "sha256": "e6737fcd144925ba7569e60ef169168cf5fd2a7cfa9d0cbc0003ccafc635e844",
+      "kind": "component",
+      "target": "src/examples/spinner-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Basic",
+        "In Buttons",
+        "In Badges",
+        "In Input Group",
+        "In Empty State"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "sonner-example",
+      "title": "Sonner",
+      "source": "apps/v4/registry/bases/base/examples/sonner-example.tsx",
+      "sha256": "43627fc677ef32387e313ff12a620068b9e18dc77a184a24a5a15d3eea506676",
+      "kind": "component",
+      "target": "src/examples/sonner-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Basic",
+        "With Description"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "slider-example",
+      "title": "Slider",
+      "source": "apps/v4/registry/bases/base/examples/slider-example.tsx",
+      "sha256": "231f663761e7c5ea9e067978bef9d581af858956bffaafae35f6ace0f2943db4",
+      "kind": "component",
+      "target": "src/examples/slider-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Basic",
+        "Range",
+        "Multiple Thumbs",
+        "Vertical",
+        "Controlled",
+        "Disabled"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "skeleton-example",
+      "title": "Skeleton",
+      "source": "apps/v4/registry/bases/base/examples/skeleton-example.tsx",
+      "sha256": "848b6c79fecadd25362f816a5223efb767cb890d337eb7f9650570798673e800",
+      "kind": "component",
+      "target": "src/examples/skeleton-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Avatar",
+        "Card",
+        "Text",
+        "Form",
+        "Table"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "sidebar-inset-example",
+      "title": "Sidebar Inset",
+      "source": "apps/v4/registry/bases/base/examples/sidebar-inset-example.tsx",
+      "sha256": "5e22f9ec066cf0f8ac6e03e0d2d51771f8ec421bb2dbaae3ae134d4aa0c773c5",
+      "kind": "component",
+      "target": "src/examples/sidebar-inset-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "sidebar-icon-example",
+      "title": "Sidebar Icon",
+      "source": "apps/v4/registry/bases/base/examples/sidebar-icon-example.tsx",
+      "sha256": "d908d0a6d481b1f43a9da3f435ab7d3484b1641b3388e55a86df470fdf0ad796",
+      "kind": "component",
+      "target": "src/examples/sidebar-icon-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "sidebar-floating-example",
+      "title": "Sidebar Floating",
+      "source": "apps/v4/registry/bases/base/examples/sidebar-floating-example.tsx",
+      "sha256": "db28dfe6a837858e0095d3024b05d593653bb64169a016a450e1966741d64fd6",
+      "kind": "component",
+      "target": "src/examples/sidebar-floating-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "sidebar-example",
+      "title": "Sidebar",
+      "source": "apps/v4/registry/bases/base/examples/sidebar-example.tsx",
+      "sha256": "098cd742d7f8df6ccf983f103f49bd9a6bcc44e6c4576dc5b62d2d68d3784f49",
+      "kind": "component",
+      "target": "src/examples/sidebar-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "sheet-example",
+      "title": "Sheet",
+      "source": "apps/v4/registry/bases/base/examples/sheet-example.tsx",
+      "sha256": "380fc3aa16a9750431bfc0ea5763c7359b72c0c76f18d362d1d430b68092cab0",
+      "kind": "component",
+      "target": "src/examples/sheet-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "With Form",
+        "No Close Button",
+        "Sides"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "separator-example",
+      "title": "Separator",
+      "source": "apps/v4/registry/bases/base/examples/separator-example.tsx",
+      "sha256": "88f72bb831d292634125fd7ffa1839d68087295639b6f0f248f029488938973b",
+      "kind": "component",
+      "target": "src/examples/separator-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Horizontal",
+        "Vertical",
+        "Vertical Menu",
+        "In List"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "select-example",
+      "title": "Select",
+      "source": "apps/v4/registry/bases/base/examples/select-example.tsx",
+      "sha256": "5571f7345411108bbaa1030ef502914b3e1e2cba3136ffac9ffaac73b8f967a7",
+      "kind": "component",
+      "target": "src/examples/select-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Basic",
+        "Sides",
+        "With Icons",
+        "With Groups & Labels",
+        "Large List",
+        "Sizes",
+        "With Button",
+        "Item Aligned",
+        "With Field",
+        "Invalid",
+        "Inline with Input & NativeSelect",
+        "Disabled",
+        "Subscription Plan",
+        "Multiple Selection",
+        "In Dialog"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "scroll-area-example",
+      "title": "Scroll Area",
+      "source": "apps/v4/registry/bases/base/examples/scroll-area-example.tsx",
+      "sha256": "6cf563576388bf298a71e164e1d9b3bb1b869bcfe75851cb17111a728352f06e",
+      "kind": "component",
+      "target": "src/examples/scroll-area-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Vertical",
+        "Horizontal"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "resizable-example",
+      "title": "Resizable",
+      "source": "apps/v4/registry/bases/base/examples/resizable-example.tsx",
+      "sha256": "6076eabb0585591cb286be56359172dfde616e5cf3847916b422e1526a2940ab",
+      "kind": "component",
+      "target": "src/examples/resizable-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Horizontal",
+        "Vertical",
+        "With Handle",
+        "Nested",
+        "Controlled"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "radio-group-example",
+      "title": "Radio Group",
+      "source": "apps/v4/registry/bases/base/examples/radio-group-example.tsx",
+      "sha256": "abb4e0ca3f42884001666c790aa061c31f6e1ae01c1451d80ed8c6f699f55ea0",
+      "kind": "component",
+      "target": "src/examples/radio-group-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Basic",
+        "With Descriptions",
+        "With FieldSet",
+        "Grid Layout",
+        "Disabled",
+        "Invalid"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "questionnaire-example",
+      "title": "Questionnaire",
+      "source": "apps/v4/registry/bases/base/examples/questionnaire-example.tsx",
+      "sha256": "56616a86a91b4bba801ceec7fecfe279330aa84c4b1863952f721cdee01cfff1",
+      "kind": "component",
+      "target": "src/examples/questionnaire-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Disabled",
+        "No description",
+        "Standalone",
+        "Card",
+        "Dialog"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "progress-example",
+      "title": "Progress",
+      "source": "apps/v4/registry/bases/base/examples/progress-example.tsx",
+      "sha256": "0774c7a6bc4c241f22b4f53ae910ad3bba9b8a558d1c293c75d7e90fc7bc187a",
+      "kind": "component",
+      "target": "src/examples/progress-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Progress Bar",
+        "With Label",
+        "Controlled",
+        "File Upload List"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "popover-example",
+      "title": "Popover",
+      "source": "apps/v4/registry/bases/base/examples/popover-example.tsx",
+      "sha256": "668dd4d2682d6940ed0d2619a1c181fed7c03937351ed3d994b16df9da79a0f4",
+      "kind": "component",
+      "target": "src/examples/popover-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Basic",
+        "Sides",
+        "With Form",
+        "Alignments",
+        "In Dialog"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "pagination-example",
+      "title": "Pagination",
+      "source": "apps/v4/registry/bases/base/examples/pagination-example.tsx",
+      "sha256": "2cc67f36da0b0f3cf9dbbd224e4c60d568f825672b72496a68a0e53db97b0f94",
+      "kind": "component",
+      "target": "src/examples/pagination-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Basic",
+        "Simple",
+        "With Select"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "navigation-menu-example",
+      "title": "Navigation Menu",
+      "source": "apps/v4/registry/bases/base/examples/navigation-menu-example.tsx",
+      "sha256": "4a2fd068c7b5c3543500d82a37cd115951e2657e4926ade4cdfa5f06ec2c752a",
+      "kind": "component",
+      "target": "src/examples/navigation-menu-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Basic"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "native-select-example",
+      "title": "Native Select",
+      "source": "apps/v4/registry/bases/base/examples/native-select-example.tsx",
+      "sha256": "67366f6c3785982b683b2541bc68b7e7a4562a227850fdb798dc79ba147ea453",
+      "kind": "component",
+      "target": "src/examples/native-select-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Basic",
+        "With Groups",
+        "Sizes",
+        "With Field",
+        "Disabled",
+        "Invalid"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "message-scroller-example",
+      "title": "Message Scroller",
+      "source": "apps/v4/registry/bases/base/examples/message-scroller-example.tsx",
+      "sha256": "43ab1c6161d424cb42168573d8ec442af96c558022061cdf0f60088ec0925f10",
+      "kind": "component",
+      "target": "src/examples/message-scroller-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Chat"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "message-example",
+      "title": "Message",
+      "source": "apps/v4/registry/bases/base/examples/message-example.tsx",
+      "sha256": "2b653b3ae6de3b1dcbdb74743a4b94faf4dbc42f325e9957dfdcfc28fa529212",
+      "kind": "component",
+      "target": "src/examples/message-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Message",
+        "Avatar",
+        "Group",
+        "Group Chat",
+        "Header and Footer",
+        "Attachment",
+        "Attachment Group",
+        "Actions"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "menubar-example",
+      "title": "Menubar",
+      "source": "apps/v4/registry/bases/base/examples/menubar-example.tsx",
+      "sha256": "9db7cb209ee6e3e08d8408f2238b0bf91d25611132159b1120893565459b11ac",
+      "kind": "component",
+      "target": "src/examples/menubar-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Basic",
+        "Sides",
+        "With Submenu",
+        "With Checkboxes",
+        "With Radio",
+        "With Icons",
+        "With Shortcuts",
+        "Format",
+        "Insert",
+        "Destructive",
+        "In Dialog",
+        "With Inset"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "marker-example",
+      "title": "Marker",
+      "source": "apps/v4/registry/bases/base/examples/marker-example.tsx",
+      "sha256": "1a6c7b909f4f486e287e01ebc09d8c64ffc38f7971a867352277023384ad31b8",
+      "kind": "component",
+      "target": "src/examples/marker-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Markers",
+        "Border",
+        "Separator",
+        "Accordion",
+        "Drawer"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "label-example",
+      "title": "Label",
+      "source": "apps/v4/registry/bases/base/examples/label-example.tsx",
+      "sha256": "c20d97df902332467e5f76f76b7b752a6e0504d744f874101146851d1867e649",
+      "kind": "component",
+      "target": "src/examples/label-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "With Checkbox",
+        "With Input",
+        "Disabled",
+        "With Textarea"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "kbd-example",
+      "title": "Kbd",
+      "source": "apps/v4/registry/bases/base/examples/kbd-example.tsx",
+      "sha256": "3fbd8b8b3ad0f286205ff0a2796b9404922bb477e947820c1337135f2e588bba",
+      "kind": "component",
+      "target": "src/examples/kbd-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Basic",
+        "Modifier Keys",
+        "KbdGroup",
+        "Arrow Keys",
+        "With Icons",
+        "With Icons and Text",
+        "InputGroup",
+        "Tooltip",
+        "With samp"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "item-example",
+      "title": "Item",
+      "source": "apps/v4/registry/bases/base/examples/item-example.tsx",
+      "sha256": "d72b202993064cd9a69521596b424a1515815fdd0c3562d48a6b5f5def89d154",
+      "kind": "component",
+      "target": "src/examples/item-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Default",
+        "Outline",
+        "Muted",
+        "Small",
+        "Outline - Small",
+        "Muted - Small",
+        "Extra Small",
+        "Outline - Extra Small",
+        "Muted - Extra Small",
+        "asChild",
+        "Outline - asChild",
+        "Muted - asChild",
+        "ItemGroup",
+        "Outline - ItemGroup",
+        "Muted - ItemGroup",
+        "ItemSeparator",
+        "ItemHeader",
+        "ItemFooter",
+        "ItemHeader + ItemFooter",
+        "Default - ItemMedia image",
+        "Outline - ItemMedia image",
+        "Outline - ItemMedia image - Small",
+        "Outline - ItemMedia image - Extra Small",
+        "Muted - ItemMedia image"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "input-otp-example",
+      "title": "Input Otp",
+      "source": "apps/v4/registry/bases/base/examples/input-otp-example.tsx",
+      "sha256": "2bd8a52b61fcb99cfa7337489b11279bf72ec4543bf84ab8c47e797920572e20",
+      "kind": "component",
+      "target": "src/examples/input-otp-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Simple",
+        "Digits Only",
+        "With Separator",
+        "Alphanumeric",
+        "Disabled",
+        "4 Digits",
+        "Invalid State",
+        "Form"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "input-group-example",
+      "title": "Input Group",
+      "source": "apps/v4/registry/bases/base/examples/input-group-example.tsx",
+      "sha256": "52d34e3f375eff925391b0a30fb6c667ac0b7f65a00d2046b61e394dc368aad8",
+      "kind": "component",
+      "target": "src/examples/input-group-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Basic",
+        "With Addons",
+        "With Buttons",
+        "With Tooltip, Dropdown, Popover",
+        "With Kbd",
+        "In Card",
+        "Textarea"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "input-example",
+      "title": "Input",
+      "source": "apps/v4/registry/bases/base/examples/input-example.tsx",
+      "sha256": "f77f44d96b1f4e268191fff736a2daa7884bd3d04ffb63fa6f9dbb821da3cdd2",
+      "kind": "component",
+      "target": "src/examples/input-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Basic",
+        "Invalid",
+        "With Label",
+        "With Description",
+        "Disabled",
+        "Input Types",
+        "With Select",
+        "With Button",
+        "With Native Select",
+        "Form"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "hover-card-example",
+      "title": "Hover Card",
+      "source": "apps/v4/registry/bases/base/examples/hover-card-example.tsx",
+      "sha256": "ef4dfa7cd7f58cac2224ec228717f531429074a77be19be0a6d0b605cb3ba19c",
+      "kind": "component",
+      "target": "src/examples/hover-card-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Sides",
+        "In Dialog"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "field-example",
+      "title": "Field",
+      "source": "apps/v4/registry/bases/base/examples/field-example.tsx",
+      "sha256": "54e279b7e55e513d3f313df38bff379feedda7ce89ad92c142cebb65ff993fc6",
+      "kind": "component",
+      "target": "src/examples/field-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Input Fields",
+        "Textarea Fields",
+        "Select Fields",
+        "Native Select Fields",
+        "Checkbox Fields",
+        "Radio Fields",
+        "Switch Fields",
+        "Slider Fields",
+        "OTP Input Fields",
+        "Horizontal Fields"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "empty-example",
+      "title": "Empty",
+      "source": "apps/v4/registry/bases/base/examples/empty-example.tsx",
+      "sha256": "c40ecdb43cbc685ab147ff603953b508c57d2abd47b8cca44e886fbc5530dc36",
+      "kind": "component",
+      "target": "src/examples/empty-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Basic",
+        "With Muted Background",
+        "With Border",
+        "With Icon",
+        "With Muted Background Alt",
+        "In Card"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "dropdown-menu-example",
+      "title": "Dropdown Menu",
+      "source": "apps/v4/registry/bases/base/examples/dropdown-menu-example.tsx",
+      "sha256": "2d5b5ad4b4181c66250c6748aee9365249eb3a3f13ab298387b1e82257070e08",
+      "kind": "component",
+      "target": "src/examples/dropdown-menu-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Basic",
+        "Sides",
+        "With Icons",
+        "With Shortcuts",
+        "With Submenu",
+        "With Checkboxes",
+        "With Radio Group",
+        "Checkboxes with Icons",
+        "Radio with Icons",
+        "With Destructive Items",
+        "With Avatar",
+        "In Dialog",
+        "With Inset",
+        "Complex"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "drawer-example",
+      "title": "Drawer",
+      "source": "apps/v4/registry/bases/base/examples/drawer-example.tsx",
+      "sha256": "eb76b83c16db78286f92aae1042c547550fe57d8f430c12272e52141817088f4",
+      "kind": "component",
+      "target": "src/examples/drawer-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Demo",
+        "Swipe Handle",
+        "Custom Width and Height",
+        "Position",
+        "Scrollable Content",
+        "Snap Points",
+        "Nested",
+        "Non Modal"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "dialog-example",
+      "title": "Dialog",
+      "source": "apps/v4/registry/bases/base/examples/dialog-example.tsx",
+      "sha256": "8c0951ad73042f692673b1552d6dac25c0c69b1d0f218d1e9e603aeab93fd09d",
+      "kind": "component",
+      "target": "src/examples/dialog-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "With Form",
+        "Scrollable Content",
+        "With Sticky Footer",
+        "No Close Button",
+        "Chat Settings"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "context-menu-example",
+      "title": "Context Menu",
+      "source": "apps/v4/registry/bases/base/examples/context-menu-example.tsx",
+      "sha256": "6af7465c3be63adcfe2dd9038f695f7a063502bcca61b97a2d4739bd24bb72a0",
+      "kind": "component",
+      "target": "src/examples/context-menu-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Basic",
+        "With Icons",
+        "With Shortcuts",
+        "With Submenu",
+        "With Groups, Labels & Separators",
+        "With Checkboxes",
+        "With Radio Group",
+        "With Destructive Items",
+        "With Sides",
+        "In Dialog",
+        "With Inset"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "command-example",
+      "title": "Command",
+      "source": "apps/v4/registry/bases/base/examples/command-example.tsx",
+      "sha256": "e118eb5c70fb7aca6cd08dd833fb0d1216a805df0b7b360c2a30c1776fe56aa9",
+      "kind": "component",
+      "target": "src/examples/command-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Inline",
+        "Basic",
+        "With Shortcuts",
+        "With Groups",
+        "Many Groups & Items"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "combobox-example",
+      "title": "Combobox",
+      "source": "apps/v4/registry/bases/base/examples/combobox-example.tsx",
+      "sha256": "6b63f6a5671af4738a91b738830ef645da299b5088e59a084ea1ca5d2748ff2a",
+      "kind": "component",
+      "target": "src/examples/combobox-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Basic",
+        "Sides",
+        "Disabled",
+        "Disabled Items",
+        "Invalid",
+        "With Clear Button",
+        "With Groups",
+        "With Groups and Separator",
+        "Form with Combobox",
+        "Large List (100 items)",
+        "With Auto Highlight",
+        "With Icon Addon",
+        "Combobox in Popup",
+        "Combobox Multiple",
+        "Combobox Multiple Disabled",
+        "Combobox Multiple Invalid",
+        "Combobox Multiple (No Remove)",
+        "With Custom Item Rendering",
+        "Combobox in Dialog",
+        "With Other Inputs"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "collapsible-example",
+      "title": "Collapsible",
+      "source": "apps/v4/registry/bases/base/examples/collapsible-example.tsx",
+      "sha256": "dd365dedc98eea455ed379673d956197900692ee581fbe029d5ab97775f049b5",
+      "kind": "component",
+      "target": "src/examples/collapsible-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "File Tree",
+        "Settings"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "code-block-example",
+      "title": "Code Block",
+      "source": "apps/v4/registry/bases/base/examples/code-block-example.tsx",
+      "sha256": "1539c6d60b09effbedcc51c5b986a02c8ee46b227addaff6eca7e871734b403e",
+      "kind": "component",
+      "target": "src/examples/code-block-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Plain",
+        "Wrap",
+        "Line Numbers",
+        "Header",
+        "Destructive",
+        "Diff",
+        "Highlighted Lines",
+        "Height",
+        "Syntax Highlighting",
+        "Empty",
+        "Small",
+        "Small Destructive",
+        "Trace",
+        "Typeset",
+        "Actions",
+        "Show More",
+        "Show More with Max Height",
+        "Wrap and Line Numbers",
+        "Start Line",
+        "Diff, Wrap and Highlighting",
+        "Header Edges",
+        "Single Line and Empty",
+        "Small Combinations",
+        "Streaming",
+        "Markdown",
+        "Languages",
+        "Card and Dialog",
+        "Chat Answer",
+        "Tabs",
+        "RTL"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "checkbox-example",
+      "title": "Checkbox",
+      "source": "apps/v4/registry/bases/base/examples/checkbox-example.tsx",
+      "sha256": "1d1980a77777c91d3b8ca8014433b20c508c76a9a096b4e3c8dd71714ab7dabe",
+      "kind": "component",
+      "target": "src/examples/checkbox-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Basic",
+        "With Description",
+        "Invalid",
+        "Disabled",
+        "With Title",
+        "In Table",
+        "Group"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "chart-example",
+      "title": "Chart",
+      "source": "apps/v4/registry/bases/base/examples/chart-example.tsx",
+      "sha256": "70465e6e68a3a0471c4b1bb71072da8abc60b56e5f41a1907b8b065219e15a64",
+      "kind": "component",
+      "target": "src/examples/chart-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Area Chart",
+        "Bar Chart",
+        "Line Chart",
+        "Pie Chart",
+        "Radar Chart",
+        "Radial Chart"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "carousel-example",
+      "title": "Carousel",
+      "source": "apps/v4/registry/bases/base/examples/carousel-example.tsx",
+      "sha256": "3f04d744b24e2e9ade532b5b7aa2ade70c305ade9c87c47f2a2335766cac2bb6",
+      "kind": "component",
+      "target": "src/examples/carousel-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Basic",
+        "Multiple",
+        "With Gap"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "card-example",
+      "title": "Card",
+      "source": "apps/v4/registry/bases/base/examples/card-example.tsx",
+      "sha256": "00daf26ba404d0bfc41167a244d993ddc2837ba820cedfd6967d4a96932b3425",
+      "kind": "component",
+      "target": "src/examples/card-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Content Edge to Edge",
+        "Custom Spacing",
+        "Login",
+        "Meeting Notes",
+        "With Image",
+        "With Image (Small)",
+        "Header with Border",
+        "Footer with Border",
+        "Default Size",
+        "Small Size",
+        "Header with Border (Small)",
+        "Footer with Border (Small)"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "calendar-example",
+      "title": "Calendar",
+      "source": "apps/v4/registry/bases/base/examples/calendar-example.tsx",
+      "sha256": "12e806d3568ee4c3b960766a7bd45f5437967bebe4c32dbcb0d3875bb2355993",
+      "kind": "component",
+      "target": "src/examples/calendar-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "In Card",
+        "In Popover",
+        "Single",
+        "Multiple",
+        "Range",
+        "Range Multiple Months",
+        "Booked Dates",
+        "With Time",
+        "Custom Days",
+        "With Presets",
+        "Date Picker Simple",
+        "Date Picker Range",
+        "Date Picker with Dropdowns",
+        "Week Numbers"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "button-group-example",
+      "title": "Button Group",
+      "source": "apps/v4/registry/bases/base/examples/button-group-example.tsx",
+      "sha256": "5d2ed228eb49d7d254b5fab75e42d40eafb504dfc811273e763678d4e9710a26",
+      "kind": "component",
+      "target": "src/examples/button-group-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Basic",
+        "With Input",
+        "With Text",
+        "With Dropdown",
+        "With Select",
+        "With Icons",
+        "With Input Group",
+        "With Fields",
+        "With Like",
+        "With Select and Input",
+        "Nested",
+        "Pagination",
+        "Pagination Split",
+        "Navigation",
+        "Text Alignment",
+        "Vertical",
+        "Vertical Nested"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "button-example",
+      "title": "Button",
+      "source": "apps/v4/registry/bases/base/examples/button-example.tsx",
+      "sha256": "18eb30f758a5f64d918014952bce3f867a4ba06f79fa36f92f83ac331ef82f8a",
+      "kind": "component",
+      "target": "src/examples/button-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Variants & Sizes",
+        "Icon Right",
+        "Icon Left",
+        "Icon Only",
+        "Examples",
+        "Invalid States"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "bubble-example",
+      "title": "Bubble",
+      "source": "apps/v4/registry/bases/base/examples/bubble-example.tsx",
+      "sha256": "9164d600a337d988bfca1124916ceaecb14c95bbb129ae0291d230dbdec61361",
+      "kind": "component",
+      "target": "src/examples/bubble-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Variants",
+        "Sizes",
+        "Grouped",
+        "Collapsible",
+        "Reaction Placement",
+        "Reactions Buttons",
+        "Alignment",
+        "Button & Links"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "breadcrumb-example",
+      "title": "Breadcrumb",
+      "source": "apps/v4/registry/bases/base/examples/breadcrumb-example.tsx",
+      "sha256": "3880b085f86ee868367576aec07f021b955c14b72aa27d0749849d812032e34b",
+      "kind": "component",
+      "target": "src/examples/breadcrumb-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Basic",
+        "With Dropdown",
+        "With Link"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "badge-example",
+      "title": "Badge",
+      "source": "apps/v4/registry/bases/base/examples/badge-example.tsx",
+      "sha256": "b5ec41da831fe3034393d95bd93625d0f2331115353c96d5773a921cefdc2a97",
+      "kind": "component",
+      "target": "src/examples/badge-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Variants",
+        "Icon Left",
+        "Icon Right",
+        "With Spinner",
+        "asChild",
+        "Long Text",
+        "Custom Colors"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "avatar-example",
+      "title": "Avatar",
+      "source": "apps/v4/registry/bases/base/examples/avatar-example.tsx",
+      "sha256": "78f6fb795d33ef90fa2c4790b5ee3db29ca2b4ff62110941c23807ba8e0eda62",
+      "kind": "component",
+      "target": "src/examples/avatar-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Sizes",
+        "Badge",
+        "Badge with Icon",
+        "Group",
+        "Group with Count",
+        "Group with Icon Count",
+        "In Empty"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "attachment-example",
+      "title": "Attachment",
+      "source": "apps/v4/registry/bases/base/examples/attachment-example.tsx",
+      "sha256": "39fbf1843c0941ad3dffe4978209902b6b552f96884f6d3687335c87b1c8c16f",
+      "kind": "component",
+      "target": "src/examples/attachment-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Files",
+        "Content Only",
+        "States",
+        "Images",
+        "Image States",
+        "Sizes",
+        "Scrollable Group",
+        "Triggers"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "aspect-ratio-example",
+      "title": "Aspect Ratio",
+      "source": "apps/v4/registry/bases/base/examples/aspect-ratio-example.tsx",
+      "sha256": "d81a6912343f21f28f6939a20012f3033edb523e64fd892c3c9148246df4ef6a",
+      "kind": "component",
+      "target": "src/examples/aspect-ratio-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "16:9",
+        "1:1",
+        "9:16",
+        "21:9"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "alert-example",
+      "title": "Alert",
+      "source": "apps/v4/registry/bases/base/examples/alert-example.tsx",
+      "sha256": "2f13f1ad964a31981386a08d890acb94e329ad009d6e484b4ae4a8b6008463b2",
+      "kind": "component",
+      "target": "src/examples/alert-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Basic",
+        "With Icons",
+        "Destructive",
+        "With Actions"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "alert-dialog-example",
+      "title": "Alert Dialog",
+      "source": "apps/v4/registry/bases/base/examples/alert-dialog-example.tsx",
+      "sha256": "d6ac5f3c57c5ebe0c2d74446ebb001aa06eb3de43529530a62c318ca176d7e18",
+      "kind": "component",
+      "target": "src/examples/alert-dialog-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Basic",
+        "Small",
+        "With Media",
+        "Small With Media",
+        "Destructive",
+        "In Dialog"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "accordion-example",
+      "title": "Accordion",
+      "source": "apps/v4/registry/bases/base/examples/accordion-example.tsx",
+      "sha256": "2d22b2749b4e3f32ed753ff5fdc46db6c8e5d4bce8b42d7af1c7e02aca41d0fe",
+      "kind": "component",
+      "target": "src/examples/accordion-example.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "Basic",
+        "Multiple",
+        "With Borders",
+        "In Card",
+        "With Disabled"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "preview-02",
+      "title": "Composition 01",
+      "source": "apps/v4/registry/bases/base/blocks/preview-02/index.tsx",
+      "sha256": "a514ca6a721ba10b5c206931102d41e33693d151f3acf33be829f4709c1d98bd",
+      "kind": "composition",
+      "target": "src/examples/blocks/preview-02/index.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "AccountAccess",
+        "CardOverview",
+        "ClaimableBalance",
+        "ContributionHistory",
+        "CoverArt",
+        "DividendIncome",
+        "EmptyConnectBank",
+        "EmptyDistributeTrack",
+        "EmptyExploreCatalog",
+        "Faq",
+        "FrontDoor",
+        "IndexInvesting",
+        "KitchenIsland",
+        "LoadingCard",
+        "NewMilestone",
+        "NotificationSettings",
+        "Payments",
+        "PayoutThreshold",
+        "PowerUsage",
+        "Preferences",
+        "QrConnect",
+        "ReceivingMethod",
+        "RecentTransactions",
+        "ReleaseCatalog",
+        "RollerShades",
+        "SavingsProgress",
+        "SavingsTargets",
+        "SidebarNav",
+        "SocialLinks",
+        "StockPerformance",
+        "SyncingState",
+        "TransferFunds",
+        "UpcomingPayments"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "Original seven-column canvas reflows to 1–3 columns on this website; card content and combinations retained.",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    },
+    {
+      "id": "preview",
+      "title": "Composition 02",
+      "source": "apps/v4/registry/bases/base/blocks/preview/index.tsx",
+      "sha256": "abad92156b1e566bcad43cf849e148c75ec5017ea1ff640a16908068fb16872d",
+      "kind": "composition",
+      "target": "src/examples/blocks/preview/index.tsx",
+      "classification": "style extension",
+      "result": "implemented",
+      "scenes": [
+        "ActivateAgentDialog",
+        "AnalyticsCard",
+        "AnomalyAlert",
+        "BarChartCard",
+        "BookAppointment",
+        "CodespacesCard",
+        "ContributionsActivity",
+        "Contributors",
+        "EnvironmentVariables",
+        "FeedbackForm",
+        "FileUpload",
+        "GithubProfile",
+        "IconPreviewGrid",
+        "InviteTeam",
+        "Invoice",
+        "LiveWaveformCard",
+        "NoTeamMembers",
+        "NotFound",
+        "ObservabilityCard",
+        "PieChartCard",
+        "ReportBug",
+        "ShippingAddress",
+        "Shortcuts",
+        "SkeletonLoading",
+        "SleepReport",
+        "StyleOverview",
+        "TypographySpecimen",
+        "UIElements",
+        "UsageCard",
+        "Visitors",
+        "WeeklyFitnessSummary"
+      ],
+      "states": "Original component composition and controlled interactions retained. Stateless actions provide explicit local-demo feedback; forms save locally; copy/download/file selection work. Mock chat uses scripted local transport, never a model API.",
+      "differences": "Original seven-column canvas reflows to 1–3 columns on this website; card content and combinations retained.",
+      "evidence": [
+        "evidence/smoke.json",
+        "evidence/interaction-results.json"
+      ]
+    }
+  ],
+  "theme": {
+    "accentColors": 26,
+    "grayOptions": 7,
+    "appearances": 2,
+    "radii": 5,
+    "scalings": 5,
+    "materials": 2,
+    "grayAuto": "mauve/slate/sage/olive/sand/gray via fixed Radix helper mapping",
+    "colorData": "@radix-ui/colors@3.0.0, 12 opaque + 12 alpha steps in both appearances; sRGB baseline",
+    "mapping": "Radix design data → accent-1..12 / gray-1..12 / material/size/motion tokens → shadcn semantic tokens and local slot styles. shadcn --accent remains a subtle interaction surface.",
+    "evidence": "evidence/theme-options.json"
+  },
+  "cropped": [],
+  "limitations": [
+    "Visual comparison uses one pinned local Chromium on Linux and sRGB; system font stack resolves on that machine. It is not a cross-OS/browser certification.",
+    "100 gallery pairs cover all 45 sections in light/dark plus 10 open states (including a submenu and the alternate popper Select). The 12-combination multi-component matrix is representative, not every Cartesian permutation.",
+    "Pixel difference values are diagnostics, not a claimed fidelity percentage. Open overlay placement/scrolling follows Base UI; see per-row notes and screenshots.",
+    "Application examples are intentionally local demonstrations; no backend/account/payment/generator service is provided."
+  ],
+  "validation": {
+    "behavior": "evidence/interaction-results.json",
+    "animation": "evidence/animations/report.json",
+    "accessibility": "evidence/accessibility.json",
+    "consumer": "evidence/registry/installation.json"
+  }
+}

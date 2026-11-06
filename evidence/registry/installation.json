@@ -1,0 +1,84 @@
+{
+  "dir": "/tmp/radix-base-consumer-E1iA4s",
+  "base": "http://localhost:5173/r",
+  "logs": [
+    {
+      "command": "npm exec --yes --package=create-vite@9.3.4 -- create-vite consumer --template react-ts",
+      "cwd": "/tmp/radix-base-consumer-E1iA4s",
+      "status": 0,
+      "output": "\ncreate-vite v9.3.4\n\n│\n◇  Scaffolding project in /tmp/radix-base-consumer-E1iA4s/consumer...\n│\n└  Done. Now run:\n\n  cd consumer\n  npm install\n  npm run dev\n\n"
+    },
+    {
+      "command": "npm install",
+      "cwd": "/tmp/radix-base-consumer-E1iA4s/consumer",
+      "status": 0,
+      "output": "\nadded 28 packages, and audited 29 packages in 1s\n\n9 packages are looking for funding\n  run `npm fund` for details\n\nfound 0 vulnerabilities\n"
+    },
+    {
+      "command": "npm install -D --save-exact tailwindcss@4.3.4 @tailwindcss/vite@4.3.4 @types/node@24.19.2",
+      "cwd": "/tmp/radix-base-consumer-E1iA4s/consumer",
+      "status": 0,
+      "output": "\nadded 16 packages, and audited 51 packages in 1s\n\n11 packages are looking for funding\n  run `npm fund` for details\n\nfound 0 vulnerabilities\n"
+    },
+    {
+      "command": "/home/michael/.nvm/versions/node/v26.13.0/bin/node /home/michael/orca/workspaces/radix-shadcn/shrimp/node_modules/shadcn/dist/index.js init --base base --preset nova --yes --no-monorepo",
+      "cwd": "/tmp/radix-base-consumer-E1iA4s/consumer",
+      "status": 0,
+      "output": "  - src/lib/utils.ts\n\nProject initialization completed.\nYou may now add components.\n\n- Preflight checks.\n✔ Preflight checks.\n- Verifying framework.\n✔ Verifying framework. Found Vite.\n- Validating Tailwind CSS. Found v4.\n✔ Validating Tailwind CSS. Found v4.\n- Validating import alias.\n✔ Validating import alias.\n- Writing components.json.\n✔ Writing components.json.\n- Checking registry.\n✔ Checking registry.\n- Installing dependencies.\n- Installing dependencies.\n✔ Installing dependencies.\n- Updating files.\n✔ Created 1 file:\n- Updating src/index.css\n✔ Updating src/index.css\n"
+    },
+    {
+      "command": "/home/michael/.nvm/versions/node/v26.13.0/bin/node /home/michael/orca/workspaces/radix-shadcn/shrimp/node_modules/shadcn/dist/index.js add http://localhost:5173/r/button.json --yes",
+      "cwd": "/tmp/radix-base-consumer-E1iA4s/consumer",
+      "status": 0,
+      "output": "  - src/design/ui/button.tsx\n  - src/design/ui/spinner.tsx\n  - src/design/lib/theme/NOTICE.txt\n  - src/design/lib/theme/card-material.css\n  - src/design/lib/theme/design-tokens.css\n  - src/design/lib/theme/palettes.css\n  - src/design/lib/theme/styles.css\n  - src/design/lib/theme/surfaces.css\n  - src/design/lib/theme/theme.tsx\n  - src/design/lib/theme/visual-props.ts\nImport the installed lib/theme/styles.css once after Tailwind. Wrap your app with Theme from your configured lib alias + /theme/theme. Portals inherit Theme. Sources use the system font stack; no font network request. Files include the complete local dependency closure; no namespace or host-bound dependency URLs.\n\n- Checking registry.\n✔ Checking registry.\n- Installing dependencies.\n- Installing dependencies.\n✔ Installing dependencies.\n- Updating files.\n✔ Created 10 files:\n"
+    },
+    {
+      "command": "npm run build",
+      "cwd": "/tmp/radix-base-consumer-E1iA4s/consumer",
+      "status": 0,
+      "output": "\n> consumer@0.0.0 build\n> tsc -b && vite build\n\nvite v8.3.6 building client environment for production...\ntransforming...\n✓ 53 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                                              0.45 kB │ gzip:  0.29 kB\ndist/assets/geist-cyrillic-ext-wght-normal-DjL33-gN.woff2    7.42 kB\ndist/assets/geist-vietnamese-wght-normal-6IgcOCM7.woff2      8.00 kB\ndist/assets/geist-cyrillic-wght-normal-BEAKL7Jp.woff2       15.08 kB\ndist/assets/geist-latin-ext-wght-normal-DC-KSUi6.woff2      16.51 kB\ndist/assets/geist-latin-wght-normal-BgDaEnEv.woff2          29.40 kB\ndist/assets/index-DCz1Zki_.css                             170.34 kB │ gzip: 31.70 kB\ndist/assets/index-Dv2_Wubk.js                              256.92 kB │ gzip: 83.56 kB\n\n✓ built in 186ms\n"
+    },
+    {
+      "command": "/home/michael/.nvm/versions/node/v26.13.0/bin/node /home/michael/orca/workspaces/radix-shadcn/shrimp/node_modules/shadcn/dist/index.js add http://localhost:5173/r/button.json --yes",
+      "cwd": "/tmp/radix-base-consumer-E1iA4s/consumer",
+      "status": 0,
+      "output": "  - src/design/ui/button.tsx\n  - src/design/ui/spinner.tsx\n  - src/design/lib/theme/NOTICE.txt\n  - src/design/lib/theme/card-material.css\n  - src/design/lib/theme/design-tokens.css\n  - src/design/lib/theme/palettes.css\n  - src/design/lib/theme/styles.css\n  - src/design/lib/theme/surfaces.css\n  - src/design/lib/theme/theme.tsx\n  - src/design/lib/theme/visual-props.ts\nImport the installed lib/theme/styles.css once after Tailwind. Wrap your app with Theme from your configured lib alias + /theme/theme. Portals inherit Theme. Sources use the system font stack; no font network request. Files include the complete local dependency closure; no namespace or host-bound dependency URLs.\n\n- Checking registry.\n✔ Checking registry.\n- Installing dependencies.\n- Installing dependencies.\n✔ Installing dependencies.\n- Updating files.\nℹ Skipped 10 files: (files might be identical, use --overwrite to overwrite)\n"
+    },
+    {
+      "command": "/home/michael/.nvm/versions/node/v26.13.0/bin/node /home/michael/orca/workspaces/radix-shadcn/shrimp/node_modules/shadcn/dist/index.js add http://localhost:5173/r/button.json --dry-run",
+      "cwd": "/tmp/radix-base-consumer-E1iA4s/consumer",
+      "status": 0,
+      "output": "┌ shadcn add http://localhost:5173/r/button.json (dry run)\n│\n├ Files (10) ~1 overwrite, =9 skip\n│ ~ src/design/ui/button.tsx                overwrite\n│ = src/design/ui/spinner.tsx               skip (identical)\n│ = src/design/lib/theme/NOTICE.txt         skip (identical)\n│ = src/design/lib/theme/card-material.css  skip (identical)\n│ = src/design/lib/theme/design-tokens.css  skip (identical)\n│ = src/design/lib/theme/palettes.css       skip (identical)\n│ = src/design/lib/theme/styles.css         skip (identical)\n│ = src/design/lib/theme/surfaces.css       skip (identical)\n│ = src/design/lib/theme/theme.tsx          skip (identical)\n│ = src/design/lib/theme/visual-props.ts    skip (identical)\n│\n├ Dependencies (5)\n│ + @base-ui/react@1.9.0\n│ + @radix-ui/colors@3.0.0\n│ + class-variance-authority@0.7.1\n│ + cn@0.5.2\n│ + lucide-react@1.69.0\n│\n⚠ 1 file will be overwritten.\n│\n│ 10 files, 5 deps\n│\n│ Run with --diff to view changes.\n│ Run with --view to view file contents.\n└ Run without --dry-run to apply.\n- Resolving items.\n"
+    },
+    {
+      "command": "/home/michael/.nvm/versions/node/v26.13.0/bin/node /home/michael/orca/workspaces/radix-shadcn/shrimp/node_modules/shadcn/dist/index.js add http://localhost:5173/r/button.json --yes --overwrite",
+      "cwd": "/tmp/radix-base-consumer-E1iA4s/consumer",
+      "status": 0,
+      "output": "  - src/design/ui/button.tsx\n  - src/design/ui/spinner.tsx\n  - src/design/lib/theme/NOTICE.txt\n  - src/design/lib/theme/card-material.css\n  - src/design/lib/theme/design-tokens.css\n  - src/design/lib/theme/palettes.css\n  - src/design/lib/theme/styles.css\n  - src/design/lib/theme/surfaces.css\n  - src/design/lib/theme/theme.tsx\n  - src/design/lib/theme/visual-props.ts\nImport the installed lib/theme/styles.css once after Tailwind. Wrap your app with Theme from your configured lib alias + /theme/theme. Portals inherit Theme. Sources use the system font stack; no font network request. Files include the complete local dependency closure; no namespace or host-bound dependency URLs.\n\n- Checking registry.\n✔ Checking registry.\n- Installing dependencies.\n- Installing dependencies.\n✔ Installing dependencies.\n- Updating files.\nℹ Updated 1 file:\nℹ Skipped 9 files: (files might be identical, use --overwrite to overwrite)\n"
+    },
+    {
+      "command": "/home/michael/.nvm/versions/node/v26.13.0/bin/node /home/michael/orca/workspaces/radix-shadcn/shrimp/node_modules/shadcn/dist/index.js add http://localhost:5173/r/radix-base.json --yes --overwrite",
+      "cwd": "/tmp/radix-base-consumer-E1iA4s/consumer",
+      "status": 0,
+      "output": "  - src/design/ui/accordion.tsx\n  - src/design/ui/adaptations.tsx\n  - src/design/ui/alert-dialog.tsx\n  - src/design/ui/alert.tsx\n  - src/design/ui/aspect-ratio.tsx\n  - src/design/ui/attachment.tsx\n  - src/design/ui/avatar.tsx\n  - src/design/ui/badge.tsx\n  - src/design/ui/breadcrumb.tsx\n  - src/design/ui/bubble.tsx\n  - src/design/ui/button-group.tsx\n  - src/design/ui/calendar.tsx\n  - src/design/ui/card.tsx\n  - src/design/ui/carousel.tsx\n  - src/design/ui/chart.tsx\n  - src/design/ui/checkbox-group.tsx\n  - src/design/ui/checkbox.tsx\n  - src/design/ui/code-block.tsx\n  - src/design/ui/collapsible.tsx\n  - src/design/ui/combobox.tsx\n  - src/design/ui/command.tsx\n  - src/design/ui/context-menu.tsx\n  - src/design/ui/dialog.tsx\n  - src/design/ui/direction.tsx\n  - src/design/ui/drawer.tsx\n  - src/design/ui/dropdown-menu.tsx\n  - src/design/ui/empty.tsx\n  - src/design/ui/field.tsx\n  - src/design/ui/hover-card.tsx\n  - src/design/ui/input-group.tsx\n  - src/design/ui/input-otp.tsx\n  - src/design/ui/input.tsx\n  - src/design/ui/item.tsx\n  - src/design/ui/kbd.tsx\n  - src/design/ui/label.tsx\n  - src/design/ui/marker.tsx\n  - src/design/ui/menubar.tsx\n  - src/design/ui/message-scroller.tsx\n  - src/design/ui/message.tsx\n  - src/design/ui/native-select.tsx\n  - src/design/ui/navigation-menu.tsx\n  - src/design/ui/pagination.tsx\n  - src/design/ui/popover.tsx\n  - src/design/ui/progress.tsx\n  - src/design/ui/questionnaire.tsx\n  - src/design/ui/radio-group.tsx\n  - src/design/ui/resizable.tsx\n  - src/design/ui/scroll-area.tsx\n  - src/design/ui/select.tsx\n  - src/design/ui/separator.tsx\n  - src/design/ui/sheet.tsx\n  - src/design/ui/sidebar.tsx\n  - src/design/ui/skeleton.tsx\n  - src/design/ui/slider.tsx\n  - src/design/ui/sonner.tsx\n  - src/design/ui/switch.tsx\n  - src/design/ui/tab-nav.tsx\n  - src/design/ui/table.tsx\n  - src/design/ui/tabs.tsx\n  - src/design/ui/textarea.tsx\n  - src/design/ui/toast.tsx\n  - src/design/ui/toggle-group.tsx\n  - src/design/ui/toggle.tsx\n  - src/design/ui/tooltip.tsx\n  - src/design/ui/trace.tsx\n  - src/design/ui/typography.tsx\n  - src/design/hooks/use-mobile.ts\n  - src/design/ui/button.tsx\n  - src/design/ui/spinner.tsx\n  - src/design/lib/theme/NOTICE.txt\n  - src/design/lib/theme/card-material.css\n  - src/design/lib/theme/design-tokens.css\n  - src/design/lib/theme/palettes.css\n  - src/design/lib/theme/styles.css\n  - src/design/lib/theme/surfaces.css\n  - src/design/lib/theme/theme.tsx\n  - src/design/lib/theme/visual-props.ts\nImport the installed lib/theme/styles.css once after Tailwind. Wrap your app with Theme from your configured lib alias + /theme/theme. Portals inherit Theme. Sources use the system font stack; no font network request. Files include the complete local dependency closure; no namespace or host-bound dependency URLs.\n\n- Checking registry.\n✔ Checking registry.\n- Installing dependencies.\n- Installing dependencies.\n✔ Installing dependencies.\n- Updating files.\n✔ Created 67 files:\nℹ Skipped 10 files: (files might be identical, use --overwrite to overwrite)\n"
+    },
+    {
+      "command": "npm run build",
+      "cwd": "/tmp/radix-base-consumer-E1iA4s/consumer",
+      "status": 0,
+      "output": "\n> consumer@0.0.0 build\n> tsc -b && vite build\n\nvite v8.3.6 building client environment for production...\ntransforming...\n✓ 2314 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                                              0.45 kB │ gzip:   0.29 kB\ndist/assets/geist-cyrillic-ext-wght-normal-DjL33-gN.woff2    7.42 kB\ndist/assets/geist-vietnamese-wght-normal-6IgcOCM7.woff2      8.00 kB\ndist/assets/geist-cyrillic-wght-normal-BEAKL7Jp.woff2       15.08 kB\ndist/assets/geist-latin-ext-wght-normal-DC-KSUi6.woff2      16.51 kB\ndist/assets/geist-latin-wght-normal-BgDaEnEv.woff2          29.40 kB\ndist/assets/index-DYzGrCJ1.css                             364.18 kB │ gzip:  58.87 kB\ndist/assets/index-C8v7zXkZ.js                              395.90 kB │ gzip: 131.34 kB\n\n✓ built in 371ms\n"
+    }
+  ],
+  "supplementalThemeInstall": {
+    "command": "/home/michael/.nvm/versions/node/v26.13.0/bin/node /home/michael/orca/workspaces/radix-shadcn/shrimp/node_modules/shadcn/dist/index.js add http://localhost:5173/r/theme.json --yes --overwrite",
+    "status": 0,
+    "output": "  - src/design/lib/theme/NOTICE.txt\n  - src/design/lib/theme/theme.tsx\n  - src/design/lib/theme/card-material.css\n  - src/design/lib/theme/design-tokens.css\n  - src/design/lib/theme/palettes.css\n  - src/design/lib/theme/styles.css\n  - src/design/lib/theme/surfaces.css\n  - src/design/lib/theme/visual-props.ts\nImport the installed lib/theme/styles.css once after Tailwind. Wrap your app with Theme from your configured lib alias + /theme/theme. Portals inherit Theme. Sources use the system font stack; no font network request. Files include the complete local dependency closure; no namespace or host-bound dependency URLs.\n\n- Checking registry.\n✔ Checking registry.\n- Installing dependencies.\n- Installing dependencies.\n✔ Installing dependencies.\n- Updating files.\nℹ Updated 2 files:\nℹ Skipped 6 files: (files might be identical, use --overwrite to overwrite)\n",
+    "noticeSha256": "520adcb85035daa5c4b2ebfa68a4e475f943da7c39ea68ed5c2ab151d8d3c8d7",
+    "noticeIncludes": [
+      "WorkOS",
+      "shadcn",
+      "Michael Chen"
+    ],
+    "byteIdentical": true
+  }
+}

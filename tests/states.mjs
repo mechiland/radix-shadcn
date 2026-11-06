@@ -1,0 +1,17 @@
+import {chromium} from '@playwright/test'
+import {mkdirSync,writeFileSync} from 'node:fs'
+import {PNG} from 'pngjs'
+import pixelmatch from 'pixelmatch'
+const out='evidence/states';mkdirSync(out,{recursive:true})
+const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/usr/bin/google-chrome',args:['--no-sandbox','--force-color-profile=srgb']});const context=await browser.newContext({viewport:{width:1000,height:800},deviceScaleFactor:1,locale:'en-US'});const pages=[await context.newPage(),await context.newPage()];const results=[]
+const cases=[];for(const variant of ['classic','solid','soft','surface','outline','ghost'])for(const state of ['hover','active','focus-visible'])cases.push({id:'button',variant,state,appearance:'light'});for(const id of ['checkbox','switch'])for(const appearance of ['light','dark'])cases.push({id,variant:'surface',state:'focus-visible',appearance});cases.push({id:'button',variant:'solid',state:'focus-visible',appearance:'dark'})
+for(const c of cases){const name=`${c.id}-${c.variant}-${c.state}-${c.appearance}`,images=[],metrics=[];const theme={accentColor:'indigo',grayColor:'auto',appearance:c.appearance,radius:'medium',scaling:'100%',panelBackground:'translucent'}
+ for(let i=0;i<2;i++){const page=pages[i],q=encodeURIComponent(JSON.stringify(theme));await page.goto(`http://localhost:${i?5173:5174}/?${i?'fixture=1&':''}component=${c.id}&theme=${q}`);let target
+ if(c.id==='button')target=page.locator(i?`#comparison-fixture .ds-${c.variant}`:`#comparison-fixture .rt-Button.rt-variant-${c.variant}`).first()
+ else target=page.locator(i?`[data-slot=${c.id}][data-variant=${c.variant}]`:`[role=${c.id}].rt-variant-${c.variant}`).first()
+ await target.waitFor();if(c.state==='focus-visible'){await page.keyboard.press('Tab');await target.focus()}else await target.hover();if(c.state==='active')await page.mouse.down();await target.evaluate(async e=>{await Promise.all(e.getAnimations().filter(a=>a.effect?.getTiming().iterations!==Infinity).map(a=>a.finished.catch(()=>{})))})
+ const box=await target.boundingBox();const clip={x:Math.max(0,box.x-6),y:Math.max(0,box.y-6),width:box.width+12,height:box.height+12};images.push(PNG.sync.read(await page.screenshot({path:`${out}/${name}-${i?'implementation':'reference'}.png`,clip})));metrics.push(await target.evaluate(el=>{const s=getComputedStyle(el);return{fontSize:s.fontSize,background:s.backgroundColor,color:s.color,shadow:s.boxShadow,outline:s.outline,outlineOffset:s.outlineOffset,focusVisible:el.matches(':focus-visible')}}));if(c.state==='active')await page.mouse.up()
+ }
+ const [a,b]=images,w=Math.max(a.width,b.width),h=Math.max(a.height,b.height);const pad=p=>{const n=new PNG({width:w,height:h});n.data.fill(255);PNG.bitblt(p,n,0,0,p.width,p.height,0,0);return n};const aa=pad(a),bb=pad(b),diff=new PNG({width:w,height:h});const mismatched=pixelmatch(aa.data,bb.data,diff.data,w,h,{threshold:.1,includeAA:false});writeFileSync(`${out}/${name}-diff.png`,PNG.sync.write(diff));results.push({...c,name,reference:metrics[0],implementation:metrics[1],mismatchedPixels:mismatched,totalPixels:w*h,mismatchFraction:mismatched/(w*h)})
+}
+writeFileSync(`${out}/report.json`,JSON.stringify({browser:await browser.version(),viewport:{width:1000,height:800},dpr:1,clip:'Component bounds plus 6px for focus ring; no full-page whitespace',pixelmatch:{threshold:.1,includeAA:false},results},null,2));await browser.close();console.log('Captured',results.length,'paired hover, active and focus-visible regions.')

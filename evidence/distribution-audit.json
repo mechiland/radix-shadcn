@@ -1,0 +1,427 @@
+{
+  "items": [
+    {
+      "name": "accordion",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "56049e509137d2e62b95228f241632a29f77dc02b8519efe5781788bf6f8b59e"
+    },
+    {
+      "name": "adaptations",
+      "type": "registry:ui",
+      "files": 11,
+      "sha256": "2d9f6f385f142d6559097e3a3eeed815b7aec47dbd872078030f6d1a486650f1"
+    },
+    {
+      "name": "alert-dialog",
+      "type": "registry:ui",
+      "files": 11,
+      "sha256": "5c7df5e6f577355d2b2856fc89879d30dd66b42964c8d6be0f0b211e4e5f3570"
+    },
+    {
+      "name": "alert",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "df83638201b21329506cced8804d1f4c84568e784815aa2998cd8e153ccef8e2"
+    },
+    {
+      "name": "aspect-ratio",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "86aa3826e53e34a072fd2214fabe2c653d755d0b17a020838396b45d225683ee"
+    },
+    {
+      "name": "attachment",
+      "type": "registry:ui",
+      "files": 11,
+      "sha256": "c233256f5c15e4a144b1dc097ca3f4ba44f8c0020edc2985ad1467f1a2fb1e3b"
+    },
+    {
+      "name": "avatar",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "4c01e70aeacd72011fd16f1f4cb67e7af6920ed7ee37077af13f66fc5cf41655"
+    },
+    {
+      "name": "badge",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "5dab56543e850e31e38e51d9f027fb2419ef773e3aedb56388b4363a1ccb9a73"
+    },
+    {
+      "name": "breadcrumb",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "06f8e8fd42fc1a944e80749a33a2a69249d8c91201232c50d1177ab272b7a4b3"
+    },
+    {
+      "name": "bubble",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "f293ef31f90c4ee0f69a06090a318785c93173a910aeebd3489360e913f37b15"
+    },
+    {
+      "name": "button-group",
+      "type": "registry:ui",
+      "files": 10,
+      "sha256": "cdc8c8cfe80f7fedc897d4eaf62c872309d432c3402d64eda1ebc350c910645f"
+    },
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "files": 10,
+      "sha256": "4a6170530b66e3f3593debae4d91f563ea13aad28304158aa35c7cbca069e121"
+    },
+    {
+      "name": "calendar",
+      "type": "registry:ui",
+      "files": 11,
+      "sha256": "60313ecd632ceb4eca491f91108464d5f1d3daa26900517d25b98589b4922e4c"
+    },
+    {
+      "name": "card",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "1bcbaf21f31c31016fcfd79dfd1360e4019a18abebdf7ca44fa99fa75bf33d43"
+    },
+    {
+      "name": "carousel",
+      "type": "registry:ui",
+      "files": 11,
+      "sha256": "0bd4df7d3a5b9cfafd489e5e6bcc680631179f6c30ffa406f14584d9ee4576f5"
+    },
+    {
+      "name": "chart",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "e2daaa2c1a9471e2d683d9127988cc1bfbef520b0713fce146f62f25bd42d79f"
+    },
+    {
+      "name": "checkbox-group",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "469a4cd2e9c84076b653fe1e81277415143fbdc71e4428932776d6b03172490f"
+    },
+    {
+      "name": "checkbox",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "dd6cd59afd23e7636bacba2d9d5cc2a0ef9d9f3e151f08e0fd6d94b1ccb47e46"
+    },
+    {
+      "name": "code-block",
+      "type": "registry:ui",
+      "files": 11,
+      "sha256": "cd57d47e938a2aafa6cab232ce3819afe25003aefe49bfc5dd9860910fc1e7fc"
+    },
+    {
+      "name": "collapsible",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "b5036faa75263fdc016f33527e3a4338982bf416e669e69829f4a46ceccdfa8a"
+    },
+    {
+      "name": "combobox",
+      "type": "registry:ui",
+      "files": 14,
+      "sha256": "f45236a00f4f75f005acff8d9919a4a595f21f6cbecf46250d1b26083867e512"
+    },
+    {
+      "name": "command",
+      "type": "registry:ui",
+      "files": 12,
+      "sha256": "bf180b1255fafdf972b913b34533e66a1a8c4ddd4c907ef2f1befbb29993d32e"
+    },
+    {
+      "name": "context-menu",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "ad48c9803d86e24ef65fbfb8e0212855675dbdd8ff5aae85ccd1c74e39779709"
+    },
+    {
+      "name": "dialog",
+      "type": "registry:ui",
+      "files": 11,
+      "sha256": "194059659d823a5082c014ad62a1c4a63f1465d17b4495e2ecfd0646abb90464"
+    },
+    {
+      "name": "direction",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "47a0888d077f0dda4f27a100bd3732ceb3b806bc6849aea39deb4d20227ca257"
+    },
+    {
+      "name": "drawer",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "e1f7709eafb10fec34245e8d5d8a08963f1d20386eb091d4d2cfb6fb295f5810"
+    },
+    {
+      "name": "dropdown-menu",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "6b17d1b36475893b5c2b8f0ef6e14c75da813ef3127db8b221246fa54c350807"
+    },
+    {
+      "name": "empty",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "68c608e30d99c7797aed1705c3cc1472c5be6deff06837bef56f1bf42814bc56"
+    },
+    {
+      "name": "field",
+      "type": "registry:ui",
+      "files": 11,
+      "sha256": "44f518b20c9a9a7999c41df852cf531e337713eb8e43b00d6d02052a3d3f7032"
+    },
+    {
+      "name": "hover-card",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "321cb03c61f984bf24ef7a1e296243e232d8fc2f05db1abdb6fe413d32ad71b1"
+    },
+    {
+      "name": "input-group",
+      "type": "registry:ui",
+      "files": 13,
+      "sha256": "7fed6f7434fd2caae9ae2396d5b53a3313fe7727635f57efa9b30da36e80d836"
+    },
+    {
+      "name": "input-otp",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "0db0b7498194e1a4cb64ff8b0994f11be19257a4577a9f5a847b8dc95dc963ae"
+    },
+    {
+      "name": "input",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "7393407fc20942f9abcb249a76fe8d261fd37dfca9d5c33cd82af8d1d8a8c546"
+    },
+    {
+      "name": "item",
+      "type": "registry:ui",
+      "files": 10,
+      "sha256": "39f1f50ad010ffbaa7e120fa27013bdb92a1a614bcd2446ffab3094225963ca3"
+    },
+    {
+      "name": "kbd",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "d3532551606cfa33ea79994467f9cef3b3ba58d5b07cbb214a3c411aa5223dcd"
+    },
+    {
+      "name": "label",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "fd0f7b8328092a25a90fc320d90ebfedb01081425f2d0f04447bcfdcb7e0bca7"
+    },
+    {
+      "name": "marker",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "6f844cde128c1b7df79e0a1e1c2b10999749ce715725bfc5602318f2428d5dc9"
+    },
+    {
+      "name": "menubar",
+      "type": "registry:ui",
+      "files": 10,
+      "sha256": "3a6c0bde7959a456f21f71f8ff67a675d3fa6897e9bcb79372f5dbf248d624aa"
+    },
+    {
+      "name": "message-scroller",
+      "type": "registry:ui",
+      "files": 11,
+      "sha256": "f1f54eb12059d705c74e425634b6abef154cea4df951f3a8a7913e6b9c9fe8c5"
+    },
+    {
+      "name": "message",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "7aa29100aa55c08dbfd959a2472407f9194457622e3072bbe5d100c763c6e4a5"
+    },
+    {
+      "name": "native-select",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "8844f80056727be515ce34b7b7ba4dcc120c8b81b33ba8078954b3803e2119eb"
+    },
+    {
+      "name": "navigation-menu",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "e3e279194110e2e4669fbf0199f80d95be55cfc2fd5d3cc85b9939a5849c4ccd"
+    },
+    {
+      "name": "pagination",
+      "type": "registry:ui",
+      "files": 11,
+      "sha256": "fbbb25d6c64c08175c0826f319b2f736de067acfb9066334148bc12895f26bab"
+    },
+    {
+      "name": "popover",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "f63afc3c40dff02d9bfa42e61037f10ea851da3bc347e1e303d389cc0191e061"
+    },
+    {
+      "name": "progress",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "0371c43c23bab34366aba1b62db7222cf0325ec66cc48a1a7b0b6c89441ecf21"
+    },
+    {
+      "name": "questionnaire",
+      "type": "registry:ui",
+      "files": 11,
+      "sha256": "7f6e41d64bcf7f9ca6372559114c401d44b902e81cd37dec96032e05b80efe29"
+    },
+    {
+      "name": "radio-group",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "de9b8d54078fd3e8ca0d6f611098bfcc37e5ed65f284b525b14e9a023dc9725c"
+    },
+    {
+      "name": "radix-base",
+      "type": "registry:base",
+      "files": 77,
+      "sha256": "86165f0f44d52c7774a34f222a2f188a98f2c388611794c35579f41e3adb64d4"
+    },
+    {
+      "name": "resizable",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "a404f7365a21ed3bd686e967ecfd196895344c2e6f387ed662d230358f54cb72"
+    },
+    {
+      "name": "scroll-area",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "b8fc2f337f4105ff947118d6e4fb02387885749e77b81caecd35da96d369e05c"
+    },
+    {
+      "name": "select",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "f089b654e6c5fc7317a6f2445caf2fe1ea0565f1e1640969765ac135ff516f80"
+    },
+    {
+      "name": "separator",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "b7d78a0c4ef5fbed3acdafe92931e3cca67f2cf0c57f787d3a2a0394a3e07c69"
+    },
+    {
+      "name": "sheet",
+      "type": "registry:ui",
+      "files": 11,
+      "sha256": "7ce6df0251d6d2fd38464c9044de7aa0d8fe6aee143eda1b0322a3655a6e7541"
+    },
+    {
+      "name": "sidebar",
+      "type": "registry:ui",
+      "files": 17,
+      "sha256": "2daeb70fe8e046685d5b8a55289916788e1f48c1c8285add1e1622a579224b69"
+    },
+    {
+      "name": "skeleton",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "dc413c9bd02dab849322b6638d37276822f24b2c09c47d4b89c5e634fad4f8ad"
+    },
+    {
+      "name": "slider",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "cd61ef994bde1590a401775b1739fd40c6927c3f31319f824e3255899d50e57d"
+    },
+    {
+      "name": "sonner",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "b035165f7d45109421609879225606f2028e9b7bcfa12af486146535d6e3404a"
+    },
+    {
+      "name": "spinner",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "ac4be766a23b63a9988f179a7c2007ac19f1766ec4eb63e22f946cb317c8b433"
+    },
+    {
+      "name": "switch",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "2a181762fde3f0f9ddd03b447c0e38ea6d9c4fb568d74e7c370a068895c690a6"
+    },
+    {
+      "name": "tab-nav",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "052ced4d0d7932e530a4ee9091a1a6921c61f8d99625d4731ed7808c49924b03"
+    },
+    {
+      "name": "table",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "6fc69fa6f56aafbfbbffdab780a78686158bb020cac7d47f2cd89cb59b76a8a9"
+    },
+    {
+      "name": "tabs",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "7dd08ea5515c3d5503f08f5c9393bb7cdf008a52ae33e853c7439e1683da2059"
+    },
+    {
+      "name": "textarea",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "a0df26aeb6dd1199a79858fe4e463b7e1b5ae40d150e37d8eb2cddc1f0f4a50e"
+    },
+    {
+      "name": "theme",
+      "type": "registry:theme",
+      "files": 8,
+      "sha256": "522b3199defcbcb2872989549f1a91505427bc6cf8ed71e044f0d2a94636805b"
+    },
+    {
+      "name": "toast",
+      "type": "registry:ui",
+      "files": 11,
+      "sha256": "3c3d4a0921322468bf52a8294b7fc0287f37fa6669951642c9c38d89dfd2c005"
+    },
+    {
+      "name": "toggle-group",
+      "type": "registry:ui",
+      "files": 10,
+      "sha256": "12ffe1256b6e1ba6b6875e30132b89a28cb545d0882a087dacf7bdc7d0f97b65"
+    },
+    {
+      "name": "toggle",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "af1a1bb07009502b5a3d4525a27f5813f3f67fdf80bf451484b336a214fc7fb2"
+    },
+    {
+      "name": "tooltip",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "bf464f8cbb9dc452658666df6cb4e711d8ebbaf49b8df6fffb40c28a100d6a97"
+    },
+    {
+      "name": "trace",
+      "type": "registry:ui",
+      "files": 10,
+      "sha256": "e062a40f46fcb7b3e7c14f7d3572a95446e8650739fd141f9205b222672ffd68"
+    },
+    {
+      "name": "typography",
+      "type": "registry:ui",
+      "files": 9,
+      "sha256": "2dbd6183084b6a189b8e0a96f1989ec9781770c1713723cc322de0245bd8491e"
+    }
+  ],
+  "radixRuntimePackages": [],
+  "problems": [],
+  "status": "passed"
+}

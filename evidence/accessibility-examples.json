@@ -1,0 +1,636 @@
+[
+  {
+    "id": "trace-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "tooltip-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "toggle-group-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "toggle-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "toast-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "textarea-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "tabs-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "table-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "switch-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "spinner-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "sonner-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "slider-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "skeleton-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "sidebar-inset-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "sidebar-icon-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "sidebar-floating-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": [
+        {
+          "id": "",
+          "fields": []
+        }
+      ]
+    }
+  },
+  {
+    "id": "sidebar-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": [
+        {
+          "id": "",
+          "fields": []
+        }
+      ]
+    }
+  },
+  {
+    "id": "sheet-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "separator-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "select-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "scroll-area-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "resizable-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "radio-group-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "questionnaire-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": [
+        {
+          "id": "",
+          "fields": []
+        },
+        {
+          "id": "",
+          "fields": []
+        },
+        {
+          "id": "",
+          "fields": []
+        },
+        {
+          "id": "",
+          "fields": []
+        }
+      ]
+    }
+  },
+  {
+    "id": "progress-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "popover-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "pagination-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "navigation-menu-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "native-select-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "message-scroller-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": [
+        {
+          "id": "chat-form",
+          "fields": []
+        }
+      ]
+    }
+  },
+  {
+    "id": "message-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "menubar-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "marker-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "label-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "kbd-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "item-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "input-otp-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": [
+        {
+          "id": "_r_0_",
+          "fields": [
+            "verificationCode"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "input-group-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "input-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": [
+        {
+          "id": "",
+          "fields": [
+            "name",
+            "email",
+            "phone",
+            "country",
+            "address"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "hover-card-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "field-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "empty-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "dropdown-menu-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "drawer-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "dialog-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": [
+        {
+          "id": "",
+          "fields": []
+        }
+      ]
+    }
+  },
+  {
+    "id": "context-menu-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "command-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "combobox-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": [
+        {
+          "id": "form-with-combobox",
+          "fields": [
+            "framework"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "collapsible-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "code-block-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "checkbox-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "chart-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "carousel-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "card-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": [
+        {
+          "id": "_r_4_",
+          "fields": [
+            "email",
+            "password"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "calendar-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "button-group-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "button-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "bubble-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "breadcrumb-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "badge-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "avatar-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "attachment-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "aspect-ratio-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "alert-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "alert-dialog-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "accordion-example",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "preview-02",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": []
+    }
+  },
+  {
+    "id": "preview",
+    "violations": [],
+    "forms": {
+      "orphanSubmits": [],
+      "nativeForms": [
+        {
+          "id": "feedback-form",
+          "fields": [
+            "topic",
+            "feedback"
+          ]
+        },
+        {
+          "id": "profile",
+          "fields": [
+            "name",
+            "email",
+            "bio"
+          ]
+        },
+        {
+          "id": "contributions-activity",
+          "fields": []
+        }
+      ]
+    }
+  }
+]

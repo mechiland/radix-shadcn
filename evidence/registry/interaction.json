@@ -1,0 +1,29 @@
+{
+  "consumer": "/tmp/radix-base-consumer-E1iA4s/consumer",
+  "browser": "157.0.8103.38",
+  "viewport": {
+    "width": 1200,
+    "height": 800
+  },
+  "theme": {
+    "height": 800,
+    "appearance": true,
+    "accent": "#ffe629",
+    "background": "rgb(17, 17, 16)"
+  },
+  "portal": {
+    "accent": "#ffe629",
+    "theme": "yellow",
+    "background": "rgb(25, 25, 24)"
+  },
+  "checks": [
+    "root viewport",
+    "installed CSS and yellow/dark tokens",
+    "keyboard checkbox",
+    "dialog focus restoration",
+    "portal theme inheritance",
+    "select change"
+  ],
+  "errors": [],
+  "status": "passed"
+}

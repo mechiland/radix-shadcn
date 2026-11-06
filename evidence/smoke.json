@@ -1,0 +1,680 @@
+[
+  {
+    "group": "components",
+    "id": "alert-dialog",
+    "errors": [],
+    "content": 47
+  },
+  {
+    "group": "components",
+    "id": "aspect-ratio",
+    "errors": [],
+    "content": 12
+  },
+  {
+    "group": "components",
+    "id": "avatar",
+    "errors": [],
+    "content": 168
+  },
+  {
+    "group": "components",
+    "id": "badge",
+    "errors": [],
+    "content": 146
+  },
+  {
+    "group": "components",
+    "id": "blockquote",
+    "errors": [],
+    "content": 660
+  },
+  {
+    "group": "components",
+    "id": "button",
+    "errors": [],
+    "content": 329
+  },
+  {
+    "group": "components",
+    "id": "callout",
+    "errors": [],
+    "content": 377
+  },
+  {
+    "group": "components",
+    "id": "card",
+    "errors": [],
+    "content": 782
+  },
+  {
+    "group": "components",
+    "id": "checkbox",
+    "errors": [],
+    "content": 232
+  },
+  {
+    "group": "components",
+    "id": "checkbox-group",
+    "errors": [],
+    "content": 556
+  },
+  {
+    "group": "components",
+    "id": "checkbox-cards",
+    "errors": [],
+    "content": 195
+  },
+  {
+    "group": "components",
+    "id": "code",
+    "errors": [],
+    "content": 284
+  },
+  {
+    "group": "components",
+    "id": "context-menu",
+    "errors": [],
+    "content": 16
+  },
+  {
+    "group": "components",
+    "id": "data-list",
+    "errors": [],
+    "content": 224
+  },
+  {
+    "group": "components",
+    "id": "dialog",
+    "errors": [],
+    "content": 47
+  },
+  {
+    "group": "components",
+    "id": "dropdown-menu",
+    "errors": [],
+    "content": 78
+  },
+  {
+    "group": "components",
+    "id": "em",
+    "errors": [],
+    "content": 44
+  },
+  {
+    "group": "components",
+    "id": "heading",
+    "errors": [],
+    "content": 282
+  },
+  {
+    "group": "components",
+    "id": "hover-card",
+    "errors": [],
+    "content": 8
+  },
+  {
+    "group": "components",
+    "id": "icon-button",
+    "errors": [],
+    "content": 183
+  },
+  {
+    "group": "components",
+    "id": "inset",
+    "errors": [],
+    "content": 38
+  },
+  {
+    "group": "components",
+    "id": "kbd",
+    "errors": [],
+    "content": 233
+  },
+  {
+    "group": "components",
+    "id": "link",
+    "errors": [],
+    "content": 134
+  },
+  {
+    "group": "components",
+    "id": "popover",
+    "errors": [],
+    "content": 59
+  },
+  {
+    "group": "components",
+    "id": "progress",
+    "errors": [],
+    "content": 161
+  },
+  {
+    "group": "components",
+    "id": "quote",
+    "errors": [],
+    "content": 61
+  },
+  {
+    "group": "components",
+    "id": "radio",
+    "errors": [],
+    "content": 202
+  },
+  {
+    "group": "components",
+    "id": "radio-group",
+    "errors": [],
+    "content": 202
+  },
+  {
+    "group": "components",
+    "id": "radio-cards",
+    "errors": [],
+    "content": 195
+  },
+  {
+    "group": "components",
+    "id": "scroll-area",
+    "errors": [],
+    "content": 2530
+  },
+  {
+    "group": "components",
+    "id": "select",
+    "errors": [],
+    "content": 113
+  },
+  {
+    "group": "components",
+    "id": "separator",
+    "errors": [],
+    "content": 167
+  },
+  {
+    "group": "components",
+    "id": "segmented-control",
+    "errors": [],
+    "content": 191
+  },
+  {
+    "group": "components",
+    "id": "skeleton",
+    "errors": [],
+    "content": 0
+  },
+  {
+    "group": "components",
+    "id": "slider",
+    "errors": [],
+    "content": 125
+  },
+  {
+    "group": "components",
+    "id": "spinner",
+    "errors": [],
+    "content": 20
+  },
+  {
+    "group": "components",
+    "id": "strong",
+    "errors": [],
+    "content": 42
+  },
+  {
+    "group": "components",
+    "id": "switch",
+    "errors": [],
+    "content": 142
+  },
+  {
+    "group": "components",
+    "id": "table",
+    "errors": [],
+    "content": 332
+  },
+  {
+    "group": "components",
+    "id": "tabs",
+    "errors": [],
+    "content": 191
+  },
+  {
+    "group": "components",
+    "id": "tab-nav",
+    "errors": [],
+    "content": 26
+  },
+  {
+    "group": "components",
+    "id": "text",
+    "errors": [],
+    "content": 507
+  },
+  {
+    "group": "components",
+    "id": "text-area",
+    "errors": [],
+    "content": 20
+  },
+  {
+    "group": "components",
+    "id": "text-field",
+    "errors": [],
+    "content": 41
+  },
+  {
+    "group": "components",
+    "id": "tooltip",
+    "errors": [],
+    "content": 21
+  },
+  {
+    "group": "examples",
+    "id": "trace-example",
+    "errors": [],
+    "content": 1178
+  },
+  {
+    "group": "examples",
+    "id": "tooltip-example",
+    "errors": [],
+    "content": 196
+  },
+  {
+    "group": "examples",
+    "id": "toggle-group-example",
+    "errors": [],
+    "content": 546
+  },
+  {
+    "group": "examples",
+    "id": "toggle-example",
+    "errors": [],
+    "content": 239
+  },
+  {
+    "group": "examples",
+    "id": "toast-example",
+    "errors": [],
+    "content": 60
+  },
+  {
+    "group": "examples",
+    "id": "textarea-example",
+    "errors": [],
+    "content": 119
+  },
+  {
+    "group": "examples",
+    "id": "tabs-example",
+    "errors": [],
+    "content": 777
+  },
+  {
+    "group": "examples",
+    "id": "table-example",
+    "errors": [],
+    "content": 1011
+  },
+  {
+    "group": "examples",
+    "id": "switch-example",
+    "errors": [],
+    "content": 219
+  },
+  {
+    "group": "examples",
+    "id": "spinner-example",
+    "errors": [],
+    "content": 266
+  },
+  {
+    "group": "examples",
+    "id": "sonner-example",
+    "errors": [],
+    "content": 44
+  },
+  {
+    "group": "examples",
+    "id": "slider-example",
+    "errors": [],
+    "content": 77
+  },
+  {
+    "group": "examples",
+    "id": "skeleton-example",
+    "errors": [],
+    "content": 27
+  },
+  {
+    "group": "examples",
+    "id": "sidebar-inset-example",
+    "errors": [],
+    "content": 0
+  },
+  {
+    "group": "examples",
+    "id": "sidebar-icon-example",
+    "errors": [],
+    "content": 0
+  },
+  {
+    "group": "examples",
+    "id": "sidebar-floating-example",
+    "errors": [],
+    "content": 0
+  },
+  {
+    "group": "examples",
+    "id": "sidebar-example",
+    "errors": [],
+    "content": 0
+  },
+  {
+    "group": "examples",
+    "id": "sheet-example",
+    "errors": [],
+    "content": 74
+  },
+  {
+    "group": "examples",
+    "id": "separator-example",
+    "errors": [],
+    "content": 313
+  },
+  {
+    "group": "examples",
+    "id": "select-example",
+    "errors": [],
+    "content": 663
+  },
+  {
+    "group": "examples",
+    "id": "scroll-area-example",
+    "errors": [],
+    "content": 832
+  },
+  {
+    "group": "examples",
+    "id": "resizable-example",
+    "errors": [],
+    "content": 118
+  },
+  {
+    "group": "examples",
+    "id": "radio-group-example",
+    "errors": [],
+    "content": 440
+  },
+  {
+    "group": "examples",
+    "id": "questionnaire-example",
+    "errors": [],
+    "content": 958
+  },
+  {
+    "group": "examples",
+    "id": "progress-example",
+    "errors": [],
+    "content": 178
+  },
+  {
+    "group": "examples",
+    "id": "popover-example",
+    "errors": [],
+    "content": 143
+  },
+  {
+    "group": "examples",
+    "id": "pagination-example",
+    "errors": [],
+    "content": 96
+  },
+  {
+    "group": "examples",
+    "id": "navigation-menu-example",
+    "errors": [],
+    "content": 56
+  },
+  {
+    "group": "examples",
+    "id": "native-select-example",
+    "errors": [],
+    "content": 417
+  },
+  {
+    "group": "examples",
+    "id": "message-scroller-example",
+    "errors": [],
+    "content": 68
+  },
+  {
+    "group": "examples",
+    "id": "message-example",
+    "errors": [],
+    "content": 2504
+  },
+  {
+    "group": "examples",
+    "id": "menubar-example",
+    "errors": [],
+    "content": 292
+  },
+  {
+    "group": "examples",
+    "id": "marker-example",
+    "errors": [],
+    "content": 473
+  },
+  {
+    "group": "examples",
+    "id": "label-example",
+    "errors": [],
+    "content": 101
+  },
+  {
+    "group": "examples",
+    "id": "kbd-example",
+    "errors": [],
+    "content": 171
+  },
+  {
+    "group": "examples",
+    "id": "item-example",
+    "errors": [],
+    "content": 8667
+  },
+  {
+    "group": "examples",
+    "id": "input-otp-example",
+    "errors": [],
+    "content": 562
+  },
+  {
+    "group": "examples",
+    "id": "input-group-example",
+    "errors": [],
+    "content": 1412
+  },
+  {
+    "group": "examples",
+    "id": "input-example",
+    "errors": [],
+    "content": 340
+  },
+  {
+    "group": "examples",
+    "id": "hover-card-example",
+    "errors": [],
+    "content": 73
+  },
+  {
+    "group": "examples",
+    "id": "field-example",
+    "errors": [],
+    "content": 3810
+  },
+  {
+    "group": "examples",
+    "id": "empty-example",
+    "errors": [],
+    "content": 822
+  },
+  {
+    "group": "examples",
+    "id": "dropdown-menu-example",
+    "errors": [],
+    "content": 368
+  },
+  {
+    "group": "examples",
+    "id": "drawer-example",
+    "errors": [],
+    "content": 277
+  },
+  {
+    "group": "examples",
+    "id": "dialog-example",
+    "errors": [],
+    "content": 153
+  },
+  {
+    "group": "examples",
+    "id": "context-menu-example",
+    "errors": [],
+    "content": 376
+  },
+  {
+    "group": "examples",
+    "id": "command-example",
+    "errors": [],
+    "content": 187
+  },
+  {
+    "group": "examples",
+    "id": "combobox-example",
+    "errors": [],
+    "content": 674
+  },
+  {
+    "group": "examples",
+    "id": "collapsible-example",
+    "errors": [],
+    "content": 211
+  },
+  {
+    "group": "examples",
+    "id": "code-block-example",
+    "errors": [],
+    "content": 12508
+  },
+  {
+    "group": "examples",
+    "id": "checkbox-example",
+    "errors": [],
+    "content": 684
+  },
+  {
+    "group": "examples",
+    "id": "chart-example",
+    "errors": [],
+    "content": 906
+  },
+  {
+    "group": "examples",
+    "id": "carousel-example",
+    "errors": [],
+    "content": 131
+  },
+  {
+    "group": "examples",
+    "id": "card-example",
+    "errors": [],
+    "content": 2535
+  },
+  {
+    "group": "examples",
+    "id": "calendar-example",
+    "errors": [],
+    "content": 3334
+  },
+  {
+    "group": "examples",
+    "id": "button-group-example",
+    "errors": [],
+    "content": 400
+  },
+  {
+    "group": "examples",
+    "id": "button-example",
+    "errors": [],
+    "content": 881
+  },
+  {
+    "group": "examples",
+    "id": "bubble-example",
+    "errors": [],
+    "content": 3196
+  },
+  {
+    "group": "examples",
+    "id": "breadcrumb-example",
+    "errors": [],
+    "content": 132
+  },
+  {
+    "group": "examples",
+    "id": "badge-example",
+    "errors": [],
+    "content": 385
+  },
+  {
+    "group": "examples",
+    "id": "avatar-example",
+    "errors": [],
+    "content": 197
+  },
+  {
+    "group": "examples",
+    "id": "attachment-example",
+    "errors": [],
+    "content": 1871
+  },
+  {
+    "group": "examples",
+    "id": "aspect-ratio-example",
+    "errors": [],
+    "content": 18
+  },
+  {
+    "group": "examples",
+    "id": "alert-example",
+    "errors": [],
+    "content": 1702
+  },
+  {
+    "group": "examples",
+    "id": "alert-dialog-example",
+    "errors": [],
+    "content": 129
+  },
+  {
+    "group": "examples",
+    "id": "accordion-example",
+    "errors": [],
+    "content": 1087
+  },
+  {
+    "group": "examples",
+    "id": "preview-02",
+    "errors": [],
+    "content": 6033
+  },
+  {
+    "group": "examples",
+    "id": "preview",
+    "errors": [],
+    "content": 4854
+  }
+]

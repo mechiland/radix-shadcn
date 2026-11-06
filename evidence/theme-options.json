@@ -1,0 +1,1422 @@
+[
+  {
+    "config": {
+      "accentColor": "gray",
+      "grayColor": "auto",
+      "appearance": "light",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#8d8d8d",
+      "gray": "#fcfcfc",
+      "surface": "rgba(255,255,255,.7)",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "gray",
+      "grayColor": "auto",
+      "appearance": "dark",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#6e6e6e",
+      "gray": "#111111",
+      "surface": "#ffffff09",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "gold",
+      "grayColor": "auto",
+      "appearance": "light",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#978365",
+      "gray": "#fdfdfc",
+      "surface": "rgba(255,255,255,.7)",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "gold",
+      "grayColor": "auto",
+      "appearance": "dark",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#978365",
+      "gray": "#111110",
+      "surface": "#f4f4f309",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "bronze",
+      "grayColor": "auto",
+      "appearance": "light",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#a18072",
+      "gray": "#fdfdfc",
+      "surface": "rgba(255,255,255,.7)",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "bronze",
+      "grayColor": "auto",
+      "appearance": "dark",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#a18072",
+      "gray": "#111110",
+      "surface": "#f4f4f309",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "brown",
+      "grayColor": "auto",
+      "appearance": "light",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#ad7f58",
+      "gray": "#fdfdfc",
+      "surface": "rgba(255,255,255,.7)",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "brown",
+      "grayColor": "auto",
+      "appearance": "dark",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#ad7f58",
+      "gray": "#111110",
+      "surface": "#f4f4f309",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "yellow",
+      "grayColor": "auto",
+      "appearance": "light",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#ffe629",
+      "gray": "#fdfdfc",
+      "surface": "rgba(255,255,255,.7)",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "yellow",
+      "grayColor": "auto",
+      "appearance": "dark",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#ffe629",
+      "gray": "#111110",
+      "surface": "#f4f4f309",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "amber",
+      "grayColor": "auto",
+      "appearance": "light",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#ffc53d",
+      "gray": "#fdfdfc",
+      "surface": "rgba(255,255,255,.7)",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "amber",
+      "grayColor": "auto",
+      "appearance": "dark",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#ffc53d",
+      "gray": "#111110",
+      "surface": "#f4f4f309",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "orange",
+      "grayColor": "auto",
+      "appearance": "light",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#f76b15",
+      "gray": "#fdfdfc",
+      "surface": "rgba(255,255,255,.7)",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "orange",
+      "grayColor": "auto",
+      "appearance": "dark",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#f76b15",
+      "gray": "#111110",
+      "surface": "#f4f4f309",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "tomato",
+      "grayColor": "auto",
+      "appearance": "light",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#e54d2e",
+      "gray": "#fdfcfd",
+      "surface": "rgba(255,255,255,.7)",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "tomato",
+      "grayColor": "auto",
+      "appearance": "dark",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#e54d2e",
+      "gray": "#121113",
+      "surface": "#f5f4f609",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "red",
+      "grayColor": "auto",
+      "appearance": "light",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#e5484d",
+      "gray": "#fdfcfd",
+      "surface": "rgba(255,255,255,.7)",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "red",
+      "grayColor": "auto",
+      "appearance": "dark",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#e5484d",
+      "gray": "#121113",
+      "surface": "#f5f4f609",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "ruby",
+      "grayColor": "auto",
+      "appearance": "light",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#e54666",
+      "gray": "#fdfcfd",
+      "surface": "rgba(255,255,255,.7)",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "ruby",
+      "grayColor": "auto",
+      "appearance": "dark",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#e54666",
+      "gray": "#121113",
+      "surface": "#f5f4f609",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "crimson",
+      "grayColor": "auto",
+      "appearance": "light",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#e93d82",
+      "gray": "#fdfcfd",
+      "surface": "rgba(255,255,255,.7)",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "crimson",
+      "grayColor": "auto",
+      "appearance": "dark",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#e93d82",
+      "gray": "#121113",
+      "surface": "#f5f4f609",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "pink",
+      "grayColor": "auto",
+      "appearance": "light",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#d6409f",
+      "gray": "#fdfcfd",
+      "surface": "rgba(255,255,255,.7)",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "pink",
+      "grayColor": "auto",
+      "appearance": "dark",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#d6409f",
+      "gray": "#121113",
+      "surface": "#f5f4f609",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "plum",
+      "grayColor": "auto",
+      "appearance": "light",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#ab4aba",
+      "gray": "#fdfcfd",
+      "surface": "rgba(255,255,255,.7)",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "plum",
+      "grayColor": "auto",
+      "appearance": "dark",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#ab4aba",
+      "gray": "#121113",
+      "surface": "#f5f4f609",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "purple",
+      "grayColor": "auto",
+      "appearance": "light",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#8e4ec6",
+      "gray": "#fdfcfd",
+      "surface": "rgba(255,255,255,.7)",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "purple",
+      "grayColor": "auto",
+      "appearance": "dark",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#8e4ec6",
+      "gray": "#121113",
+      "surface": "#f5f4f609",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "violet",
+      "grayColor": "auto",
+      "appearance": "light",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#6e56cf",
+      "gray": "#fdfcfd",
+      "surface": "rgba(255,255,255,.7)",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "violet",
+      "grayColor": "auto",
+      "appearance": "dark",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#6e56cf",
+      "gray": "#121113",
+      "surface": "#f5f4f609",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "iris",
+      "grayColor": "auto",
+      "appearance": "light",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#5b5bd6",
+      "gray": "#fcfcfd",
+      "surface": "rgba(255,255,255,.7)",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "iris",
+      "grayColor": "auto",
+      "appearance": "dark",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#5b5bd6",
+      "gray": "#111113",
+      "surface": "#d8f4f609",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "indigo",
+      "grayColor": "auto",
+      "appearance": "light",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#3e63dd",
+      "gray": "#fcfcfd",
+      "surface": "rgba(255,255,255,.7)",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "indigo",
+      "grayColor": "auto",
+      "appearance": "dark",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#3e63dd",
+      "gray": "#111113",
+      "surface": "#d8f4f609",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "blue",
+      "grayColor": "auto",
+      "appearance": "light",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#0090ff",
+      "gray": "#fcfcfd",
+      "surface": "rgba(255,255,255,.7)",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "blue",
+      "grayColor": "auto",
+      "appearance": "dark",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#0090ff",
+      "gray": "#111113",
+      "surface": "#d8f4f609",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "cyan",
+      "grayColor": "auto",
+      "appearance": "light",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#00a2c7",
+      "gray": "#fcfcfd",
+      "surface": "rgba(255,255,255,.7)",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "cyan",
+      "grayColor": "auto",
+      "appearance": "dark",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#00a2c7",
+      "gray": "#111113",
+      "surface": "#d8f4f609",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "teal",
+      "grayColor": "auto",
+      "appearance": "light",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#12a594",
+      "gray": "#fbfdfc",
+      "surface": "rgba(255,255,255,.7)",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "teal",
+      "grayColor": "auto",
+      "appearance": "dark",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#12a594",
+      "gray": "#101211",
+      "surface": "#f0f2f108",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "jade",
+      "grayColor": "auto",
+      "appearance": "light",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#29a383",
+      "gray": "#fbfdfc",
+      "surface": "rgba(255,255,255,.7)",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "jade",
+      "grayColor": "auto",
+      "appearance": "dark",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#29a383",
+      "gray": "#101211",
+      "surface": "#f0f2f108",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "green",
+      "grayColor": "auto",
+      "appearance": "light",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#30a46c",
+      "gray": "#fbfdfc",
+      "surface": "rgba(255,255,255,.7)",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "green",
+      "grayColor": "auto",
+      "appearance": "dark",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#30a46c",
+      "gray": "#101211",
+      "surface": "#f0f2f108",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "grass",
+      "grayColor": "auto",
+      "appearance": "light",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#46a758",
+      "gray": "#fcfdfc",
+      "surface": "rgba(255,255,255,.7)",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "grass",
+      "grayColor": "auto",
+      "appearance": "dark",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#46a758",
+      "gray": "#111210",
+      "surface": "#f1f2f008",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "lime",
+      "grayColor": "auto",
+      "appearance": "light",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#bdee63",
+      "gray": "#fcfdfc",
+      "surface": "rgba(255,255,255,.7)",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "lime",
+      "grayColor": "auto",
+      "appearance": "dark",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#bdee63",
+      "gray": "#111210",
+      "surface": "#f1f2f008",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "mint",
+      "grayColor": "auto",
+      "appearance": "light",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#86ead4",
+      "gray": "#fbfdfc",
+      "surface": "rgba(255,255,255,.7)",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "mint",
+      "grayColor": "auto",
+      "appearance": "dark",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#86ead4",
+      "gray": "#101211",
+      "surface": "#f0f2f108",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "sky",
+      "grayColor": "auto",
+      "appearance": "light",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#7ce2fe",
+      "gray": "#fcfcfd",
+      "surface": "rgba(255,255,255,.7)",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "sky",
+      "grayColor": "auto",
+      "appearance": "dark",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#7ce2fe",
+      "gray": "#111113",
+      "surface": "#d8f4f609",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "indigo",
+      "grayColor": "auto",
+      "appearance": "light",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#3e63dd",
+      "gray": "#fcfcfd",
+      "surface": "rgba(255,255,255,.7)",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "indigo",
+      "grayColor": "gray",
+      "appearance": "light",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#3e63dd",
+      "gray": "#fcfcfc",
+      "surface": "rgba(255,255,255,.7)",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "indigo",
+      "grayColor": "mauve",
+      "appearance": "light",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#3e63dd",
+      "gray": "#fdfcfd",
+      "surface": "rgba(255,255,255,.7)",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "indigo",
+      "grayColor": "slate",
+      "appearance": "light",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#3e63dd",
+      "gray": "#fcfcfd",
+      "surface": "rgba(255,255,255,.7)",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "indigo",
+      "grayColor": "sage",
+      "appearance": "light",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#3e63dd",
+      "gray": "#fbfdfc",
+      "surface": "rgba(255,255,255,.7)",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "indigo",
+      "grayColor": "olive",
+      "appearance": "light",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#3e63dd",
+      "gray": "#fcfdfc",
+      "surface": "rgba(255,255,255,.7)",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "indigo",
+      "grayColor": "sand",
+      "appearance": "light",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#3e63dd",
+      "gray": "#fdfdfc",
+      "surface": "rgba(255,255,255,.7)",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "indigo",
+      "grayColor": "auto",
+      "appearance": "light",
+      "radius": "none",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#3e63dd",
+      "gray": "#fcfcfd",
+      "surface": "rgba(255,255,255,.7)",
+      "font": "12px",
+      "height": 24,
+      "radius": "0px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "indigo",
+      "grayColor": "auto",
+      "appearance": "light",
+      "radius": "small",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#3e63dd",
+      "gray": "#fcfcfd",
+      "surface": "rgba(255,255,255,.7)",
+      "font": "12px",
+      "height": 24,
+      "radius": "2.25px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "indigo",
+      "grayColor": "auto",
+      "appearance": "light",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#3e63dd",
+      "gray": "#fcfcfd",
+      "surface": "rgba(255,255,255,.7)",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "indigo",
+      "grayColor": "auto",
+      "appearance": "light",
+      "radius": "large",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#3e63dd",
+      "gray": "#fcfcfd",
+      "surface": "rgba(255,255,255,.7)",
+      "font": "12px",
+      "height": 24,
+      "radius": "4.5px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "indigo",
+      "grayColor": "auto",
+      "appearance": "light",
+      "radius": "full",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#3e63dd",
+      "gray": "#fcfcfd",
+      "surface": "rgba(255,255,255,.7)",
+      "font": "12px",
+      "height": 24,
+      "radius": "9999px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "indigo",
+      "grayColor": "auto",
+      "appearance": "light",
+      "radius": "medium",
+      "scaling": "90%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#3e63dd",
+      "gray": "#fcfcfd",
+      "surface": "rgba(255,255,255,.7)",
+      "font": "10.8px",
+      "height": 21.59375,
+      "radius": "2.7px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "indigo",
+      "grayColor": "auto",
+      "appearance": "light",
+      "radius": "medium",
+      "scaling": "95%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#3e63dd",
+      "gray": "#fcfcfd",
+      "surface": "rgba(255,255,255,.7)",
+      "font": "11.4px",
+      "height": 22.796875,
+      "radius": "2.85px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "indigo",
+      "grayColor": "auto",
+      "appearance": "light",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#3e63dd",
+      "gray": "#fcfcfd",
+      "surface": "rgba(255,255,255,.7)",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "indigo",
+      "grayColor": "auto",
+      "appearance": "light",
+      "radius": "medium",
+      "scaling": "105%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#3e63dd",
+      "gray": "#fcfcfd",
+      "surface": "rgba(255,255,255,.7)",
+      "font": "12.6px",
+      "height": 25.1875,
+      "radius": "3.15px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "indigo",
+      "grayColor": "auto",
+      "appearance": "light",
+      "radius": "medium",
+      "scaling": "110%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#3e63dd",
+      "gray": "#fcfcfd",
+      "surface": "rgba(255,255,255,.7)",
+      "font": "13.2px",
+      "height": 26.390625,
+      "radius": "3.3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "indigo",
+      "grayColor": "auto",
+      "appearance": "light",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "solid"
+    },
+    "metrics": {
+      "accent": "#3e63dd",
+      "gray": "#fcfcfd",
+      "surface": "white",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "config": {
+      "accentColor": "indigo",
+      "grayColor": "auto",
+      "appearance": "light",
+      "radius": "medium",
+      "scaling": "100%",
+      "panelBackground": "translucent"
+    },
+    "metrics": {
+      "accent": "#3e63dd",
+      "gray": "#fcfcfd",
+      "surface": "rgba(255,255,255,.7)",
+      "font": "12px",
+      "height": 24,
+      "radius": "3px",
+      "zoom": "1",
+      "transform": "none"
+    }
+  }
+]

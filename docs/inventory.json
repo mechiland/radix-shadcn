@@ -1,0 +1,674 @@
+{
+  "date": "2026-11-06",
+  "repos": {
+    "themes": "1faff10ac26ae17f09944d418c6949b93fc6b566",
+    "shadcn": "8a3536678a528cc012b9e62484290e79d0be410f",
+    "website": "402e749613ab2e7ab7139c65b0029842b0360f07"
+  },
+  "versions": {
+    "@radix-ui/themes": "3.3.0",
+    "@radix-ui/colors": "3.0.0",
+    "@base-ui/react": "1.9.0",
+    "shadcn": "4.23.0"
+  },
+  "radix": [
+    {
+      "id": "alert-dialog",
+      "title": "Alert Dialog"
+    },
+    {
+      "id": "aspect-ratio",
+      "title": "Aspect Ratio"
+    },
+    {
+      "id": "avatar",
+      "title": "Avatar"
+    },
+    {
+      "id": "badge",
+      "title": "Badge"
+    },
+    {
+      "id": "blockquote",
+      "title": "Blockquote"
+    },
+    {
+      "id": "button",
+      "title": "Button"
+    },
+    {
+      "id": "callout",
+      "title": "Callout"
+    },
+    {
+      "id": "card",
+      "title": "Card"
+    },
+    {
+      "id": "checkbox",
+      "title": "Checkbox"
+    },
+    {
+      "id": "checkbox-group",
+      "title": "Checkbox Group"
+    },
+    {
+      "id": "checkbox-cards",
+      "title": "Checkbox Cards"
+    },
+    {
+      "id": "code",
+      "title": "Code"
+    },
+    {
+      "id": "context-menu",
+      "title": "Context Menu"
+    },
+    {
+      "id": "data-list",
+      "title": "Data List"
+    },
+    {
+      "id": "dialog",
+      "title": "Dialog"
+    },
+    {
+      "id": "dropdown-menu",
+      "title": "Dropdown Menu"
+    },
+    {
+      "id": "em",
+      "title": "Em"
+    },
+    {
+      "id": "heading",
+      "title": "Heading"
+    },
+    {
+      "id": "hover-card",
+      "title": "Hover Card"
+    },
+    {
+      "id": "icon-button",
+      "title": "Icon Button"
+    },
+    {
+      "id": "inset",
+      "title": "Inset"
+    },
+    {
+      "id": "kbd",
+      "title": "Kbd"
+    },
+    {
+      "id": "link",
+      "title": "Link"
+    },
+    {
+      "id": "popover",
+      "title": "Popover"
+    },
+    {
+      "id": "progress",
+      "title": "Progress"
+    },
+    {
+      "id": "quote",
+      "title": "Quote"
+    },
+    {
+      "id": "radio",
+      "title": "Radio"
+    },
+    {
+      "id": "radio-group",
+      "title": "Radio Group"
+    },
+    {
+      "id": "radio-cards",
+      "title": "Radio Cards"
+    },
+    {
+      "id": "scroll-area",
+      "title": "Scroll Area"
+    },
+    {
+      "id": "select",
+      "title": "Select"
+    },
+    {
+      "id": "separator",
+      "title": "Separator"
+    },
+    {
+      "id": "segmented-control",
+      "title": "\n\t\t\t\t\t\t\t\tSegmented Control\n\t\t\t\t\t\t\t"
+    },
+    {
+      "id": "skeleton",
+      "title": "Skeleton"
+    },
+    {
+      "id": "slider",
+      "title": "Slider"
+    },
+    {
+      "id": "spinner",
+      "title": "Spinner"
+    },
+    {
+      "id": "strong",
+      "title": "Strong"
+    },
+    {
+      "id": "switch",
+      "title": "Switch"
+    },
+    {
+      "id": "table",
+      "title": "Table"
+    },
+    {
+      "id": "tabs",
+      "title": "Tabs"
+    },
+    {
+      "id": "tab-nav",
+      "title": "Tab Nav"
+    },
+    {
+      "id": "text",
+      "title": "Text"
+    },
+    {
+      "id": "text-area",
+      "title": "Text Area"
+    },
+    {
+      "id": "text-field",
+      "title": "Text Field"
+    },
+    {
+      "id": "tooltip",
+      "title": "Tooltip"
+    }
+  ],
+  "create": [
+    {
+      "id": "trace-example",
+      "title": "Trace",
+      "source": "apps/v4/registry/bases/base/examples/trace-example.tsx",
+      "sha256": "d43fc53306f5eea26323f225e733c7d8d4c53ba20c17de3758be6b6a29052069",
+      "kind": "component"
+    },
+    {
+      "id": "tooltip-example",
+      "title": "Tooltip",
+      "source": "apps/v4/registry/bases/base/examples/tooltip-example.tsx",
+      "sha256": "c60557bd5445d1f6bf7065764d0323fe903d9ee49df702d7c56b2b3a16435d12",
+      "kind": "component"
+    },
+    {
+      "id": "toggle-group-example",
+      "title": "Toggle Group",
+      "source": "apps/v4/registry/bases/base/examples/toggle-group-example.tsx",
+      "sha256": "a8408862275ace9b42e45199b2aaab45e5aa48134b36d52a5e84d6b4d5baecee",
+      "kind": "component"
+    },
+    {
+      "id": "toggle-example",
+      "title": "Toggle",
+      "source": "apps/v4/registry/bases/base/examples/toggle-example.tsx",
+      "sha256": "8033aa988070b03a9692aca63329ffbfe7f848960fbc63652ba9361295d8d64d",
+      "kind": "component"
+    },
+    {
+      "id": "toast-example",
+      "title": "Toast",
+      "source": "apps/v4/registry/bases/base/examples/toast-example.tsx",
+      "sha256": "664bf58972f6779baa3e6ed383ca5759392b7824dac44cc09b74be55070f3e6a",
+      "kind": "component"
+    },
+    {
+      "id": "textarea-example",
+      "title": "Textarea",
+      "source": "apps/v4/registry/bases/base/examples/textarea-example.tsx",
+      "sha256": "3199a0816889450768a891d9c3c97ca7618d7d03eca0867cf359bb2d3c9b30d9",
+      "kind": "component"
+    },
+    {
+      "id": "tabs-example",
+      "title": "Tabs",
+      "source": "apps/v4/registry/bases/base/examples/tabs-example.tsx",
+      "sha256": "8df264574f17761f00573bca98bf77823506fe60abfb887a2a9f8ee6ea8c8eaa",
+      "kind": "component"
+    },
+    {
+      "id": "table-example",
+      "title": "Table",
+      "source": "apps/v4/registry/bases/base/examples/table-example.tsx",
+      "sha256": "dcfd2fa9f630c6fc5440f1f0af57e8c8b9062a31879e1fc0be29ee8621ccf0c2",
+      "kind": "component"
+    },
+    {
+      "id": "switch-example",
+      "title": "Switch",
+      "source": "apps/v4/registry/bases/base/examples/switch-example.tsx",
+      "sha256": "ccff0a0d4b1b1bb1e91471f53e421e0831bd578dbe41844eb9f4da5cc77bb2f1",
+      "kind": "component"
+    },
+    {
+      "id": "spinner-example",
+      "title": "Spinner",
+      "source": "apps/v4/registry/bases/base/examples/spinner-example.tsx",
+      "sha256": "e6737fcd144925ba7569e60ef169168cf5fd2a7cfa9d0cbc0003ccafc635e844",
+      "kind": "component"
+    },
+    {
+      "id": "sonner-example",
+      "title": "Sonner",
+      "source": "apps/v4/registry/bases/base/examples/sonner-example.tsx",
+      "sha256": "43627fc677ef32387e313ff12a620068b9e18dc77a184a24a5a15d3eea506676",
+      "kind": "component"
+    },
+    {
+      "id": "slider-example",
+      "title": "Slider",
+      "source": "apps/v4/registry/bases/base/examples/slider-example.tsx",
+      "sha256": "231f663761e7c5ea9e067978bef9d581af858956bffaafae35f6ace0f2943db4",
+      "kind": "component"
+    },
+    {
+      "id": "skeleton-example",
+      "title": "Skeleton",
+      "source": "apps/v4/registry/bases/base/examples/skeleton-example.tsx",
+      "sha256": "848b6c79fecadd25362f816a5223efb767cb890d337eb7f9650570798673e800",
+      "kind": "component"
+    },
+    {
+      "id": "sidebar-inset-example",
+      "title": "Sidebar Inset",
+      "source": "apps/v4/registry/bases/base/examples/sidebar-inset-example.tsx",
+      "sha256": "5e22f9ec066cf0f8ac6e03e0d2d51771f8ec421bb2dbaae3ae134d4aa0c773c5",
+      "kind": "component"
+    },
+    {
+      "id": "sidebar-icon-example",
+      "title": "Sidebar Icon",
+      "source": "apps/v4/registry/bases/base/examples/sidebar-icon-example.tsx",
+      "sha256": "d908d0a6d481b1f43a9da3f435ab7d3484b1641b3388e55a86df470fdf0ad796",
+      "kind": "component"
+    },
+    {
+      "id": "sidebar-floating-example",
+      "title": "Sidebar Floating",
+      "source": "apps/v4/registry/bases/base/examples/sidebar-floating-example.tsx",
+      "sha256": "db28dfe6a837858e0095d3024b05d593653bb64169a016a450e1966741d64fd6",
+      "kind": "component"
+    },
+    {
+      "id": "sidebar-example",
+      "title": "Sidebar",
+      "source": "apps/v4/registry/bases/base/examples/sidebar-example.tsx",
+      "sha256": "098cd742d7f8df6ccf983f103f49bd9a6bcc44e6c4576dc5b62d2d68d3784f49",
+      "kind": "component"
+    },
+    {
+      "id": "sheet-example",
+      "title": "Sheet",
+      "source": "apps/v4/registry/bases/base/examples/sheet-example.tsx",
+      "sha256": "380fc3aa16a9750431bfc0ea5763c7359b72c0c76f18d362d1d430b68092cab0",
+      "kind": "component"
+    },
+    {
+      "id": "separator-example",
+      "title": "Separator",
+      "source": "apps/v4/registry/bases/base/examples/separator-example.tsx",
+      "sha256": "88f72bb831d292634125fd7ffa1839d68087295639b6f0f248f029488938973b",
+      "kind": "component"
+    },
+    {
+      "id": "select-example",
+      "title": "Select",
+      "source": "apps/v4/registry/bases/base/examples/select-example.tsx",
+      "sha256": "5571f7345411108bbaa1030ef502914b3e1e2cba3136ffac9ffaac73b8f967a7",
+      "kind": "component"
+    },
+    {
+      "id": "scroll-area-example",
+      "title": "Scroll Area",
+      "source": "apps/v4/registry/bases/base/examples/scroll-area-example.tsx",
+      "sha256": "6cf563576388bf298a71e164e1d9b3bb1b869bcfe75851cb17111a728352f06e",
+      "kind": "component"
+    },
+    {
+      "id": "resizable-example",
+      "title": "Resizable",
+      "source": "apps/v4/registry/bases/base/examples/resizable-example.tsx",
+      "sha256": "6076eabb0585591cb286be56359172dfde616e5cf3847916b422e1526a2940ab",
+      "kind": "component"
+    },
+    {
+      "id": "radio-group-example",
+      "title": "Radio Group",
+      "source": "apps/v4/registry/bases/base/examples/radio-group-example.tsx",
+      "sha256": "abb4e0ca3f42884001666c790aa061c31f6e1ae01c1451d80ed8c6f699f55ea0",
+      "kind": "component"
+    },
+    {
+      "id": "questionnaire-example",
+      "title": "Questionnaire",
+      "source": "apps/v4/registry/bases/base/examples/questionnaire-example.tsx",
+      "sha256": "56616a86a91b4bba801ceec7fecfe279330aa84c4b1863952f721cdee01cfff1",
+      "kind": "component"
+    },
+    {
+      "id": "progress-example",
+      "title": "Progress",
+      "source": "apps/v4/registry/bases/base/examples/progress-example.tsx",
+      "sha256": "0774c7a6bc4c241f22b4f53ae910ad3bba9b8a558d1c293c75d7e90fc7bc187a",
+      "kind": "component"
+    },
+    {
+      "id": "popover-example",
+      "title": "Popover",
+      "source": "apps/v4/registry/bases/base/examples/popover-example.tsx",
+      "sha256": "668dd4d2682d6940ed0d2619a1c181fed7c03937351ed3d994b16df9da79a0f4",
+      "kind": "component"
+    },
+    {
+      "id": "pagination-example",
+      "title": "Pagination",
+      "source": "apps/v4/registry/bases/base/examples/pagination-example.tsx",
+      "sha256": "2cc67f36da0b0f3cf9dbbd224e4c60d568f825672b72496a68a0e53db97b0f94",
+      "kind": "component"
+    },
+    {
+      "id": "navigation-menu-example",
+      "title": "Navigation Menu",
+      "source": "apps/v4/registry/bases/base/examples/navigation-menu-example.tsx",
+      "sha256": "4a2fd068c7b5c3543500d82a37cd115951e2657e4926ade4cdfa5f06ec2c752a",
+      "kind": "component"
+    },
+    {
+      "id": "native-select-example",
+      "title": "Native Select",
+      "source": "apps/v4/registry/bases/base/examples/native-select-example.tsx",
+      "sha256": "67366f6c3785982b683b2541bc68b7e7a4562a227850fdb798dc79ba147ea453",
+      "kind": "component"
+    },
+    {
+      "id": "message-scroller-example",
+      "title": "Message Scroller",
+      "source": "apps/v4/registry/bases/base/examples/message-scroller-example.tsx",
+      "sha256": "43ab1c6161d424cb42168573d8ec442af96c558022061cdf0f60088ec0925f10",
+      "kind": "component"
+    },
+    {
+      "id": "message-example",
+      "title": "Message",
+      "source": "apps/v4/registry/bases/base/examples/message-example.tsx",
+      "sha256": "2b653b3ae6de3b1dcbdb74743a4b94faf4dbc42f325e9957dfdcfc28fa529212",
+      "kind": "component"
+    },
+    {
+      "id": "menubar-example",
+      "title": "Menubar",
+      "source": "apps/v4/registry/bases/base/examples/menubar-example.tsx",
+      "sha256": "9db7cb209ee6e3e08d8408f2238b0bf91d25611132159b1120893565459b11ac",
+      "kind": "component"
+    },
+    {
+      "id": "marker-example",
+      "title": "Marker",
+      "source": "apps/v4/registry/bases/base/examples/marker-example.tsx",
+      "sha256": "1a6c7b909f4f486e287e01ebc09d8c64ffc38f7971a867352277023384ad31b8",
+      "kind": "component"
+    },
+    {
+      "id": "label-example",
+      "title": "Label",
+      "source": "apps/v4/registry/bases/base/examples/label-example.tsx",
+      "sha256": "c20d97df902332467e5f76f76b7b752a6e0504d744f874101146851d1867e649",
+      "kind": "component"
+    },
+    {
+      "id": "kbd-example",
+      "title": "Kbd",
+      "source": "apps/v4/registry/bases/base/examples/kbd-example.tsx",
+      "sha256": "3fbd8b8b3ad0f286205ff0a2796b9404922bb477e947820c1337135f2e588bba",
+      "kind": "component"
+    },
+    {
+      "id": "item-example",
+      "title": "Item",
+      "source": "apps/v4/registry/bases/base/examples/item-example.tsx",
+      "sha256": "d72b202993064cd9a69521596b424a1515815fdd0c3562d48a6b5f5def89d154",
+      "kind": "component"
+    },
+    {
+      "id": "input-otp-example",
+      "title": "Input Otp",
+      "source": "apps/v4/registry/bases/base/examples/input-otp-example.tsx",
+      "sha256": "2bd8a52b61fcb99cfa7337489b11279bf72ec4543bf84ab8c47e797920572e20",
+      "kind": "component"
+    },
+    {
+      "id": "input-group-example",
+      "title": "Input Group",
+      "source": "apps/v4/registry/bases/base/examples/input-group-example.tsx",
+      "sha256": "52d34e3f375eff925391b0a30fb6c667ac0b7f65a00d2046b61e394dc368aad8",
+      "kind": "component"
+    },
+    {
+      "id": "input-example",
+      "title": "Input",
+      "source": "apps/v4/registry/bases/base/examples/input-example.tsx",
+      "sha256": "f77f44d96b1f4e268191fff736a2daa7884bd3d04ffb63fa6f9dbb821da3cdd2",
+      "kind": "component"
+    },
+    {
+      "id": "hover-card-example",
+      "title": "Hover Card",
+      "source": "apps/v4/registry/bases/base/examples/hover-card-example.tsx",
+      "sha256": "ef4dfa7cd7f58cac2224ec228717f531429074a77be19be0a6d0b605cb3ba19c",
+      "kind": "component"
+    },
+    {
+      "id": "field-example",
+      "title": "Field",
+      "source": "apps/v4/registry/bases/base/examples/field-example.tsx",
+      "sha256": "54e279b7e55e513d3f313df38bff379feedda7ce89ad92c142cebb65ff993fc6",
+      "kind": "component"
+    },
+    {
+      "id": "empty-example",
+      "title": "Empty",
+      "source": "apps/v4/registry/bases/base/examples/empty-example.tsx",
+      "sha256": "c40ecdb43cbc685ab147ff603953b508c57d2abd47b8cca44e886fbc5530dc36",
+      "kind": "component"
+    },
+    {
+      "id": "dropdown-menu-example",
+      "title": "Dropdown Menu",
+      "source": "apps/v4/registry/bases/base/examples/dropdown-menu-example.tsx",
+      "sha256": "2d5b5ad4b4181c66250c6748aee9365249eb3a3f13ab298387b1e82257070e08",
+      "kind": "component"
+    },
+    {
+      "id": "drawer-example",
+      "title": "Drawer",
+      "source": "apps/v4/registry/bases/base/examples/drawer-example.tsx",
+      "sha256": "eb76b83c16db78286f92aae1042c547550fe57d8f430c12272e52141817088f4",
+      "kind": "component"
+    },
+    {
+      "id": "dialog-example",
+      "title": "Dialog",
+      "source": "apps/v4/registry/bases/base/examples/dialog-example.tsx",
+      "sha256": "8c0951ad73042f692673b1552d6dac25c0c69b1d0f218d1e9e603aeab93fd09d",
+      "kind": "component"
+    },
+    {
+      "id": "context-menu-example",
+      "title": "Context Menu",
+      "source": "apps/v4/registry/bases/base/examples/context-menu-example.tsx",
+      "sha256": "6af7465c3be63adcfe2dd9038f695f7a063502bcca61b97a2d4739bd24bb72a0",
+      "kind": "component"
+    },
+    {
+      "id": "command-example",
+      "title": "Command",
+      "source": "apps/v4/registry/bases/base/examples/command-example.tsx",
+      "sha256": "e118eb5c70fb7aca6cd08dd833fb0d1216a805df0b7b360c2a30c1776fe56aa9",
+      "kind": "component"
+    },
+    {
+      "id": "combobox-example",
+      "title": "Combobox",
+      "source": "apps/v4/registry/bases/base/examples/combobox-example.tsx",
+      "sha256": "6b63f6a5671af4738a91b738830ef645da299b5088e59a084ea1ca5d2748ff2a",
+      "kind": "component"
+    },
+    {
+      "id": "collapsible-example",
+      "title": "Collapsible",
+      "source": "apps/v4/registry/bases/base/examples/collapsible-example.tsx",
+      "sha256": "dd365dedc98eea455ed379673d956197900692ee581fbe029d5ab97775f049b5",
+      "kind": "component"
+    },
+    {
+      "id": "code-block-example",
+      "title": "Code Block",
+      "source": "apps/v4/registry/bases/base/examples/code-block-example.tsx",
+      "sha256": "1539c6d60b09effbedcc51c5b986a02c8ee46b227addaff6eca7e871734b403e",
+      "kind": "component"
+    },
+    {
+      "id": "checkbox-example",
+      "title": "Checkbox",
+      "source": "apps/v4/registry/bases/base/examples/checkbox-example.tsx",
+      "sha256": "1d1980a77777c91d3b8ca8014433b20c508c76a9a096b4e3c8dd71714ab7dabe",
+      "kind": "component"
+    },
+    {
+      "id": "chart-example",
+      "title": "Chart",
+      "source": "apps/v4/registry/bases/base/examples/chart-example.tsx",
+      "sha256": "70465e6e68a3a0471c4b1bb71072da8abc60b56e5f41a1907b8b065219e15a64",
+      "kind": "component"
+    },
+    {
+      "id": "carousel-example",
+      "title": "Carousel",
+      "source": "apps/v4/registry/bases/base/examples/carousel-example.tsx",
+      "sha256": "3f04d744b24e2e9ade532b5b7aa2ade70c305ade9c87c47f2a2335766cac2bb6",
+      "kind": "component"
+    },
+    {
+      "id": "card-example",
+      "title": "Card",
+      "source": "apps/v4/registry/bases/base/examples/card-example.tsx",
+      "sha256": "00daf26ba404d0bfc41167a244d993ddc2837ba820cedfd6967d4a96932b3425",
+      "kind": "component"
+    },
+    {
+      "id": "calendar-example",
+      "title": "Calendar",
+      "source": "apps/v4/registry/bases/base/examples/calendar-example.tsx",
+      "sha256": "12e806d3568ee4c3b960766a7bd45f5437967bebe4c32dbcb0d3875bb2355993",
+      "kind": "component"
+    },
+    {
+      "id": "button-group-example",
+      "title": "Button Group",
+      "source": "apps/v4/registry/bases/base/examples/button-group-example.tsx",
+      "sha256": "5d2ed228eb49d7d254b5fab75e42d40eafb504dfc811273e763678d4e9710a26",
+      "kind": "component"
+    },
+    {
+      "id": "button-example",
+      "title": "Button",
+      "source": "apps/v4/registry/bases/base/examples/button-example.tsx",
+      "sha256": "18eb30f758a5f64d918014952bce3f867a4ba06f79fa36f92f83ac331ef82f8a",
+      "kind": "component"
+    },
+    {
+      "id": "bubble-example",
+      "title": "Bubble",
+      "source": "apps/v4/registry/bases/base/examples/bubble-example.tsx",
+      "sha256": "9164d600a337d988bfca1124916ceaecb14c95bbb129ae0291d230dbdec61361",
+      "kind": "component"
+    },
+    {
+      "id": "breadcrumb-example",
+      "title": "Breadcrumb",
+      "source": "apps/v4/registry/bases/base/examples/breadcrumb-example.tsx",
+      "sha256": "3880b085f86ee868367576aec07f021b955c14b72aa27d0749849d812032e34b",
+      "kind": "component"
+    },
+    {
+      "id": "badge-example",
+      "title": "Badge",
+      "source": "apps/v4/registry/bases/base/examples/badge-example.tsx",
+      "sha256": "b5ec41da831fe3034393d95bd93625d0f2331115353c96d5773a921cefdc2a97",
+      "kind": "component"
+    },
+    {
+      "id": "avatar-example",
+      "title": "Avatar",
+      "source": "apps/v4/registry/bases/base/examples/avatar-example.tsx",
+      "sha256": "78f6fb795d33ef90fa2c4790b5ee3db29ca2b4ff62110941c23807ba8e0eda62",
+      "kind": "component"
+    },
+    {
+      "id": "attachment-example",
+      "title": "Attachment",
+      "source": "apps/v4/registry/bases/base/examples/attachment-example.tsx",
+      "sha256": "39fbf1843c0941ad3dffe4978209902b6b552f96884f6d3687335c87b1c8c16f",
+      "kind": "component"
+    },
+    {
+      "id": "aspect-ratio-example",
+      "title": "Aspect Ratio",
+      "source": "apps/v4/registry/bases/base/examples/aspect-ratio-example.tsx",
+      "sha256": "d81a6912343f21f28f6939a20012f3033edb523e64fd892c3c9148246df4ef6a",
+      "kind": "component"
+    },
+    {
+      "id": "alert-example",
+      "title": "Alert",
+      "source": "apps/v4/registry/bases/base/examples/alert-example.tsx",
+      "sha256": "2f13f1ad964a31981386a08d890acb94e329ad009d6e484b4ae4a8b6008463b2",
+      "kind": "component"
+    },
+    {
+      "id": "alert-dialog-example",
+      "title": "Alert Dialog",
+      "source": "apps/v4/registry/bases/base/examples/alert-dialog-example.tsx",
+      "sha256": "d6ac5f3c57c5ebe0c2d74446ebb001aa06eb3de43529530a62c318ca176d7e18",
+      "kind": "component"
+    },
+    {
+      "id": "accordion-example",
+      "title": "Accordion",
+      "source": "apps/v4/registry/bases/base/examples/accordion-example.tsx",
+      "sha256": "2d22b2749b4e3f32ed753ff5fdc46db6c8e5d4bce8b42d7af1c7e02aca41d0fe",
+      "kind": "component"
+    },
+    {
+      "id": "preview-02",
+      "title": "Composition 01",
+      "source": "apps/v4/registry/bases/base/blocks/preview-02/index.tsx",
+      "sha256": "a514ca6a721ba10b5c206931102d41e33693d151f3acf33be829f4709c1d98bd",
+      "kind": "composition"
+    },
+    {
+      "id": "preview",
+      "title": "Composition 02",
+      "source": "apps/v4/registry/bases/base/blocks/preview/index.tsx",
+      "sha256": "abad92156b1e566bcad43cf849e148c75ec5017ea1ff640a16908068fb16872d",
+      "kind": "composition"
+    }
+  ]
+}

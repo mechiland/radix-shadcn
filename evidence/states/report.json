@@ -1,0 +1,659 @@
+{
+  "browser": "157.0.8103.38",
+  "viewport": {
+    "width": 1000,
+    "height": 800
+  },
+  "dpr": 1,
+  "clip": "Component bounds plus 6px for focus ring; no full-page whitespace",
+  "pixelmatch": {
+    "threshold": 0.1,
+    "includeAA": false
+  },
+  "results": [
+    {
+      "id": "button",
+      "variant": "classic",
+      "state": "hover",
+      "appearance": "light",
+      "name": "button-classic-hover-light",
+      "reference": {
+        "fontSize": "14px",
+        "background": "rgb(62, 99, 221)",
+        "color": "rgb(255, 255, 255)",
+        "shadow": "rgba(0, 0, 45, 0.09) 0px 0px 0px 1px inset, rgba(0, 0, 51, 0.06) 0px -2px 1px 0px inset, rgb(62, 99, 221) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.7) 0px 4px 2px -2px inset, rgba(255, 255, 255, 0.7) 0px 2px 1px -1px inset",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "outlineOffset": "0px",
+        "focusVisible": false
+      },
+      "implementation": {
+        "fontSize": "14px",
+        "background": "rgb(51, 88, 212)",
+        "color": "rgb(255, 255, 255)",
+        "shadow": "rgba(0, 0, 45, 0.09) 0px 0px 0px 1px inset, rgba(0, 0, 51, 0.06) 0px -2px 1px 0px inset, rgb(62, 99, 221) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.7) 0px 4px 2px -2px inset, rgba(255, 255, 255, 0.7) 0px 2px 1px -1px inset",
+        "outline": "oklab(0.730841 0.00087288 -0.112313 / 0.5) none 3px",
+        "outlineOffset": "0px",
+        "focusVisible": false
+      },
+      "mismatchedPixels": 47,
+      "totalPixels": 2904,
+      "mismatchFraction": 0.01618457300275482
+    },
+    {
+      "id": "button",
+      "variant": "classic",
+      "state": "active",
+      "appearance": "light",
+      "name": "button-classic-active-light",
+      "reference": {
+        "fontSize": "14px",
+        "background": "rgb(62, 99, 221)",
+        "color": "rgb(255, 255, 255)",
+        "shadow": "rgba(0, 0, 45, 0.09) 0px 4px 2px -2px inset, rgba(0, 6, 46, 0.196) 0px 1px 1px 0px inset, rgba(0, 9, 50, 0.12) 0px 0px 0px 1px inset, rgb(62, 99, 221) 0px 0px 0px 1px inset, rgba(0, 0, 51, 0.06) 0px 3px 2px 0px inset, rgba(255, 255, 255, 0.5) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.3) 0px -2px 1px 0px inset",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "outlineOffset": "0px",
+        "focusVisible": false
+      },
+      "implementation": {
+        "fontSize": "14px",
+        "background": "rgb(62, 99, 221)",
+        "color": "rgb(255, 255, 255)",
+        "shadow": "rgba(0, 0, 45, 0.09) 0px 4px 2px -2px inset, rgba(0, 6, 46, 0.196) 0px 1px 1px 0px inset, rgba(0, 9, 50, 0.12) 0px 0px 0px 1px inset, rgb(62, 99, 221) 0px 0px 0px 1px inset, rgba(0, 0, 51, 0.06) 0px 3px 2px 0px inset, rgba(255, 255, 255, 0.5) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.3) 0px -2px 1px 0px inset",
+        "outline": "oklab(0.730841 0.00087288 -0.112313 / 0.5) none 3px",
+        "outlineOffset": "0px",
+        "focusVisible": false
+      },
+      "mismatchedPixels": 166,
+      "totalPixels": 2904,
+      "mismatchFraction": 0.05716253443526171
+    },
+    {
+      "id": "button",
+      "variant": "classic",
+      "state": "focus-visible",
+      "appearance": "light",
+      "name": "button-classic-focus-visible-light",
+      "reference": {
+        "fontSize": "14px",
+        "background": "rgb(62, 99, 221)",
+        "color": "rgb(255, 255, 255)",
+        "shadow": "rgba(0, 0, 45, 0.09) 0px 0px 0px 1px inset, rgba(0, 0, 51, 0.06) 0px -2px 1px 0px inset, rgb(62, 99, 221) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.7) 0px 4px 2px -2px inset, rgba(255, 255, 255, 0.7) 0px 2px 1px -1px inset",
+        "outline": "rgb(141, 164, 239) solid 2px",
+        "outlineOffset": "2px",
+        "focusVisible": true
+      },
+      "implementation": {
+        "fontSize": "14px",
+        "background": "rgb(62, 99, 221)",
+        "color": "rgb(255, 255, 255)",
+        "shadow": "none",
+        "outline": "rgb(141, 164, 239) solid 2px",
+        "outlineOffset": "2px",
+        "focusVisible": true
+      },
+      "mismatchedPixels": 57,
+      "totalPixels": 2904,
+      "mismatchFraction": 0.01962809917355372
+    },
+    {
+      "id": "button",
+      "variant": "solid",
+      "state": "hover",
+      "appearance": "light",
+      "name": "button-solid-hover-light",
+      "reference": {
+        "fontSize": "14px",
+        "background": "rgb(51, 88, 212)",
+        "color": "rgb(255, 255, 255)",
+        "shadow": "none",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "outlineOffset": "0px",
+        "focusVisible": false
+      },
+      "implementation": {
+        "fontSize": "14px",
+        "background": "rgb(51, 88, 212)",
+        "color": "rgb(255, 255, 255)",
+        "shadow": "none",
+        "outline": "oklab(0.730841 0.00087288 -0.112313 / 0.5) none 3px",
+        "outlineOffset": "0px",
+        "focusVisible": false
+      },
+      "mismatchedPixels": 0,
+      "totalPixels": 2904,
+      "mismatchFraction": 0
+    },
+    {
+      "id": "button",
+      "variant": "solid",
+      "state": "active",
+      "appearance": "light",
+      "name": "button-solid-active-light",
+      "reference": {
+        "fontSize": "14px",
+        "background": "rgb(51, 88, 212)",
+        "color": "rgb(255, 255, 255)",
+        "shadow": "none",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "outlineOffset": "0px",
+        "focusVisible": false
+      },
+      "implementation": {
+        "fontSize": "14px",
+        "background": "rgb(51, 88, 212)",
+        "color": "rgb(255, 255, 255)",
+        "shadow": "none",
+        "outline": "oklab(0.730841 0.00087288 -0.112313 / 0.5) none 3px",
+        "outlineOffset": "0px",
+        "focusVisible": false
+      },
+      "mismatchedPixels": 0,
+      "totalPixels": 2904,
+      "mismatchFraction": 0
+    },
+    {
+      "id": "button",
+      "variant": "solid",
+      "state": "focus-visible",
+      "appearance": "light",
+      "name": "button-solid-focus-visible-light",
+      "reference": {
+        "fontSize": "14px",
+        "background": "rgb(62, 99, 221)",
+        "color": "rgb(255, 255, 255)",
+        "shadow": "none",
+        "outline": "rgb(141, 164, 239) solid 2px",
+        "outlineOffset": "2px",
+        "focusVisible": true
+      },
+      "implementation": {
+        "fontSize": "14px",
+        "background": "rgb(62, 99, 221)",
+        "color": "rgb(255, 255, 255)",
+        "shadow": "none",
+        "outline": "rgb(141, 164, 239) solid 2px",
+        "outlineOffset": "2px",
+        "focusVisible": true
+      },
+      "mismatchedPixels": 0,
+      "totalPixels": 2904,
+      "mismatchFraction": 0
+    },
+    {
+      "id": "button",
+      "variant": "soft",
+      "state": "hover",
+      "appearance": "light",
+      "name": "button-soft-hover-light",
+      "reference": {
+        "fontSize": "14px",
+        "background": "rgba(0, 68, 255, 0.118)",
+        "color": "rgba(0, 43, 183, 0.773)",
+        "shadow": "none",
+        "outline": "rgba(0, 43, 183, 0.773) none 3px",
+        "outlineOffset": "0px",
+        "focusVisible": false
+      },
+      "implementation": {
+        "fontSize": "14px",
+        "background": "rgba(0, 68, 255, 0.118)",
+        "color": "rgba(0, 43, 183, 0.773)",
+        "shadow": "none",
+        "outline": "oklab(0.730841 0.00087288 -0.112313 / 0.5) none 3px",
+        "outlineOffset": "0px",
+        "focusVisible": false
+      },
+      "mismatchedPixels": 0,
+      "totalPixels": 2904,
+      "mismatchFraction": 0
+    },
+    {
+      "id": "button",
+      "variant": "soft",
+      "state": "active",
+      "appearance": "light",
+      "name": "button-soft-active-light",
+      "reference": {
+        "fontSize": "14px",
+        "background": "rgba(0, 68, 255, 0.176)",
+        "color": "rgba(0, 43, 183, 0.773)",
+        "shadow": "none",
+        "outline": "rgba(0, 43, 183, 0.773) none 3px",
+        "outlineOffset": "0px",
+        "focusVisible": false
+      },
+      "implementation": {
+        "fontSize": "14px",
+        "background": "rgba(0, 68, 255, 0.176)",
+        "color": "rgba(0, 43, 183, 0.773)",
+        "shadow": "none",
+        "outline": "oklab(0.730841 0.00087288 -0.112313 / 0.5) none 3px",
+        "outlineOffset": "0px",
+        "focusVisible": false
+      },
+      "mismatchedPixels": 0,
+      "totalPixels": 2904,
+      "mismatchFraction": 0
+    },
+    {
+      "id": "button",
+      "variant": "soft",
+      "state": "focus-visible",
+      "appearance": "light",
+      "name": "button-soft-focus-visible-light",
+      "reference": {
+        "fontSize": "14px",
+        "background": "rgba(0, 71, 241, 0.07)",
+        "color": "rgba(0, 43, 183, 0.773)",
+        "shadow": "none",
+        "outline": "rgb(141, 164, 239) solid 2px",
+        "outlineOffset": "-1px",
+        "focusVisible": true
+      },
+      "implementation": {
+        "fontSize": "14px",
+        "background": "rgba(0, 71, 241, 0.07)",
+        "color": "rgba(0, 43, 183, 0.773)",
+        "shadow": "none",
+        "outline": "rgb(141, 164, 239) solid 2px",
+        "outlineOffset": "-1px",
+        "focusVisible": true
+      },
+      "mismatchedPixels": 0,
+      "totalPixels": 2904,
+      "mismatchFraction": 0
+    },
+    {
+      "id": "button",
+      "variant": "surface",
+      "state": "hover",
+      "appearance": "light",
+      "name": "button-surface-hover-light",
+      "reference": {
+        "fontSize": "14px",
+        "background": "rgba(245, 248, 255, 0.8)",
+        "color": "rgba(0, 43, 183, 0.773)",
+        "shadow": "rgba(0, 52, 220, 0.447) 0px 0px 0px 1px inset",
+        "outline": "rgba(0, 43, 183, 0.773) none 3px",
+        "outlineOffset": "0px",
+        "focusVisible": false
+      },
+      "implementation": {
+        "fontSize": "14px",
+        "background": "rgba(245, 248, 255, 0.8)",
+        "color": "rgba(0, 43, 183, 0.773)",
+        "shadow": "rgba(0, 52, 220, 0.447) 0px 0px 0px 1px inset",
+        "outline": "oklab(0.730841 0.00087288 -0.112313 / 0.5) none 3px",
+        "outlineOffset": "0px",
+        "focusVisible": false
+      },
+      "mismatchedPixels": 0,
+      "totalPixels": 2904,
+      "mismatchFraction": 0
+    },
+    {
+      "id": "button",
+      "variant": "surface",
+      "state": "active",
+      "appearance": "light",
+      "name": "button-surface-active-light",
+      "reference": {
+        "fontSize": "14px",
+        "background": "rgba(0, 71, 241, 0.07)",
+        "color": "rgba(0, 43, 183, 0.773)",
+        "shadow": "rgba(0, 52, 220, 0.447) 0px 0px 0px 1px inset",
+        "outline": "rgba(0, 43, 183, 0.773) none 3px",
+        "outlineOffset": "0px",
+        "focusVisible": false
+      },
+      "implementation": {
+        "fontSize": "14px",
+        "background": "rgba(245, 248, 255, 0.8)",
+        "color": "rgba(0, 43, 183, 0.773)",
+        "shadow": "rgba(0, 52, 220, 0.447) 0px 0px 0px 1px inset",
+        "outline": "oklab(0.730841 0.00087288 -0.112313 / 0.5) none 3px",
+        "outlineOffset": "0px",
+        "focusVisible": false
+      },
+      "mismatchedPixels": 0,
+      "totalPixels": 2904,
+      "mismatchFraction": 0
+    },
+    {
+      "id": "button",
+      "variant": "surface",
+      "state": "focus-visible",
+      "appearance": "light",
+      "name": "button-surface-focus-visible-light",
+      "reference": {
+        "fontSize": "14px",
+        "background": "rgba(245, 248, 255, 0.8)",
+        "color": "rgba(0, 43, 183, 0.773)",
+        "shadow": "rgba(0, 55, 237, 0.33) 0px 0px 0px 1px inset",
+        "outline": "rgb(141, 164, 239) solid 2px",
+        "outlineOffset": "-1px",
+        "focusVisible": true
+      },
+      "implementation": {
+        "fontSize": "14px",
+        "background": "rgba(245, 248, 255, 0.8)",
+        "color": "rgba(0, 43, 183, 0.773)",
+        "shadow": "none",
+        "outline": "rgb(141, 164, 239) solid 2px",
+        "outlineOffset": "-1px",
+        "focusVisible": true
+      },
+      "mismatchedPixels": 0,
+      "totalPixels": 2904,
+      "mismatchFraction": 0
+    },
+    {
+      "id": "button",
+      "variant": "outline",
+      "state": "hover",
+      "appearance": "light",
+      "name": "button-outline-hover-light",
+      "reference": {
+        "fontSize": "14px",
+        "background": "rgba(0, 64, 255, 0.03)",
+        "color": "rgba(0, 43, 183, 0.773)",
+        "shadow": "rgba(0, 52, 220, 0.447) 0px 0px 0px 1px inset",
+        "outline": "rgba(0, 43, 183, 0.773) none 3px",
+        "outlineOffset": "0px",
+        "focusVisible": false
+      },
+      "implementation": {
+        "fontSize": "14px",
+        "background": "rgba(0, 64, 255, 0.03)",
+        "color": "rgba(0, 43, 183, 0.773)",
+        "shadow": "rgba(0, 52, 220, 0.447) 0px 0px 0px 1px inset",
+        "outline": "oklab(0.730841 0.00087288 -0.112313 / 0.5) none 3px",
+        "outlineOffset": "0px",
+        "focusVisible": false
+      },
+      "mismatchedPixels": 0,
+      "totalPixels": 2904,
+      "mismatchFraction": 0
+    },
+    {
+      "id": "button",
+      "variant": "outline",
+      "state": "active",
+      "appearance": "light",
+      "name": "button-outline-active-light",
+      "reference": {
+        "fontSize": "14px",
+        "background": "rgba(0, 71, 241, 0.07)",
+        "color": "rgba(0, 43, 183, 0.773)",
+        "shadow": "rgba(0, 52, 220, 0.447) 0px 0px 0px 1px inset",
+        "outline": "rgba(0, 43, 183, 0.773) none 3px",
+        "outlineOffset": "0px",
+        "focusVisible": false
+      },
+      "implementation": {
+        "fontSize": "14px",
+        "background": "rgba(0, 71, 241, 0.07)",
+        "color": "rgba(0, 43, 183, 0.773)",
+        "shadow": "rgba(0, 52, 220, 0.447) 0px 0px 0px 1px inset",
+        "outline": "oklab(0.730841 0.00087288 -0.112313 / 0.5) none 3px",
+        "outlineOffset": "0px",
+        "focusVisible": false
+      },
+      "mismatchedPixels": 0,
+      "totalPixels": 2904,
+      "mismatchFraction": 0
+    },
+    {
+      "id": "button",
+      "variant": "outline",
+      "state": "focus-visible",
+      "appearance": "light",
+      "name": "button-outline-focus-visible-light",
+      "reference": {
+        "fontSize": "14px",
+        "background": "rgba(0, 0, 0, 0)",
+        "color": "rgba(0, 43, 183, 0.773)",
+        "shadow": "rgba(0, 52, 220, 0.447) 0px 0px 0px 1px inset",
+        "outline": "rgb(141, 164, 239) solid 2px",
+        "outlineOffset": "-1px",
+        "focusVisible": true
+      },
+      "implementation": {
+        "fontSize": "14px",
+        "background": "rgba(0, 0, 0, 0)",
+        "color": "rgba(0, 43, 183, 0.773)",
+        "shadow": "none",
+        "outline": "rgb(141, 164, 239) solid 2px",
+        "outlineOffset": "-1px",
+        "focusVisible": true
+      },
+      "mismatchedPixels": 0,
+      "totalPixels": 2904,
+      "mismatchFraction": 0
+    },
+    {
+      "id": "button",
+      "variant": "ghost",
+      "state": "hover",
+      "appearance": "light",
+      "name": "button-ghost-hover-light",
+      "reference": {
+        "fontSize": "14px",
+        "background": "rgba(0, 71, 241, 0.07)",
+        "color": "rgba(0, 43, 183, 0.773)",
+        "shadow": "none",
+        "outline": "rgba(0, 43, 183, 0.773) none 3px",
+        "outlineOffset": "0px",
+        "focusVisible": false
+      },
+      "implementation": {
+        "fontSize": "14px",
+        "background": "rgba(0, 71, 241, 0.07)",
+        "color": "rgba(0, 43, 183, 0.773)",
+        "shadow": "none",
+        "outline": "oklab(0.730841 0.00087288 -0.112313 / 0.5) none 3px",
+        "outlineOffset": "0px",
+        "focusVisible": false
+      },
+      "mismatchedPixels": 0,
+      "totalPixels": 2320,
+      "mismatchFraction": 0
+    },
+    {
+      "id": "button",
+      "variant": "ghost",
+      "state": "active",
+      "appearance": "light",
+      "name": "button-ghost-active-light",
+      "reference": {
+        "fontSize": "14px",
+        "background": "rgba(0, 68, 255, 0.118)",
+        "color": "rgba(0, 43, 183, 0.773)",
+        "shadow": "none",
+        "outline": "rgba(0, 43, 183, 0.773) none 3px",
+        "outlineOffset": "0px",
+        "focusVisible": false
+      },
+      "implementation": {
+        "fontSize": "14px",
+        "background": "rgba(0, 68, 255, 0.118)",
+        "color": "rgba(0, 43, 183, 0.773)",
+        "shadow": "none",
+        "outline": "oklab(0.730841 0.00087288 -0.112313 / 0.5) none 3px",
+        "outlineOffset": "0px",
+        "focusVisible": false
+      },
+      "mismatchedPixels": 0,
+      "totalPixels": 2320,
+      "mismatchFraction": 0
+    },
+    {
+      "id": "button",
+      "variant": "ghost",
+      "state": "focus-visible",
+      "appearance": "light",
+      "name": "button-ghost-focus-visible-light",
+      "reference": {
+        "fontSize": "14px",
+        "background": "rgba(0, 0, 0, 0)",
+        "color": "rgba(0, 43, 183, 0.773)",
+        "shadow": "none",
+        "outline": "rgb(141, 164, 239) solid 2px",
+        "outlineOffset": "-1px",
+        "focusVisible": true
+      },
+      "implementation": {
+        "fontSize": "14px",
+        "background": "rgba(0, 0, 0, 0)",
+        "color": "rgba(0, 43, 183, 0.773)",
+        "shadow": "none",
+        "outline": "rgb(141, 164, 239) solid 2px",
+        "outlineOffset": "-1px",
+        "focusVisible": true
+      },
+      "mismatchedPixels": 0,
+      "totalPixels": 2320,
+      "mismatchFraction": 0
+    },
+    {
+      "id": "checkbox",
+      "variant": "surface",
+      "state": "focus-visible",
+      "appearance": "light",
+      "name": "checkbox-surface-focus-visible-light",
+      "reference": {
+        "fontSize": "16px",
+        "background": "rgba(0, 0, 0, 0)",
+        "color": "rgb(28, 32, 36)",
+        "shadow": "none",
+        "outline": "rgb(28, 32, 36) none 3px",
+        "outlineOffset": "0px",
+        "focusVisible": true
+      },
+      "implementation": {
+        "fontSize": "16px",
+        "background": "rgba(255, 255, 255, 0.85)",
+        "color": "rgb(255, 255, 255)",
+        "shadow": "none",
+        "outline": "rgb(141, 164, 239) solid 2px",
+        "outlineOffset": "2px",
+        "focusVisible": true
+      },
+      "mismatchedPixels": 68,
+      "totalPixels": 784,
+      "mismatchFraction": 0.08673469387755102
+    },
+    {
+      "id": "checkbox",
+      "variant": "surface",
+      "state": "focus-visible",
+      "appearance": "dark",
+      "name": "checkbox-surface-focus-visible-dark",
+      "reference": {
+        "fontSize": "16px",
+        "background": "rgba(0, 0, 0, 0)",
+        "color": "rgb(237, 238, 240)",
+        "shadow": "none",
+        "outline": "rgb(237, 238, 240) none 3px",
+        "outlineOffset": "0px",
+        "focusVisible": true
+      },
+      "implementation": {
+        "fontSize": "16px",
+        "background": "rgba(0, 0, 0, 0.25)",
+        "color": "rgb(255, 255, 255)",
+        "shadow": "none",
+        "outline": "rgb(67, 93, 177) solid 2px",
+        "outlineOffset": "2px",
+        "focusVisible": true
+      },
+      "mismatchedPixels": 66,
+      "totalPixels": 784,
+      "mismatchFraction": 0.08418367346938775
+    },
+    {
+      "id": "switch",
+      "variant": "surface",
+      "state": "focus-visible",
+      "appearance": "light",
+      "name": "switch-surface-focus-visible-light",
+      "reference": {
+        "fontSize": "16px",
+        "background": "rgba(0, 0, 0, 0)",
+        "color": "rgb(28, 32, 36)",
+        "shadow": "none",
+        "outline": "rgb(28, 32, 36) none 3px",
+        "outlineOffset": "0px",
+        "focusVisible": true
+      },
+      "implementation": {
+        "fontSize": "16px",
+        "background": "rgba(0, 0, 51, 0.06)",
+        "color": "rgb(28, 32, 36)",
+        "shadow": "none",
+        "outline": "rgb(141, 164, 239) solid 2px",
+        "outlineOffset": "2px",
+        "focusVisible": true
+      },
+      "mismatchedPixels": 26,
+      "totalPixels": 1504,
+      "mismatchFraction": 0.017287234042553192
+    },
+    {
+      "id": "switch",
+      "variant": "surface",
+      "state": "focus-visible",
+      "appearance": "dark",
+      "name": "switch-surface-focus-visible-dark",
+      "reference": {
+        "fontSize": "16px",
+        "background": "rgba(0, 0, 0, 0)",
+        "color": "rgb(237, 238, 240)",
+        "shadow": "none",
+        "outline": "rgb(237, 238, 240) none 3px",
+        "outlineOffset": "0px",
+        "focusVisible": true
+      },
+      "implementation": {
+        "fontSize": "16px",
+        "background": "rgba(221, 234, 248, 0.08)",
+        "color": "rgb(237, 238, 240)",
+        "shadow": "none",
+        "outline": "rgb(67, 93, 177) solid 2px",
+        "outlineOffset": "2px",
+        "focusVisible": true
+      },
+      "mismatchedPixels": 32,
+      "totalPixels": 1504,
+      "mismatchFraction": 0.02127659574468085
+    },
+    {
+      "id": "button",
+      "variant": "solid",
+      "state": "focus-visible",
+      "appearance": "dark",
+      "name": "button-solid-focus-visible-dark",
+      "reference": {
+        "fontSize": "14px",
+        "background": "rgb(62, 99, 221)",
+        "color": "rgb(255, 255, 255)",
+        "shadow": "none",
+        "outline": "rgb(67, 93, 177) solid 2px",
+        "outlineOffset": "2px",
+        "focusVisible": true
+      },
+      "implementation": {
+        "fontSize": "14px",
+        "background": "rgb(62, 99, 221)",
+        "color": "rgb(255, 255, 255)",
+        "shadow": "none",
+        "outline": "rgb(67, 93, 177) solid 2px",
+        "outlineOffset": "2px",
+        "focusVisible": true
+      },
+      "mismatchedPixels": 0,
+      "totalPixels": 2904,
+      "mismatchFraction": 0
+    }
+  ]
+}
