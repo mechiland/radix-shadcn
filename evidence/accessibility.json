@@ -1,0 +1,38 @@
+[
+  {
+    "id": "button",
+    "violations": []
+  },
+  {
+    "id": "checkbox",
+    "violations": []
+  },
+  {
+    "id": "switch",
+    "violations": []
+  },
+  {
+    "id": "radio-group",
+    "violations": []
+  },
+  {
+    "id": "select",
+    "violations": []
+  },
+  {
+    "id": "dialog",
+    "violations": []
+  },
+  {
+    "id": "tabs",
+    "violations": []
+  },
+  {
+    "id": "text-field",
+    "violations": []
+  },
+  {
+    "id": "card",
+    "violations": []
+  }
+]

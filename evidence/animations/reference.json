@@ -1,0 +1,236 @@
+{
+  "version": "@radix-ui/themes@3.3.0",
+  "browser": "157.0.8103.38",
+  "note": "Computed original CSS and public Web Animations keyframes; independent reference environment.",
+  "results": [
+    {
+      "id": "dialog",
+      "mode": "default",
+      "computed": {
+        "animationName": "rt-dialog-content-show",
+        "animationDuration": "0.2s",
+        "animationTimingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "animationDelay": "0s",
+        "transitionDuration": "0s",
+        "transformOrigin": "225px 150.703px",
+        "keyframes": [
+          [
+            {
+              "offset": 0,
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+              "composite": "auto",
+              "transform": "translateY(5px) scale(0.97)",
+              "opacity": "0",
+              "computedOffset": 0
+            },
+            {
+              "offset": 1,
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+              "composite": "auto",
+              "transform": "translateY(0px) scale(1)",
+              "opacity": "1",
+              "computedOffset": 1
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "popover",
+      "mode": "default",
+      "computed": {
+        "animationName": "rt-slide-from-bottom, rt-fade-in",
+        "animationDuration": "0.16s",
+        "animationTimingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "animationDelay": "0s",
+        "transitionDuration": "0s",
+        "transformOrigin": "0px 0px",
+        "keyframes": [
+          [
+            {
+              "offset": 0,
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+              "composite": "auto",
+              "transform": "translateY(-4px) scale(0.97)",
+              "computedOffset": 0
+            },
+            {
+              "offset": 1,
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+              "composite": "auto",
+              "transform": "translateY(0px) scale(1)",
+              "computedOffset": 1
+            }
+          ],
+          [
+            {
+              "offset": 0,
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+              "composite": "auto",
+              "opacity": "0",
+              "computedOffset": 0
+            },
+            {
+              "offset": 1,
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+              "composite": "auto",
+              "opacity": "1",
+              "computedOffset": 1
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "dropdown-menu",
+      "mode": "default",
+      "computed": {
+        "animationName": "rt-slide-from-bottom, rt-fade-in",
+        "animationDuration": "0.16s",
+        "animationTimingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "animationDelay": "0s",
+        "transitionDuration": "0s",
+        "transformOrigin": "0px 0px",
+        "keyframes": [
+          [
+            {
+              "offset": 0,
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+              "composite": "auto",
+              "transform": "translateY(-4px) scale(0.97)",
+              "computedOffset": 0
+            },
+            {
+              "offset": 1,
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+              "composite": "auto",
+              "transform": "translateY(0px) scale(1)",
+              "computedOffset": 1
+            }
+          ],
+          [
+            {
+              "offset": 0,
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+              "composite": "auto",
+              "opacity": "0",
+              "computedOffset": 0
+            },
+            {
+              "offset": 1,
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+              "composite": "auto",
+              "opacity": "1",
+              "computedOffset": 1
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "select",
+      "mode": "default",
+      "computed": {
+        "animationName": "none",
+        "animationDuration": "0s",
+        "animationTimingFunction": "ease",
+        "animationDelay": "0s",
+        "transitionDuration": "0s",
+        "transformOrigin": "64.2422px 88px",
+        "keyframes": []
+      }
+    },
+    {
+      "id": "select",
+      "mode": "popper",
+      "computed": {
+        "animationName": "rt-slide-from-bottom, rt-fade-in",
+        "animationDuration": "0.16s",
+        "animationTimingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "animationDelay": "0s",
+        "transitionDuration": "0s",
+        "transformOrigin": "0px 0px",
+        "keyframes": [
+          [
+            {
+              "offset": 0,
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+              "composite": "auto",
+              "transform": "translateY(-4px) scale(0.97)",
+              "computedOffset": 0
+            },
+            {
+              "offset": 1,
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+              "composite": "auto",
+              "transform": "translateY(0px) scale(1)",
+              "computedOffset": 1
+            }
+          ],
+          [
+            {
+              "offset": 0,
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+              "composite": "auto",
+              "opacity": "0",
+              "computedOffset": 0
+            },
+            {
+              "offset": 1,
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+              "composite": "auto",
+              "opacity": "1",
+              "computedOffset": 1
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "tooltip",
+      "mode": "default",
+      "computed": {
+        "animationName": "rt-slide-from-bottom, rt-fade-in",
+        "animationDuration": "0.14s",
+        "animationTimingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "animationDelay": "0s",
+        "transitionDuration": "0s",
+        "transformOrigin": "53px -5px",
+        "keyframes": [
+          [
+            {
+              "offset": 0,
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+              "composite": "auto",
+              "transform": "translateY(-4px) scale(0.97)",
+              "computedOffset": 0
+            },
+            {
+              "offset": 1,
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+              "composite": "auto",
+              "transform": "translateY(0px) scale(1)",
+              "computedOffset": 1
+            }
+          ],
+          [
+            {
+              "offset": 0,
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+              "composite": "auto",
+              "opacity": "0",
+              "computedOffset": 0
+            },
+            {
+              "offset": 1,
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+              "composite": "auto",
+              "opacity": "1",
+              "computedOffset": 1
+            }
+          ]
+        ]
+      }
+    }
+  ]
+}

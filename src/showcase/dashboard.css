@@ -1,0 +1,8 @@
+/* Dashboard showcase: example-level layout helpers that the original expresses with Radix layout props. */
+
+/* Radix `trim="start"`: trims the leading above the first line of a Heading. */
+.dash-trim-start::before {
+  content: "";
+  display: table;
+  margin-bottom: calc(var(--heading-leading-trim-start, var(--default-leading-trim-start)) - var(--type-line) / 2);
+}

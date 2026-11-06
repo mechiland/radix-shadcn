@@ -1,0 +1,39 @@
+/* Example-specific styles for the Music app showcase. */
+
+/* Custom color variable that changes between light and dark mode (from the original example). */
+.music-app {
+  --color-floating-panel: rgba(239, 247, 255, 0.615);
+}
+.dark .music-app {
+  --color-floating-panel: rgba(0, 14, 24, 0.593);
+}
+
+/* Radix `trim` prop (leading trim) for our typography components. */
+.music-trim-start::before,
+.music-trim-both::before,
+.music-trim-both::after {
+  content: "";
+  display: table;
+}
+.music-trim-start::before,
+.music-trim-both::before {
+  margin-bottom: calc(var(--leading-trim-start, var(--default-leading-trim-start)) - var(--type-line, calc(1em * var(--default-line-height))) / 2);
+}
+.music-trim-both::after {
+  margin-top: calc(var(--leading-trim-end, var(--default-leading-trim-end)) - var(--type-line, calc(1em * var(--default-line-height))) / 2);
+}
+
+/* Show the play button on album hover (hover.module.css in the original). */
+.music-hover-root {
+  position: relative;
+}
+.music-hover-show {
+  opacity: 0;
+  transition: opacity 160ms;
+}
+@media (hover: hover) {
+  .music-hover-root:hover .music-hover-show {
+    opacity: 1;
+    transition: opacity 60ms;
+  }
+}

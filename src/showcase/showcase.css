@@ -1,0 +1,3 @@
+/* Radix Card has no font size of its own: card body text inherits the Theme's 16px/24px.
+   Our Card follows shadcn (text-sm), so the ported Radix showcases restore Radix's inheritance here. */
+.home-showcase-theme [data-slot=card] {font-size:var(--font-size-3);line-height:var(--line-height-3)}

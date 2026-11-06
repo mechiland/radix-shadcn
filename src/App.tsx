@@ -1,0 +1,95 @@
+import { ComparisonFixture } from "./comparison-fixture"
+import * as React from 'react'
+import { Check, Copy, RotateCcw, Sun, Moon, Search, SlidersHorizontal, Menu, ArrowUpRight, X, Link as LinkIcon, Download } from 'lucide-react'
+import { toast, Toaster } from 'sonner'
+import { Button } from '@/components/ui/button'
+import { TooltipProvider } from '@/components/ui/tooltip'
+import { Theme,defaultTheme,parseTheme,accentColors,grayColors,radii,scalings,matchingGray,type ThemeConfig } from '@/lib/theme/theme'
+import { ComponentDemo,PaletteDemo,radixPages,colorableIds } from './playground'
+import { examplePages } from './examples/catalog'
+import { VisualFixture } from './visual-fixture'
+import { HomeShowcase, showcases } from './showcase'
+const configKey='radix-base-theme-v1'
+const panelKey='radix-base-theme-panel'
+const pages=['components','examples','showcase','install'] as const
+const defaultItem:Record<string,string>={components:'button',examples:'preview-02',showcase:'dashboard-light',install:'button'}
+const framedExamples=['sidebar-example','sidebar-icon-example','sidebar-floating-example','sidebar-inset-example']
+function loadTheme() {try {const query=new URLSearchParams(location.search).get('theme');return parseTheme(JSON.parse(query||localStorage.getItem(configKey)||'null'))} catch{return defaultTheme}}
+function route() {const [page='components',item='button']=location.hash.slice(1).split('/');return {page:(pages as readonly string[]).includes(page)?page:'components',item}}
+const sourceAliases:Record<string,string>={'icon-button':'button','text-field':'input','text-area':'textarea',radio:'radio-group','segmented-control':'tabs',callout:'adaptations','checkbox-cards':'adaptations','radio-cards':'adaptations','data-list':'adaptations',inset:'adaptations',text:'typography',heading:'typography',blockquote:'typography',code:'typography',em:'typography',quote:'typography',strong:'typography',link:'typography'}
+const sources=import.meta.glob<string>('./components/ui/*.tsx',{query:'?raw',import:'default'})
+async function copy(text:string,label='Copied') {try {await navigator.clipboard.writeText(text);toast.success(label)}catch{toast.error('Clipboard unavailable. Select and copy the code below.')}}
+export default function App() {
+ const [config,setConfig]=React.useState<ThemeConfig>(loadTheme)
+ const [current,setCurrent]=React.useState(route)
+ const [search,setSearch]=React.useState('')
+ const [panel,setPanel]=React.useState(()=>{try{const v=localStorage.getItem(panelKey);if(v)return v==='open'}catch{};return typeof window!=='undefined'&&window.innerWidth>1000})
+ React.useEffect(()=>{try{localStorage.setItem(panelKey,panel?'open':'closed')}catch{}},[panel])
+ const [nav,setNav]=React.useState(false)
+ const [view,setView]=React.useState('variants')
+ const [source,setSource]=React.useState('')
+ React.useEffect(()=>{const message=(e:MessageEvent)=>{if(e.origin===location.origin&&e.source===window.parent&&e.data?.type==='radix-base-theme')setConfig(parseTheme(e.data.config))};addEventListener('message',message);return()=>removeEventListener('message',message)},[])
+ const searchRef=React.useRef<HTMLInputElement>(null)
+ React.useEffect(()=>{const key=(e:KeyboardEvent)=>{if(e.key==='/'&&!(e.target instanceof HTMLElement&&e.target.closest('input,textarea,[contenteditable=true]'))){e.preventDefault();searchRef.current?.focus()}};addEventListener('keydown',key);return()=>removeEventListener('keydown',key)},[])
+ React.useEffect(()=>{const fn=()=>{setCurrent(route());setNav(false);setSearch('');setView('variants');window.scrollTo({top:0})};addEventListener('hashchange',fn);return()=>removeEventListener('hashchange',fn)},[])
+ React.useEffect(()=>{try{localStorage.setItem(configKey,JSON.stringify(config))}catch{};const url=new URL(location.href);url.searchParams.set('theme',JSON.stringify(config));history.replaceState(null,'',url)},[config])
+ React.useEffect(()=>{if(view!=='code')return;const key=`./components/ui/${sourceAliases[current.item]||current.item}.tsx`;let live=true;setSource('');void sources[key]?.().then(text=>{if(live)setSource(text)});return()=>{live=false}},[view,current.item])
+ const isExample=current.page==='examples'
+ const isShowcase=current.page==='showcase'
+ const items:{id:string;title:string;kind?:string}[]=isShowcase?showcases:isExample?[...examplePages].sort((a,b)=>a.kind===b.kind?a.title.localeCompare(b.title):a.kind==='composition'?-1:1):radixPages
+ const active=items.find(x=>x.id===current.item)||items[0]
+ const Example=isExample?examplePages.find(x=>x.id===active.id)?.component:null
+ const update=<K extends keyof ThemeConfig>(key:K,value:ThemeConfig[K])=>setConfig(c=>({...c,[key]:value}))
+ const base=new URL(import.meta.env.BASE_URL,location.href).pathname
+ const registryURL=(name:string)=>`${location.origin}${base}r/${name}.json`
+ const embedId=new URLSearchParams(location.search).get('embedExample')
+ const Embed=examplePages.find(x=>x.id===embedId)?.component
+ if(embedId&&Embed)return <Theme config={config} className="style-nova"><TooltipProvider><DemoSurface><React.Suspense fallback={<p className="loading-text">Loading example…</p>}><Embed/></React.Suspense></DemoSurface><Toaster theme={config.appearance}/></TooltipProvider></Theme>
+ const showcaseId=new URLSearchParams(location.search).get('showcase')
+ if(showcaseId)return <TooltipProvider><HomeShowcase id={showcaseId} base={config} background={new URLSearchParams(location.search).get('bg')!=='0'}/></TooltipProvider>
+ if(new URLSearchParams(location.search).has('fixture'))return <Theme config={config} className="style-nova"><TooltipProvider>{new URLSearchParams(location.search).get('component')?<ComparisonFixture id={new URLSearchParams(location.search).get('component')!}/>:<VisualFixture/>}</TooltipProvider></Theme>
+ return <Theme config={config} className="style-nova"><TooltipProvider>
+ <a className="skip-link" href="#main-content">Skip to content</a>
+ <header className="site-header"><a className="brand" href="#components/button"><span className="radix-mark" aria-hidden><i/><b/></span><span>Radix <span className="brand-divider">/</span> <span className="brand-secondary">Base UI</span></span></a><nav className="primary-nav" aria-label="Main navigation">{pages.map(p=><a aria-current={current.page===p?'page':undefined} key={p} href={`#${p}/${defaultItem[p]}`}>{p[0].toUpperCase()+p.slice(1)}</a>)}</nav><div className="header-actions"><a className="source-link" href="https://github.com/shadcn-ui/ui" target="_blank" rel="noreferrer">shadcn/ui <ArrowUpRight size={13}/></a><Button variant="ghost" color="gray" size="icon" aria-label="Toggle appearance" onClick={()=>update('appearance',config.appearance==='light'?'dark':'light')}>{config.appearance==='light'?<Moon/>:<Sun/>}</Button><Button className="theme-toggle" variant="soft" color="gray" size="icon" aria-label="Toggle theme panel" aria-expanded={panel} aria-controls="theme-panel" onClick={()=>setPanel(!panel)}><SlidersHorizontal/></Button></div></header>
+ <div className="site-layout" data-panel={panel?'open':'closed'}>
+ {current.page!=='install'&&<><button className="mobile-nav-button" onClick={()=>setNav(!nav)}><Menu size={16}/> Browse {isShowcase?'showcases':isExample?'examples':'components'}</button><aside className={`component-nav ${nav?'is-open':''}`} aria-label={isShowcase?'Showcases':isExample?'Examples':'Components'}><div className="nav-search"><Search size={14}/><input ref={searchRef} aria-label="Search components and examples" placeholder="Search…" value={search} onChange={e=>setSearch(e.target.value)}/><kbd>/</kbd></div><div className="nav-heading">{isShowcase?'radix-ui.com':isExample?'shadcn/create':'Radix Themes'} <span>{items.length}</span></div><div className="nav-items">{items.filter(x=>x.title.toLowerCase().includes(search.toLowerCase())).map(x=><a key={x.id} href={`#${current.page}/${x.id}`} aria-current={x.id===active.id?'page':undefined}>{x.title}{x.kind==='composition'&&<span className="nav-dot"/>}</a>)}{!items.some(x=>x.title.toLowerCase().includes(search.toLowerCase()))&&<p className="empty-search">No matching components.</p>}</div><div className="nav-foot">Built with Base UI.<br/>Styled with Radix Colors.</div></aside></>}
+ <main id="main-content" className={`main-content ${current.page==='install'?'install-main':''}`}>
+ {isShowcase?<ShowcasePage id={active.id} title={active.title} config={config}/>:current.page==='install'?<Install registryURL={registryURL}/>:<><div className="page-kicker">{isExample?'EXAMPLES / SHADCN CREATE':'COMPONENTS / RADIX THEMES'}</div><div className="page-title-row"><h1>{active.title}</h1><a className="reference-link" href={isExample?'https://ui.shadcn.com/create?base=base':`https://www.radix-ui.com/themes/docs/components/${active.id}`} target="_blank" rel="noreferrer">Reference <ArrowUpRight size={13}/></a></div><p className="page-description">{isExample?'Original compositions, adapted to the Radix Themes design language. Interactive local demos.':'A familiar visual language, built on accessible Base UI primitives.'}</p>
+ {isExample&&<p className="extension-note">Style extension · shadcn/create structure · Radix tokens</p>}
+ <div className="demo-toolbar"><div className="demo-tabs">{(isExample?['preview']:(colorableIds.includes(active.id)?['variants','colors','code']:['variants','code'])).map(v=><button key={v} aria-pressed={view===v||isExample} onClick={()=>setView(v)}>{v==='colors'?'All colors':v[0].toUpperCase()+v.slice(1)}</button>)}</div><Button size="sm" variant="ghost" color="gray" onClick={()=>copy(`npx shadcn@4.23.0 add ${registryURL(isExample?'radix-base':componentRegistry(active.id))}`,'Installation command copied')}><Download size={13}/> Install</Button></div>
+ <section className={`demo-canvas ${isExample?'examples-canvas':''}`} aria-label={`${active.title} demonstrations`} key={`${current.page}/${active.id}`}>
+ {isExample&&Example?(framedExamples.includes(active.id)?<EmbeddedExample id={active.id} config={config}/>:<DemoSurface><React.Suspense fallback={<p className="loading-text">Loading example…</p>}><Example/></React.Suspense></DemoSurface>):view==='code'?<div className="code-view"><div><span>Shared source · {active.title}</span><Button variant="ghost" color="gray" size="sm" onClick={()=>copy(source,'Component source copied')}><Copy/>Copy</Button></div><pre><code>{source||'Loading source…'}</code></pre></div>:view==='colors'?<PaletteDemo id={active.id}/>:<ComponentDemo id={active.id}/>}
+ </section><div className="demo-footer"><span>{isExample?'Shared components · local demonstration data':'Default · hover · active · focus · disabled · component states'}</span><span>Reference fixed 2026-11-06</span></div>
+ </>}
+ <footer className="site-footer"><span>Radix visual language. Base UI behavior.</span><a href="#install/button">Install the system <ArrowUpRight size={12}/></a></footer>
+ </main>
+ <aside id="theme-panel" className={`theme-panel ${panel?'is-open':''}`} aria-label="Theme configuration"><div className="theme-panel-heading"><h2>Theme</h2><button className="panel-close" aria-label="Close theme panel" onClick={()=>setPanel(false)}><X size={16}/></button><Button variant="ghost" color="gray" size="icon-xs" aria-label="Reset theme" onClick={()=>{setConfig(defaultTheme);toast('Theme reset')}}><RotateCcw/></Button></div><div className="theme-control"><label>Accent color <span>{config.accentColor}</span></label><div className="color-swatches">{accentColors.map(c=><button key={c} data-color={c} className="color-swatch" style={{background:'var(--accent-9)'}} aria-label={`Accent ${c}`} aria-pressed={config.accentColor===c} title={c} onClick={()=>update('accentColor',c)}>{config.accentColor===c&&<Check size={12} style={{color:'var(--accent-contrast)'}}/>}</button>)}</div></div>
+ <div className="theme-control"><label htmlFor="gray">Gray color</label><select id="gray" value={config.grayColor} onChange={e=>update('grayColor',e.target.value as ThemeConfig['grayColor'])}>{grayColors.map(c=><option key={c} value={c}>{c==='auto'?`Auto (${matchingGray(config.accentColor)})`:c}</option>)}</select></div>
+ <OptionGroup label="Appearance" values={['light','dark']} value={config.appearance} onChange={v=>update('appearance',v as 'light')}/><OptionGroup label="Radius" values={radii} value={config.radius} onChange={v=>update('radius',v as ThemeConfig['radius'])}/><OptionGroup label="Scaling" values={scalings} value={config.scaling} onChange={v=>update('scaling',v as ThemeConfig['scaling'])}/><OptionGroup label="Panel background" values={['solid','translucent']} value={config.panelBackground} onChange={v=>update('panelBackground',v as ThemeConfig['panelBackground'])}/>
+ <div className="panel-material-sample"><div/><div/><div/><span>Surface preview</span></div>
+ <div className="theme-panel-actions"><Button variant="soft" color="gray" onClick={()=>copy(themeCode(config),'Theme configuration copied')}><Copy/>Copy theme</Button><Button variant="outline" color="gray" onClick={()=>copy(location.href,'Share link copied')}><LinkIcon/>Share</Button></div><p className="theme-note">Changes save automatically.<br/>Share a URL to keep this configuration.</p></aside>
+ </div><Toaster position="bottom-right" richColors theme={config.appearance}/>
+ </TooltipProvider></Theme>
+}
+function OptionGroup({label,values,value,onChange}:{label:string;values:readonly string[];value:string;onChange:(v:string)=>void}) {return <fieldset className="theme-control"><legend>{label}</legend><div className="segmented-options">{values.map(v=><label key={v} data-selected={value===v||undefined}><input type="radio" name={label} value={v} checked={value===v} onChange={()=>onChange(v)}/><span>{v}</span></label>)}</div></fieldset>}
+function themeCode(c:ThemeConfig) {return `import { Theme } from "@/lib/theme/theme"\nimport "@/lib/theme/styles.css"\n\n<Theme config={${JSON.stringify(c,null,2)}}>\n  <App />\n</Theme>`}
+function componentRegistry(id:string) {return ({'text-field':'input','text-area':'textarea','icon-button':'button','checkbox-group':'checkbox-group','checkbox-cards':'adaptations','radio':'radio-group','radio-cards':'adaptations','callout':'adaptations','inset':'adaptations','data-list':'adaptations','segmented-control':'tabs','tab-nav':'tabs','text':'typography','heading':'typography','blockquote':'typography','em':'typography','quote':'typography','strong':'typography','code':'typography','link':'typography'} as Record<string,string>)[id]||id}
+export function DemoSurface({children}:{children:React.ReactNode}) {return <div className="demo-surface style-nova" onSubmit={e=>{if(e.defaultPrevented)return;e.preventDefault();const form=e.target as HTMLFormElement;const data=new FormData(form);const fields=Array.from(data.keys());try{sessionStorage.setItem('radix-base-last-demo-form',JSON.stringify(Object.fromEntries(Array.from(data).filter(([key])=>!/password|token|secret/i.test(key)))))}catch{};toast.success(`Saved to local demo${fields.length?` · ${fields.length} fields`:''}`)}}>{children}</div>}
+function Install({registryURL}:{registryURL:(name:string)=>string}) {
+ const commands=[['Initialize a Base UI project','npx shadcn@4.23.0 init --base base --preset nova'],['Install the complete system',`npx shadcn@4.23.0 add ${registryURL('radix-base')}`],['Or install one component',`npx shadcn@4.23.0 add ${registryURL('button')}`]]
+ return <><div className="page-kicker">INSTALL / REGISTRY</div><h1>A shared foundation.</h1><p className="page-description">Accessible Base UI behavior, Radix Themes color and proportions. Copy the source into your project with the official shadcn CLI.</p>{commands.map(([label,command])=><div className="install-step" key={label}><h2>{label}</h2><div className="command-block"><code>{command}</code><Button variant="ghost" color="gray" size="icon" aria-label={`Copy ${label}`} onClick={()=>copy(command)}><Copy/></Button></div></div>)}<div className="install-step"><h2>Wrap your application</h2><p>Import the theme stylesheet once, after your Tailwind entry. Portals inherit the nearest Theme automatically.</p><div className="command-block"><pre><code>{themeCode(defaultTheme)}</code></pre><Button variant="ghost" color="gray" size="icon" aria-label="Copy usage" onClick={()=>copy(themeCode(defaultTheme))}><Copy/></Button></div></div><div className="install-step"><h2>Source and distribution</h2><p>This website imports the same source files shipped by the registry. The full URL works at your current host; no registered namespace or future domain is needed. Single components include their local dependencies and theme.</p><p>Designed for React, TypeScript and Tailwind CSS v4 Base UI projects. Installation adds local source files. Review existing file conflicts before overwriting; theme styles change the components inside a Theme.</p></div><div className="install-step"><h2>Reference and adaptation</h2><p>Fixed on 6 November 2026: Radix Themes 3.3.0, Radix Colors 3.0.0, Base UI 1.9.0 and shadcn CLI 4.23.0. Compositions without a Radix counterpart are labeled style extensions.</p><div className="install-links"><a href="./docs/coverage.json" target="_blank">Coverage data <ArrowUpRight size={13}/></a><a href="./registry.json" target="_blank">Registry index <ArrowUpRight size={13}/></a><a href="https://www.radix-ui.com/colors/docs/overview/installation" target="_blank" rel="noreferrer">Radix Colors <ArrowUpRight size={13}/></a></div></div></>
+}
+
+function EmbeddedExample({id,config}:{id:string;config:ThemeConfig}) {
+ const ref=React.useRef<HTMLIFrameElement>(null)
+ const initial=React.useMemo(()=>`./?embedExample=${id}&theme=${encodeURIComponent(JSON.stringify(config))}`,[id])
+ const sync=()=>ref.current?.contentWindow?.postMessage({type:'radix-base-theme',config},location.origin)
+ React.useEffect(sync,[config])
+ return <iframe ref={ref} title={`${id} interactive preview`} src={initial} onLoad={sync} className="embedded-example"/>
+}
+
+function ShowcasePage({id,title,config}:{id:string;title:string;config:ThemeConfig}) {
+ return <><div className="page-kicker">SHOWCASE / RADIX-UI.COM</div><div className="page-title-row"><h1>{title}</h1><a className="reference-link" href="https://www.radix-ui.com/" target="_blank" rel="noreferrer">Reference <ArrowUpRight size={13}/></a></div><p className="page-description">The radix-ui.com homepage examples, rebuilt with the shadcn/Base UI components of this system. Appearance and colors follow the original showcase; radius, scaling and panel background follow the theme panel.</p>
+ <section className="showcase-canvas" aria-label={`${title} showcase`} key={id}><HomeShowcase id={id} base={config}/></section>
+ <div className="demo-footer"><span>Original: radix-ui/website · MIT</span><span>Scroll horizontally to see the full layout</span></div></>
+}

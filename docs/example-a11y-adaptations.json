@@ -1,0 +1,154 @@
+[
+  {
+    "path": "src/examples/blocks/preview/cards/book-appointment.tsx",
+    "changes": 1
+  },
+  {
+    "path": "src/examples/blocks/preview/cards/codespaces-card.tsx",
+    "changes": 6
+  },
+  {
+    "path": "src/examples/blocks/preview/cards/invite-team.tsx",
+    "changes": 3
+  },
+  {
+    "path": "src/examples/blocks/preview/cards/live-waveform.tsx",
+    "changes": 1
+  },
+  {
+    "path": "src/examples/blocks/preview/cards/not-found.tsx",
+    "changes": 1
+  },
+  {
+    "path": "src/examples/blocks/preview/cards/ui-elements.tsx",
+    "changes": 9
+  },
+  {
+    "path": "src/examples/blocks/preview-02/cards/catalog-toolbar.tsx",
+    "changes": 1
+  },
+  {
+    "path": "src/examples/blocks/preview-02/cards/kitchen-island.tsx",
+    "changes": 1
+  },
+  {
+    "path": "src/examples/blocks/preview-02/cards/notification-settings.tsx",
+    "changes": 1
+  },
+  {
+    "path": "src/examples/blocks/preview-02/cards/release-catalog.tsx",
+    "changes": 1
+  },
+  {
+    "path": "src/examples/bubble-example.tsx",
+    "changes": 1
+  },
+  {
+    "path": "src/examples/button-group-example.tsx",
+    "changes": 14
+  },
+  {
+    "path": "src/examples/calendar-example.tsx",
+    "changes": 1
+  },
+  {
+    "path": "src/examples/card-example.tsx",
+    "changes": 1
+  },
+  {
+    "path": "src/examples/checkbox-example.tsx",
+    "changes": 2
+  },
+  {
+    "path": "src/examples/code-block-example.tsx",
+    "changes": 3
+  },
+  {
+    "path": "src/examples/collapsible-example.tsx",
+    "changes": 6
+  },
+  {
+    "path": "src/examples/combobox-example.tsx",
+    "changes": 19
+  },
+  {
+    "path": "src/examples/demo.tsx",
+    "changes": 8
+  },
+  {
+    "path": "src/examples/dialog-example.tsx",
+    "changes": 2
+  },
+  {
+    "path": "src/examples/drawer-example.tsx",
+    "changes": 4
+  },
+  {
+    "path": "src/examples/dropdown-menu-example.tsx",
+    "changes": 2
+  },
+  {
+    "path": "src/examples/empty-example.tsx",
+    "changes": 2
+  },
+  {
+    "path": "src/examples/hover-card-example.tsx",
+    "changes": 1
+  },
+  {
+    "path": "src/examples/input-example.tsx",
+    "changes": 7
+  },
+  {
+    "path": "src/examples/input-group-example.tsx",
+    "changes": 31
+  },
+  {
+    "path": "src/examples/kbd-example.tsx",
+    "changes": 1
+  },
+  {
+    "path": "src/examples/message-scroller-example.tsx",
+    "changes": 1
+  },
+  {
+    "path": "src/examples/native-select-example.tsx",
+    "changes": 6
+  },
+  {
+    "path": "src/examples/popover-example.tsx",
+    "changes": 2
+  },
+  {
+    "path": "src/examples/select-example.tsx",
+    "changes": 19
+  },
+  {
+    "path": "src/examples/sheet-example.tsx",
+    "changes": 1
+  },
+  {
+    "path": "src/examples/table-example.tsx",
+    "changes": 4
+  },
+  {
+    "path": "src/examples/tabs-example.tsx",
+    "changes": 4
+  },
+  {
+    "path": "src/examples/textarea-example.tsx",
+    "changes": 2
+  },
+  {
+    "path": "src/examples/toggle-group-example.tsx",
+    "changes": 2
+  },
+  {
+    "path": "src/examples/tooltip-example.tsx",
+    "changes": 1
+  },
+  {
+    "path": "src/examples/trace-example.tsx",
+    "changes": 2
+  }
+]

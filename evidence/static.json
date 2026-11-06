@@ -1,0 +1,12 @@
+{
+  "base": "http://localhost:4173",
+  "browser": "157.0.8103.38",
+  "errors": [],
+  "registry": [
+    "theme",
+    "button",
+    "dialog",
+    "radix-base"
+  ],
+  "status": "passed"
+}

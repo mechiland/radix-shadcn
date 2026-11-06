@@ -1,0 +1,12 @@
+{
+  "base": "http://127.0.0.1:34469/nested",
+  "browser": "157.0.8103.38",
+  "errors": [],
+  "registry": [
+    "theme",
+    "button",
+    "dialog",
+    "radix-base"
+  ],
+  "status": "passed"
+}
