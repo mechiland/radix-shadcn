@@ -1,10 +1,11 @@
 import {Gallery} from "./gallery"
+import {HomeShowcase} from "./home"
 import { createRoot } from 'react-dom/client'
 import { Theme,Button,Checkbox,Switch,TextField,Badge,Card,Callout,Select,Dialog,Flex,Text } from '@radix-ui/themes'
 import '@radix-ui/themes/styles.css'
 const p=new URLSearchParams(location.search)
 const config=JSON.parse(p.get('theme')||'{}')
-function Reference(){return <Theme {...config}>{p.get("component")?<Gallery id={p.get("component")!}/>:<div id="fixture" style={{boxSizing:'border-box',width:760,padding:24,display:'flex',flexDirection:'column',gap:24}}>
+function Reference(){if(p.get('home'))return <HomeShowcase id={p.get('home')!} background={p.get('bg')!=='0'}/>;return <Theme {...config}>{p.get("component")?<Gallery id={p.get("component")!}/>:<div id="fixture" style={{boxSizing:'border-box',width:760,padding:24,display:'flex',flexDirection:'column',gap:24}}>
  {(['classic','solid','soft','surface','outline','ghost'] as const).map(v=><div key={v} style={{display:'flex',gap:16,alignItems:'center'}}>{(['1','2','3','4'] as const).map(s=><Button key={s} variant={v} size={s}>Next</Button>)}<Button variant={v} highContrast>Next</Button><Button variant={v} color="gray">Next</Button><Button variant={v} disabled>Next</Button></div>)}
  <div style={{display:'flex',gap:16}}><Checkbox aria-label="Unchecked"/><Checkbox defaultChecked aria-label="Checked"/><Checkbox checked="indeterminate" aria-label="Mixed"/><Switch aria-label="Switch"/><Switch defaultChecked aria-label="Checked switch"/></div>
  <div style={{display:'flex',gap:16}}><TextField.Root aria-label="Search" placeholder="Search the docs…" style={{flex:1}}/><TextField.Root aria-label="Disabled" placeholder="Disabled" disabled style={{flex:1}}/><Select.Root defaultValue="apple"><Select.Trigger aria-label="Fruit"/><Select.Content><Select.Group><Select.Label>Fruit</Select.Label><Select.Item value="apple">Apple</Select.Item><Select.Item value="banana">Banana</Select.Item><Select.Item value="blueberry">Blueberry</Select.Item><Select.Item value="grape" disabled>Grape</Select.Item></Select.Group></Select.Content></Select.Root></div>

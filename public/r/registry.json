@@ -33,6 +33,11 @@
           "target": "@lib/theme/design-tokens.css"
         },
         {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
+        },
+        {
           "path": "src/lib/theme/palettes.css",
           "type": "registry:file",
           "target": "@lib/theme/palettes.css"
@@ -98,6 +103,11 @@
           "path": "src/lib/theme/design-tokens.css",
           "type": "registry:file",
           "target": "@lib/theme/design-tokens.css"
+        },
+        {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
         },
         {
           "path": "src/lib/theme/palettes.css",
@@ -177,6 +187,11 @@
           "target": "@lib/theme/design-tokens.css"
         },
         {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
+        },
+        {
           "path": "src/lib/theme/palettes.css",
           "type": "registry:file",
           "target": "@lib/theme/palettes.css"
@@ -254,6 +269,11 @@
           "target": "@lib/theme/design-tokens.css"
         },
         {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
+        },
+        {
           "path": "src/lib/theme/palettes.css",
           "type": "registry:file",
           "target": "@lib/theme/palettes.css"
@@ -321,6 +341,11 @@
           "target": "@lib/theme/design-tokens.css"
         },
         {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
+        },
+        {
           "path": "src/lib/theme/palettes.css",
           "type": "registry:file",
           "target": "@lib/theme/palettes.css"
@@ -386,6 +411,11 @@
           "path": "src/lib/theme/design-tokens.css",
           "type": "registry:file",
           "target": "@lib/theme/design-tokens.css"
+        },
+        {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
         },
         {
           "path": "src/lib/theme/palettes.css",
@@ -465,6 +495,11 @@
           "target": "@lib/theme/design-tokens.css"
         },
         {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
+        },
+        {
           "path": "src/lib/theme/palettes.css",
           "type": "registry:file",
           "target": "@lib/theme/palettes.css"
@@ -530,6 +565,11 @@
           "path": "src/lib/theme/design-tokens.css",
           "type": "registry:file",
           "target": "@lib/theme/design-tokens.css"
+        },
+        {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
         },
         {
           "path": "src/lib/theme/palettes.css",
@@ -599,6 +639,11 @@
           "target": "@lib/theme/design-tokens.css"
         },
         {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
+        },
+        {
           "path": "src/lib/theme/palettes.css",
           "type": "registry:file",
           "target": "@lib/theme/palettes.css"
@@ -666,6 +711,11 @@
           "target": "@lib/theme/design-tokens.css"
         },
         {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
+        },
+        {
           "path": "src/lib/theme/palettes.css",
           "type": "registry:file",
           "target": "@lib/theme/palettes.css"
@@ -731,6 +781,11 @@
           "path": "src/lib/theme/design-tokens.css",
           "type": "registry:file",
           "target": "@lib/theme/design-tokens.css"
+        },
+        {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
         },
         {
           "path": "src/lib/theme/palettes.css",
@@ -805,6 +860,11 @@
           "target": "@lib/theme/design-tokens.css"
         },
         {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
+        },
+        {
           "path": "src/lib/theme/palettes.css",
           "type": "registry:file",
           "target": "@lib/theme/palettes.css"
@@ -875,6 +935,11 @@
           "path": "src/lib/theme/design-tokens.css",
           "type": "registry:file",
           "target": "@lib/theme/design-tokens.css"
+        },
+        {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
         },
         {
           "path": "src/lib/theme/palettes.css",
@@ -955,6 +1020,11 @@
           "target": "@lib/theme/design-tokens.css"
         },
         {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
+        },
+        {
           "path": "src/lib/theme/palettes.css",
           "type": "registry:file",
           "target": "@lib/theme/palettes.css"
@@ -1020,6 +1090,11 @@
           "path": "src/lib/theme/design-tokens.css",
           "type": "registry:file",
           "target": "@lib/theme/design-tokens.css"
+        },
+        {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
         },
         {
           "path": "src/lib/theme/palettes.css",
@@ -1100,6 +1175,11 @@
           "target": "@lib/theme/design-tokens.css"
         },
         {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
+        },
+        {
           "path": "src/lib/theme/palettes.css",
           "type": "registry:file",
           "target": "@lib/theme/palettes.css"
@@ -1166,6 +1246,11 @@
           "path": "src/lib/theme/design-tokens.css",
           "type": "registry:file",
           "target": "@lib/theme/design-tokens.css"
+        },
+        {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
         },
         {
           "path": "src/lib/theme/palettes.css",
@@ -1235,6 +1320,11 @@
           "target": "@lib/theme/design-tokens.css"
         },
         {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
+        },
+        {
           "path": "src/lib/theme/palettes.css",
           "type": "registry:file",
           "target": "@lib/theme/palettes.css"
@@ -1300,6 +1390,11 @@
           "path": "src/lib/theme/design-tokens.css",
           "type": "registry:file",
           "target": "@lib/theme/design-tokens.css"
+        },
+        {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
         },
         {
           "path": "src/lib/theme/palettes.css",
@@ -1379,6 +1474,11 @@
           "target": "@lib/theme/design-tokens.css"
         },
         {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
+        },
+        {
           "path": "src/lib/theme/palettes.css",
           "type": "registry:file",
           "target": "@lib/theme/palettes.css"
@@ -1444,6 +1544,11 @@
           "path": "src/lib/theme/design-tokens.css",
           "type": "registry:file",
           "target": "@lib/theme/design-tokens.css"
+        },
+        {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
         },
         {
           "path": "src/lib/theme/palettes.css",
@@ -1538,6 +1643,11 @@
           "target": "@lib/theme/design-tokens.css"
         },
         {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
+        },
+        {
           "path": "src/lib/theme/palettes.css",
           "type": "registry:file",
           "target": "@lib/theme/palettes.css"
@@ -1620,6 +1730,11 @@
           "target": "@lib/theme/design-tokens.css"
         },
         {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
+        },
+        {
           "path": "src/lib/theme/palettes.css",
           "type": "registry:file",
           "target": "@lib/theme/palettes.css"
@@ -1685,6 +1800,11 @@
           "path": "src/lib/theme/design-tokens.css",
           "type": "registry:file",
           "target": "@lib/theme/design-tokens.css"
+        },
+        {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
         },
         {
           "path": "src/lib/theme/palettes.css",
@@ -1764,6 +1884,11 @@
           "target": "@lib/theme/design-tokens.css"
         },
         {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
+        },
+        {
           "path": "src/lib/theme/palettes.css",
           "type": "registry:file",
           "target": "@lib/theme/palettes.css"
@@ -1829,6 +1954,11 @@
           "path": "src/lib/theme/design-tokens.css",
           "type": "registry:file",
           "target": "@lib/theme/design-tokens.css"
+        },
+        {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
         },
         {
           "path": "src/lib/theme/palettes.css",
@@ -1898,6 +2028,11 @@
           "target": "@lib/theme/design-tokens.css"
         },
         {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
+        },
+        {
           "path": "src/lib/theme/palettes.css",
           "type": "registry:file",
           "target": "@lib/theme/palettes.css"
@@ -1965,6 +2100,11 @@
           "target": "@lib/theme/design-tokens.css"
         },
         {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
+        },
+        {
           "path": "src/lib/theme/palettes.css",
           "type": "registry:file",
           "target": "@lib/theme/palettes.css"
@@ -2030,6 +2170,11 @@
           "path": "src/lib/theme/design-tokens.css",
           "type": "registry:file",
           "target": "@lib/theme/design-tokens.css"
+        },
+        {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
         },
         {
           "path": "src/lib/theme/palettes.css",
@@ -2109,6 +2254,11 @@
           "target": "@lib/theme/design-tokens.css"
         },
         {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
+        },
+        {
           "path": "src/lib/theme/palettes.css",
           "type": "registry:file",
           "target": "@lib/theme/palettes.css"
@@ -2174,6 +2324,11 @@
           "path": "src/lib/theme/design-tokens.css",
           "type": "registry:file",
           "target": "@lib/theme/design-tokens.css"
+        },
+        {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
         },
         {
           "path": "src/lib/theme/palettes.css",
@@ -2263,6 +2418,11 @@
           "target": "@lib/theme/design-tokens.css"
         },
         {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
+        },
+        {
           "path": "src/lib/theme/palettes.css",
           "type": "registry:file",
           "target": "@lib/theme/palettes.css"
@@ -2331,6 +2491,11 @@
           "target": "@lib/theme/design-tokens.css"
         },
         {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
+        },
+        {
           "path": "src/lib/theme/palettes.css",
           "type": "registry:file",
           "target": "@lib/theme/palettes.css"
@@ -2396,6 +2561,11 @@
           "path": "src/lib/theme/design-tokens.css",
           "type": "registry:file",
           "target": "@lib/theme/design-tokens.css"
+        },
+        {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
         },
         {
           "path": "src/lib/theme/palettes.css",
@@ -2470,6 +2640,11 @@
           "target": "@lib/theme/design-tokens.css"
         },
         {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
+        },
+        {
           "path": "src/lib/theme/palettes.css",
           "type": "registry:file",
           "target": "@lib/theme/palettes.css"
@@ -2535,6 +2710,11 @@
           "path": "src/lib/theme/design-tokens.css",
           "type": "registry:file",
           "target": "@lib/theme/design-tokens.css"
+        },
+        {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
         },
         {
           "path": "src/lib/theme/palettes.css",
@@ -2604,6 +2784,11 @@
           "target": "@lib/theme/design-tokens.css"
         },
         {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
+        },
+        {
           "path": "src/lib/theme/palettes.css",
           "type": "registry:file",
           "target": "@lib/theme/palettes.css"
@@ -2669,6 +2854,11 @@
           "path": "src/lib/theme/design-tokens.css",
           "type": "registry:file",
           "target": "@lib/theme/design-tokens.css"
+        },
+        {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
         },
         {
           "path": "src/lib/theme/palettes.css",
@@ -2741,6 +2931,11 @@
           "path": "src/lib/theme/design-tokens.css",
           "type": "registry:file",
           "target": "@lib/theme/design-tokens.css"
+        },
+        {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
         },
         {
           "path": "src/lib/theme/palettes.css",
@@ -2821,6 +3016,11 @@
           "target": "@lib/theme/design-tokens.css"
         },
         {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
+        },
+        {
           "path": "src/lib/theme/palettes.css",
           "type": "registry:file",
           "target": "@lib/theme/palettes.css"
@@ -2886,6 +3086,11 @@
           "path": "src/lib/theme/design-tokens.css",
           "type": "registry:file",
           "target": "@lib/theme/design-tokens.css"
+        },
+        {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
         },
         {
           "path": "src/lib/theme/palettes.css",
@@ -2955,6 +3160,11 @@
           "target": "@lib/theme/design-tokens.css"
         },
         {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
+        },
+        {
           "path": "src/lib/theme/palettes.css",
           "type": "registry:file",
           "target": "@lib/theme/palettes.css"
@@ -3020,6 +3230,11 @@
           "path": "src/lib/theme/design-tokens.css",
           "type": "registry:file",
           "target": "@lib/theme/design-tokens.css"
+        },
+        {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
         },
         {
           "path": "src/lib/theme/palettes.css",
@@ -3099,6 +3314,11 @@
           "target": "@lib/theme/design-tokens.css"
         },
         {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
+        },
+        {
           "path": "src/lib/theme/palettes.css",
           "type": "registry:file",
           "target": "@lib/theme/palettes.css"
@@ -3166,6 +3386,11 @@
           "target": "@lib/theme/design-tokens.css"
         },
         {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
+        },
+        {
           "path": "src/lib/theme/palettes.css",
           "type": "registry:file",
           "target": "@lib/theme/palettes.css"
@@ -3231,6 +3456,11 @@
           "path": "src/lib/theme/design-tokens.css",
           "type": "registry:file",
           "target": "@lib/theme/design-tokens.css"
+        },
+        {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
         },
         {
           "path": "src/lib/theme/palettes.css",
@@ -3311,6 +3541,11 @@
           "target": "@lib/theme/design-tokens.css"
         },
         {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
+        },
+        {
           "path": "src/lib/theme/palettes.css",
           "type": "registry:file",
           "target": "@lib/theme/palettes.css"
@@ -3376,6 +3611,11 @@
           "path": "src/lib/theme/design-tokens.css",
           "type": "registry:file",
           "target": "@lib/theme/design-tokens.css"
+        },
+        {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
         },
         {
           "path": "src/lib/theme/palettes.css",
@@ -3446,6 +3686,11 @@
           "target": "@lib/theme/design-tokens.css"
         },
         {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
+        },
+        {
           "path": "src/lib/theme/palettes.css",
           "type": "registry:file",
           "target": "@lib/theme/palettes.css"
@@ -3511,6 +3756,11 @@
           "path": "src/lib/theme/design-tokens.css",
           "type": "registry:file",
           "target": "@lib/theme/design-tokens.css"
+        },
+        {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
         },
         {
           "path": "src/lib/theme/palettes.css",
@@ -3580,6 +3830,11 @@
           "target": "@lib/theme/design-tokens.css"
         },
         {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
+        },
+        {
           "path": "src/lib/theme/palettes.css",
           "type": "registry:file",
           "target": "@lib/theme/palettes.css"
@@ -3645,6 +3900,11 @@
           "path": "src/lib/theme/design-tokens.css",
           "type": "registry:file",
           "target": "@lib/theme/design-tokens.css"
+        },
+        {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
         },
         {
           "path": "src/lib/theme/palettes.css",
@@ -3722,6 +3982,11 @@
           "path": "src/lib/theme/design-tokens.css",
           "type": "registry:file",
           "target": "@lib/theme/design-tokens.css"
+        },
+        {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
         },
         {
           "path": "src/lib/theme/palettes.css",
@@ -3831,6 +4096,11 @@
           "target": "@lib/theme/design-tokens.css"
         },
         {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
+        },
+        {
           "path": "src/lib/theme/palettes.css",
           "type": "registry:file",
           "target": "@lib/theme/palettes.css"
@@ -3898,6 +4168,11 @@
           "target": "@lib/theme/design-tokens.css"
         },
         {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
+        },
+        {
           "path": "src/lib/theme/palettes.css",
           "type": "registry:file",
           "target": "@lib/theme/palettes.css"
@@ -3963,6 +4238,11 @@
           "path": "src/lib/theme/design-tokens.css",
           "type": "registry:file",
           "target": "@lib/theme/design-tokens.css"
+        },
+        {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
         },
         {
           "path": "src/lib/theme/palettes.css",
@@ -4033,6 +4313,11 @@
           "target": "@lib/theme/design-tokens.css"
         },
         {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
+        },
+        {
           "path": "src/lib/theme/palettes.css",
           "type": "registry:file",
           "target": "@lib/theme/palettes.css"
@@ -4098,6 +4383,11 @@
           "path": "src/lib/theme/design-tokens.css",
           "type": "registry:file",
           "target": "@lib/theme/design-tokens.css"
+        },
+        {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
         },
         {
           "path": "src/lib/theme/palettes.css",
@@ -4167,6 +4457,11 @@
           "target": "@lib/theme/design-tokens.css"
         },
         {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
+        },
+        {
           "path": "src/lib/theme/palettes.css",
           "type": "registry:file",
           "target": "@lib/theme/palettes.css"
@@ -4232,6 +4527,11 @@
           "path": "src/lib/theme/design-tokens.css",
           "type": "registry:file",
           "target": "@lib/theme/design-tokens.css"
+        },
+        {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
         },
         {
           "path": "src/lib/theme/palettes.css",
@@ -4301,6 +4601,11 @@
           "target": "@lib/theme/design-tokens.css"
         },
         {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
+        },
+        {
           "path": "src/lib/theme/palettes.css",
           "type": "registry:file",
           "target": "@lib/theme/palettes.css"
@@ -4368,6 +4673,11 @@
           "target": "@lib/theme/design-tokens.css"
         },
         {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
+        },
+        {
           "path": "src/lib/theme/palettes.css",
           "type": "registry:file",
           "target": "@lib/theme/palettes.css"
@@ -4433,6 +4743,11 @@
           "path": "src/lib/theme/design-tokens.css",
           "type": "registry:file",
           "target": "@lib/theme/design-tokens.css"
+        },
+        {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
         },
         {
           "path": "src/lib/theme/palettes.css",
@@ -4512,6 +4827,11 @@
           "target": "@lib/theme/design-tokens.css"
         },
         {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
+        },
+        {
           "path": "src/lib/theme/palettes.css",
           "type": "registry:file",
           "target": "@lib/theme/palettes.css"
@@ -4584,6 +4904,11 @@
           "target": "@lib/theme/design-tokens.css"
         },
         {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
+        },
+        {
           "path": "src/lib/theme/palettes.css",
           "type": "registry:file",
           "target": "@lib/theme/palettes.css"
@@ -4651,6 +4976,11 @@
           "target": "@lib/theme/design-tokens.css"
         },
         {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
+        },
+        {
           "path": "src/lib/theme/palettes.css",
           "type": "registry:file",
           "target": "@lib/theme/palettes.css"
@@ -4716,6 +5046,11 @@
           "path": "src/lib/theme/design-tokens.css",
           "type": "registry:file",
           "target": "@lib/theme/design-tokens.css"
+        },
+        {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
         },
         {
           "path": "src/lib/theme/palettes.css",
@@ -4790,6 +5125,11 @@
           "target": "@lib/theme/design-tokens.css"
         },
         {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
+        },
+        {
           "path": "src/lib/theme/palettes.css",
           "type": "registry:file",
           "target": "@lib/theme/palettes.css"
@@ -4855,6 +5195,11 @@
           "path": "src/lib/theme/design-tokens.css",
           "type": "registry:file",
           "target": "@lib/theme/design-tokens.css"
+        },
+        {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
         },
         {
           "path": "src/lib/theme/palettes.css",
@@ -5269,6 +5614,11 @@
           "path": "src/lib/theme/design-tokens.css",
           "type": "registry:file",
           "target": "@lib/theme/design-tokens.css"
+        },
+        {
+          "path": "src/lib/theme/icons.tsx",
+          "type": "registry:lib",
+          "target": "@lib/theme/icons.tsx"
         },
         {
           "path": "src/lib/theme/palettes.css",

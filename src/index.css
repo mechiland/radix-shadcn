@@ -5,6 +5,8 @@
 @import "./site.css";
 
 @custom-variant dark (&:is(.dark *));
+/* shadcn/create examples carry per-style variants; this site renders the nova preset structure. */
+@custom-variant style-nova (&:where(.style-nova, .style-nova *));
 
 @theme inline {
     --font-heading: var(--font-sans);

@@ -11,7 +11,7 @@ const buttonVariants = cva('ds-button', { variants:{
  },defaultVariants:{variant:'default',size:'default'}})
 type ButtonProps = ButtonPrimitive.Props & VariantProps<typeof buttonVariants> & { color?:AccentColor | (string & {}); highContrast?:boolean; loading?:boolean }
 function Button({className,variant='default',size='default',color,highContrast,loading,children,disabled,...props}: ButtonProps) {
- return <ButtonPrimitive {...props} disabled={disabled||loading} aria-busy={loading||undefined} data-slot="button" data-color={color} data-high-contrast={highContrast||undefined} data-loading={loading||undefined} className={cn(buttonVariants({variant,size}),className)}>
+ return <ButtonPrimitive data-slot="button" {...props} disabled={disabled||loading} aria-busy={loading||undefined} data-color={color} data-high-contrast={highContrast||undefined} data-loading={loading||undefined} className={cn(buttonVariants({variant,size}),className)}>
   {loading?<span className="ds-button-hidden">{children}</span>:children}{loading&&<Spinner aria-hidden className="ds-button-spinner"/>}
  </ButtonPrimitive>
 }

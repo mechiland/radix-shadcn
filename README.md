@@ -44,6 +44,8 @@ Theme 自动导入安装的主题 CSS。Registry target 遵循消费者 ui/lib/h
 - [验收和证据](docs/VALIDATION.md)：截图、diff、计算样式、交互、动画、安装与构建。
 - [上游署名与资源](docs/ATTRIBUTION.md)。
 
+- Showcase：radix-ui.com 首页的 6 个示例，用本系统的 shadcn/Base UI 组件重建（`#showcase/dashboard-light` 等）；原版在 reference 应用 `?home=dashboard-light`，可并排对照。
+
 主要源码：`src/components/ui/`、`src/lib/theme/`、`src/examples/`。`registry.json` 与 `public/r/` 由共享源生成，请勿单独修改生成文件。`reference/` 是隔离的 Radix Themes 对照应用，不进入生产构建。
 
 ```sh

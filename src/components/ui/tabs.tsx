@@ -58,7 +58,8 @@ function TabsList({
   )
 }
 
-function TabsTrigger({ className, ...props }: TabsPrimitive.Tab.Props) {
+function TabsTrigger({ className, children, ...props }: TabsPrimitive.Tab.Props) {
+  // Like Radix, a hidden medium-weight copy reserves the active width so selection never shifts the layout.
   return (
     <TabsPrimitive.Tab
       data-slot="tabs-trigger"
@@ -70,7 +71,10 @@ function TabsTrigger({ className, ...props }: TabsPrimitive.Tab.Props) {
         className
       )}
       {...props}
-    />
+    >
+      <span data-slot="tabs-trigger-inner">{children}</span>
+      <span data-slot="tabs-trigger-inner-hidden" aria-hidden>{children}</span>
+    </TabsPrimitive.Tab>
   )
 }
 

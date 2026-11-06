@@ -21,3 +21,15 @@
 - 最终视觉复核统一修正 Radio fixture 的水平布局；Select 对照放在距顶部相同的稳定区域，碰撞边界行为另以交互检查。卡片的选取材质 token 保留在 card-material.css；Ghost IconButton、Em/Quote 行高、Blockquote 缩进及 Select 指示器使用共享规则。
 - Tabs 的默认分段样式由公开 Tabs.Indicator 及 active-tab CSS variables 驱动，不读 DOM 几何自行定位。TabNav 与 Link 进入共享源码，Code 视图按真实适配关系读取源码。
 - 附件示例使用声明式 React context/state 移除和恢复；仅演示包装携带本地反馈，不污染 registry 组件。补齐原模板 Card/OTP 的表单关联，以及本地表单的字段名称和 submit 类型。片段/示例占位链接提供明确反馈，不跳走当前 Playground。
+
+## 第二轮像素修正（2026-11-06）
+
+- 层叠顺序：按钮的基础/变体样式移入 `@layer components`，使用者 `className` 中的 Tailwind utilities（`justify-start`、`w-12`、`rounded-full`、`absolute`…）按 shadcn 语义覆盖 Radix 默认值；站点元素重置移入 `@layer base`，不再压过组件的 `text-sm`。Button 允许调用方覆盖 `data-slot`（carousel/dialog 的按钮因此能被主题识别）。
+- 字号：主题根与 `.radix-themes` 一致（16px/1.5、antialiased）；shadcn 容器 Card、TabsContent、Popover、HoverCard、Dialog 描述统一为 text-sm = Radix size 2（14px/20px），Card 标题为 Heading size 3。Radix 中这些容器继承 16px，因此组件页的 Card/AlertDialog/Tabs/HoverCard 对照图会出现 14 vs 16 的文字差异，这是为 shadcn 语法和正文统一做的有意取舍。Radix 首页 Showcase 在其范围内恢复 Radix 的继承。
+- Text/Link：未指定 size/color 时继承（与 Radix 相同）；Text 应用对应字号的 letter-spacing；彩色文字里的无色 Link 为 accent-12 并常显下划线；新增 `underline="hover"`。
+- Ghost 按钮：独立使用时保留 Radix 的负 margin 修边；在 shadcn 组合组件（Calendar、Pagination、InputGroup、ButtonGroup、Sidebar、Carousel 等）内恢复为普通盒子，避免 hover/选中溢出与重叠。Ghost 文字按钮为 regular 字重；带显式尺寸的图标（Radix icons、`size-*`）不再被强制改为 16px。
+- Tabs/TabNav：采用 Radix 的“可见标签 + 隐藏的 medium 字重标签”结构，选中不再改变宽度；下划线 Tabs 使用 Radix 内层 hover 底色与 2px 指示条；新增竖排分段样式。
+- 灰色强调色：`color="gray"` 跟随主题灰阶（slate、mauve…），与 Radix 相同。
+- shadcn 扩展组件的 Radix 化：ButtonGroup 相邻无缝；Calendar 格子内 hover/选中、导航垂直居中；Command 重写为 TextField 搜索 + 32px 菜单项 + 实心强调色高亮；Combobox/InputGroup 焦点环画在整组上；NativeSelect/Select 使用 Radix 9px 实心箭头并为其预留空间；Tooltip 内 Kbd 为半透明反色；Slider 默认 surface 变体；InputGroup 支持 `variant="soft"`。
+- Examples 页按 shadcn/create 的 nova 结构渲染（`style-nova` 变体生效，包括 Portal 内容），宽度不足时横向滚动而不是压缩。主题面板在所有宽度下都可展开/收起。
+- Showcase：radix-ui.com 首页的 6 个展示（Dashboard/Ecommerce/Music × 亮/暗）。原版位于 `reference/src/home/`（`?home=<id>`），移植版位于 `src/showcase/`（`#showcase/<id>`，独立渲染 `?showcase=<id>`，`&bg=0` 去掉背景）。图片本地化到 `public/images/radix-home/`；图标以内联 SVG 复制，主应用不依赖 `@radix-ui/react-icons`。2000px 宽、无背景时与原版的像素差异：Dashboard 0.02%，Music 约 1.3%，Ecommerce 约 1.8%。

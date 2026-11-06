@@ -1,4 +1,6 @@
-* {box-sizing:border-box}body {margin:0}button,a,input,select,textarea {-webkit-tap-highlight-color:transparent}button {font:inherit}button:disabled {cursor:not-allowed}button:not(:disabled),a {touch-action:manipulation}h1,h2,h3,p {margin:0}fieldset {border:0;padding:0;margin:0}button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible {outline:2px solid var(--accent-8);outline-offset:2px}
+/* Element resets live in the base layer so component utilities (text-sm, font-medium…) keep precedence. */
+@layer base {* {box-sizing:border-box}body {margin:0}button,a,input,select,textarea {-webkit-tap-highlight-color:transparent}button {font:inherit}button:disabled {cursor:not-allowed}button:not(:disabled),a {touch-action:manipulation}h1,h2,h3,p {margin:0}fieldset {border:0;padding:0;margin:0}}
+button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible {outline:2px solid var(--accent-8);outline-offset:2px}
 .site-header {height:68px;border-bottom:1px solid var(--gray-a5);display:flex;align-items:center;gap:54px;padding:0 28px;position:sticky;top:0;background:var(--background);z-index:30;font-size:var(--font-size-2)}
 .brand {display:flex;align-items:center;gap:13px;text-decoration:none;font-size:18px;font-weight:600;white-space:nowrap;letter-spacing:-.5px}.brand-divider {color:var(--gray-a7);margin:0 8px;font-weight:400}.brand-secondary {font-size:14px;font-weight:400;letter-spacing:0;color:var(--gray-11)}
 .radix-mark {display:grid;grid-template-columns:9px 9px;gap:3px;width:21px;height:24px}.radix-mark i {background:currentColor;align-self:end;height:12px;border-radius:0 0 0 9px}.radix-mark b {background:currentColor;height:24px;border-radius:0 12px 12px 0}
@@ -20,3 +22,20 @@
 @media(max-width:700px) {.site-header {height:60px;padding-inline:16px;gap:18px}.brand {font-size:16px;gap:9px}.brand-secondary,.brand-divider,.source-link {display:none}.primary-nav {gap:16px}.primary-nav a {font-size:12px}.header-actions {gap:5px}.site-layout {display:block}.main-content {padding:28px 20px 0}.component-nav {display:none}.component-nav.is-open {display:flex;position:fixed;top:105px;left:0;width:240px;z-index:35;background:var(--background);height:calc(100dvh - 105px);box-shadow:var(--shadow-5)}.mobile-nav-button {display:flex;gap:9px;align-items:center;background:var(--gray-a2);border:0;border-bottom:1px solid var(--gray-a5);width:100%;padding:12px 20px;font-size:12px;color:var(--gray-11)}.page-kicker {font-size:9px}.page-title-row h1 {font-size:26px}.page-description {font-size:12px}.demo-toolbar {margin-top:24px}.variant-matrix {min-width:590px}.size-grid {gap:20px}.size-sample {min-width:120px}.site-footer {margin-top:40px;flex-direction:column;gap:8px}.theme-panel.is-open {top:60px;height:calc(100dvh - 60px)}.examples-canvas [data-slot=example-wrapper],.examples-canvas [data-slot=capture-target] {grid-template-columns:1fr}.examples-canvas [data-slot=example-content] {padding:20px}.install-main {padding:32px 20px 0}.install-main h1 {font-size:28px}.type-row {gap:12px}.ratio-grid {gap:12px}.theme-panel-actions .ds-button {font-size:12px}}
 .palette-grid .palette-item {min-height:0;display:flex;flex-direction:column;align-items:start;gap:12px}
 .embedded-example {width:100%;height:760px;border:1px solid var(--gray-a5);border-radius:var(--radius-4);background:var(--background)}
+/* Theme panel toggles at every width; on wide screens it collapses its grid column. */
+.theme-toggle {display:inline-flex}
+.site-layout[data-panel=closed] {grid-template-columns:202px minmax(0,1fr)}
+.site-layout[data-panel=closed] .theme-panel {display:none}
+@media(max-width:1200px) {.site-layout[data-panel=closed] {grid-template-columns:180px minmax(0,1fr)}}
+.showcase-canvas {margin-top:28px;margin-bottom:28px;overflow-x:auto;border:1px solid var(--gray-a5);border-radius:var(--radius-4)}
+.showcase-canvas>.ds-theme {min-height:0;display:inline-block;min-width:100%}
+/* Examples keep their natural width (shadcn/create renders them at max-w-5xl) and scroll horizontally instead of squeezing. */
+.examples-canvas {overflow-x:auto;overflow-y:hidden;padding:4px;margin-inline:-4px;scrollbar-width:thin}
+.examples-canvas .demo-surface [data-slot=example-wrapper] {min-width:960px}
+.examples-canvas .demo-surface [data-slot=capture-target] {min-width:900px;grid-template-columns:repeat(2,minmax(420px,1fr))}
+@media(min-width:1600px) {.examples-canvas [data-slot=capture-target] {grid-template-columns:repeat(3,minmax(380px,1fr))}}
+@media(max-width:1200px) {.examples-canvas [data-slot=example-wrapper] {grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px) {.examples-canvas .demo-surface [data-slot=example-wrapper] {min-width:0;grid-template-columns:1fr}.examples-canvas .demo-surface [data-slot=capture-target] {min-width:0;grid-template-columns:1fr}}
+/* Four primary sections must still fit a 390px header. */
+@media(max-width:700px) {.site-header {gap:14px}.primary-nav {gap:12px}.brand>span:not(.radix-mark) {display:none}}
+@media(max-width:420px) {.site-header {padding-inline:12px}.primary-nav {gap:10px}.primary-nav a {font-size:11.5px}}

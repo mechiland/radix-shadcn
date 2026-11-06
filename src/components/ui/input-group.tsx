@@ -4,14 +4,16 @@
 import * as React from "react"
 import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "cn"
+import { visualAttrs, type VisualProps } from "@/lib/theme/visual-props"
 
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 
-function InputGroup({ className, ...props }: React.ComponentProps<"div">) {
+function InputGroup({ className, color, highContrast, variant, scale, ...props }: Omit<React.ComponentProps<"div">, "color"> & VisualProps) {
   return (
     <div
+      {...visualAttrs({ color, highContrast, variant, scale })}
       data-slot="input-group"
       role="group"
       className={cn(
