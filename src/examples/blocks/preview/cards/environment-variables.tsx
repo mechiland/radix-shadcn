@@ -29,7 +29,7 @@ export function EnvironmentVariables() {
             className="flex items-center gap-2 rounded-md px-2.5 py-2 font-mono text-xs ring ring-border"
           >
             <span className="font-medium">{env.key}</span>
-            <span className="ml-auto text-muted-foreground">
+            <span className="ml-auto min-w-0 truncate text-muted-foreground">
               {env.masked ? "••••••••" : "https://api.example.com"}
             </span>
           </div>

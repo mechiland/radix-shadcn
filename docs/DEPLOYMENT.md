@@ -12,7 +12,9 @@ npm run build
 npm run preview -- --host 127.0.0.1 --port 4173
 ```
 
-`npm run build` 依次从共享源文件生成 registry、运行官方 `shadcn build`、TypeScript 检查及 Vite 生产构建。输出目录 `dist/` 可整体部署到任何支持静态 HTTP(S) 的服务。无后端、环境密钥、域名或付费服务依赖。本次没有执行公共部署。
+`npm run build` 依次从共享源文件生成 registry、运行官方 `shadcn build`、TypeScript 检查及 Vite 生产构建。输出目录 `dist/` 可整体部署到静态 HTTP(S) 服务。
+
+GitHub Actions 在 PR 中检查构建，并在更新 `main` 时将 `dist/` 发布到 GitHub Pages。线上入口为 [Create](https://migaoshuo.com/radix-shadcn/#create)。
 
 路由使用 URL hash：`/#components/button`、`/#examples/preview-02`、`/#install/button`。服务器无需 SPA rewrite；访问 `/` 和资源文件即可。Vite base 为 `./`，可部署在子目录；已通过 /nested/ 普通静态 HTTP 挂载验证。服务器须返回正确的 JS/CSS/JSON MIME，`/r/*.json` 不得重写成 index.html。
 
@@ -24,6 +26,8 @@ Registry 地址：
 - `/r/button.json` 等：按组件入口
 
 这些 JSON 内无 host-bound registryDependencies，部署后直接以真实 host 的完整 URL 安装即可。Install 页会按当前 origin 和 base 生成命令，无需改代码。
+
+`/#create` 提供实时主题预览、分享链接和项目初始化命令。命令通过 `/create/init.mjs` 调用 shadcn CLI 创建 Vite / Base UI 项目，安装完整 registry，并写入选定的 Radix 主题、shadcn 字体及图标库。静态部署需包含 `dist/create/init.mjs`。运行命令需要 Node.js、npm、Git 和 curl，并能访问当前站点、shadcn、GitHub 及 npm registry。
 
 ```sh
 # 在已有 React / Vite / Tailwind v4 项目中
