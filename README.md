@@ -2,6 +2,8 @@
 
 Radix Themes 的视觉语言，基于官方 shadcn/ui Base UI 本地组件构建。独立 Vite Playground 和静态 shadcn registry 直接共用组件与主题源码。
 
+[线上 Create](https://radix-shadcn.dev/#create)
+
 ```sh
 npm ci
 npm run dev
@@ -13,7 +15,7 @@ npm run build
 npm run preview -- --host 127.0.0.1 --port 4173
 ```
 
-构建结果在 `dist/`，可整体静态部署；hash 路由无需服务端 rewrite，不依赖 radix-shadcn.dev。
+构建结果在 `dist/`，可整体静态部署。Hash 路由可直接由静态服务器提供。
 
 从正在运行的网站安装：
 
