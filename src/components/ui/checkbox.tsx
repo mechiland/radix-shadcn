@@ -4,7 +4,7 @@ import { visualAttrs, type VisualProps } from "@/lib/theme/visual-props"
 
 import { Checkbox as CheckboxPrimitive } from "@base-ui/react/checkbox"
 import { cn } from "cn"
-import { CheckIcon, MinusIcon } from "lucide-react"
+import { ThickCheckIcon9, ThickMinusIcon9 } from "@/lib/theme/icons"
 
 function Checkbox({
   color, highContrast, variant, scale, className, ...props }: CheckboxPrimitive.Root.Props & VisualProps) {
@@ -21,9 +21,12 @@ function Checkbox({
       <CheckboxPrimitive.Indicator
         data-slot="checkbox-indicator"
         className="grid place-content-center text-current transition-none [&>svg]:size-3.5"
-      >
-        <>{props.indeterminate ? <MinusIcon/> : <CheckIcon/>}</>
-      </CheckboxPrimitive.Indicator>
+        render={(indicatorProps, state) => (
+          <span {...indicatorProps}>
+            {state.indeterminate ? <ThickMinusIcon9 /> : <ThickCheckIcon9 />}
+          </span>
+        )}
+      />
     </CheckboxPrimitive.Root>
   )
 }
