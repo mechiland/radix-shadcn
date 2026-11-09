@@ -14,7 +14,12 @@ npm run preview -- --host 127.0.0.1 --port 4173
 
 `npm run build` 依次从共享源文件生成 registry、运行官方 `shadcn build`、TypeScript 检查及 Vite 生产构建。输出目录 `dist/` 可整体部署到静态 HTTP(S) 服务。
 
-GitHub Actions 在 PR 中检查构建，并在更新 `main` 时将 `dist/` 发布到 GitHub Pages。线上入口为 [Create](https://migaoshuo.com/radix-shadcn/#create)。
+生产站点由 Cloudflare Pages 的 `radix-shadcn` 项目托管，线上入口为 [Create](https://radix-shadcn.dev/#create)。使用已获授权的 Wrangler 将构建产物上传到现有项目。
+
+```sh
+npm run build
+npx wrangler pages deploy dist --project-name radix-shadcn --branch main
+```
 
 路由使用 URL hash：`/#components/button`、`/#examples/preview-02`、`/#install/button`。服务器无需 SPA rewrite；访问 `/` 和资源文件即可。Vite base 为 `./`，可部署在子目录；已通过 /nested/ 普通静态 HTTP 挂载验证。服务器须返回正确的 JS/CSS/JSON MIME，`/r/*.json` 不得重写成 index.html。
 
