@@ -5,8 +5,8 @@ import { useThemePortal } from "@/lib/theme/theme"
 import * as React from "react"
 import { Select as SelectPrimitive } from "@base-ui/react/select"
 import { cn } from "cn"
-import { ChevronDownIcon, CheckIcon, ChevronUpIcon } from "lucide-react"
-import { ChevronDownIcon9 } from "@/lib/theme/icons"
+import { ChevronDownIcon, ChevronUpIcon } from "lucide-react"
+import { ChevronDownIcon9, ThickCheckIcon9 } from "@/lib/theme/icons"
 
 const Select = SelectPrimitive.Root
 
@@ -133,7 +133,7 @@ function SelectItem({
           <span className="pointer-events-none absolute left-2 flex size-4 items-center justify-center" />
         }
       >
-        <CheckIcon className="pointer-events-none" />
+        <ThickCheckIcon9 className="pointer-events-none" />
       </SelectPrimitive.ItemIndicator>
     </SelectPrimitive.Item>
   )
