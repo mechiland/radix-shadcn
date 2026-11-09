@@ -58,7 +58,7 @@ export function StyleOverview() {
           ].map((variant) => (
             <div
               key={variant}
-              className="flex flex-col flex-wrap items-center gap-2"
+              className="flex min-w-0 flex-col items-center gap-2"
             >
               <div
                 className="relative aspect-square w-full rounded-lg bg-(--color) after:absolute after:inset-0 after:rounded-lg after:border after:border-border after:mix-blend-darken dark:after:mix-blend-lighten style-sera:rounded-none style-sera:after:rounded-none"
@@ -68,7 +68,7 @@ export function StyleOverview() {
                   } as React.CSSProperties
                 }
               />
-              <div className="hidden max-w-14 truncate font-mono text-[0.60rem] md:block style-lyra:max-w-10 style-mira:max-w-10">
+              <div title={variant} className="hidden max-w-full truncate font-mono text-[0.60rem] md:block style-lyra:max-w-10 style-mira:max-w-10">
                 {variant}
               </div>
             </div>

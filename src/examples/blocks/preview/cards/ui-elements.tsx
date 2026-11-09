@@ -118,7 +118,7 @@ export function UIElements() {
             <Textarea aria-label="Message" placeholder="Message" className="resize-none" />
           </Field>
         </FieldGroup>
-        <div className="flex items-center gap-2">
+        <div className="flex flex-wrap items-center gap-2">
           <div className="flex gap-2">
             <Badge>Badge</Badge>
             <Badge variant="secondary">Secondary</Badge>
@@ -133,7 +133,7 @@ export function UIElements() {
             <Checkbox aria-label="Example checkbox" />
           </div>
         </div>
-        <div className="flex items-center gap-4">
+        <div className="flex flex-wrap items-center gap-4">
           <AlertDialog>
             <AlertDialogTrigger render={<Button aria-label="Open options" variant="outline" />}>
               <span className="hidden md:flex style-sera:md:hidden">
