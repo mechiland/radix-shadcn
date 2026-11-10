@@ -1,5 +1,45 @@
 import { expect, test } from '@playwright/test'
 
+test('Alert Dialog Playground uses the official layout for each size', async ({ page }) => {
+  // From the Radix Themes Playground at 100% scaling.
+  const sizes = [
+    { size: 1, width: 300, padding: 12, radius: 8, title: 14, titleGap: 4, description: 12, line: 16, footerGap: 12, buttonGap: 8, trigger: 24, button: 24 },
+    { size: 2, width: 400, padding: 16, radius: 8, title: 20, titleGap: 8, description: 14, line: 20, footerGap: 16, buttonGap: 12, trigger: 32, button: 32 },
+    { size: 3, width: 400, padding: 24, radius: 12, title: 20, titleGap: 12, description: 14, line: 20, footerGap: 16, buttonGap: 12, trigger: 40, button: 32 },
+    { size: 4, width: 450, padding: 32, radius: 12, title: 24, titleGap: 12, description: 16, line: 24, footerGap: 24, buttonGap: 12, trigger: 48, button: 40 },
+  ]
+  await page.emulateMedia({ reducedMotion: 'reduce' })
+  await page.goto('/#components/alert-dialog')
+  for (const { size, ...expected } of sizes) {
+    await test.step(`Size ${size}`, async () => {
+      const trigger = page.getByRole('button', { name: 'Open', exact: true }).nth(size - 1)
+      const triggerHeight = await trigger.evaluate(el => parseFloat(getComputedStyle(el).height))
+      await trigger.click()
+      const dialog = page.getByRole('alertdialog', { name: 'Revoke access' })
+      await expect(dialog).toHaveCSS('opacity', '1')
+      const layout = await dialog.evaluate(popup => {
+        const title = popup.querySelector('h2')!
+        const description = popup.querySelector('p')!
+        const [cancel, confirm] = popup.querySelectorAll('button')
+        const pixels = (el: Element, property: string) => parseFloat(getComputedStyle(el).getPropertyValue(property))
+        return {
+          width: pixels(popup, 'width'), padding: pixels(popup, 'padding-left'), radius: pixels(popup, 'border-top-left-radius'),
+          title: pixels(title, 'font-size'), titleGap: pixels(title, 'margin-bottom'),
+          description: pixels(description, 'font-size'), line: pixels(description, 'line-height'),
+          footerGap: Math.round(cancel.getBoundingClientRect().top - description.getBoundingClientRect().bottom),
+          buttonGap: Math.round(confirm.getBoundingClientRect().left - cancel.getBoundingClientRect().right),
+          button: pixels(confirm, 'height'),
+        }
+      })
+      expect({ ...layout, trigger: triggerHeight }).toEqual(expected)
+      await expect(dialog).toHaveAccessibleDescription(/existing sessions will be expired/)
+      await expect(dialog.getByRole('button', { name: 'Revoke', exact: true })).toBeVisible()
+      await dialog.getByRole('button', { name: 'Cancel' }).click()
+      await expect(dialog).toBeHidden()
+    })
+  }
+})
+
 test('Classic button retains its material on keyboard focus and depresses on pointer down', async ({ page }) => {
   await page.goto('/?fixture=1&component=button')
   const button = page.getByRole('button', { name: 'classic', exact: true })

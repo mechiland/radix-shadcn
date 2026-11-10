@@ -48,7 +48,31 @@ function Sizes({children,count=3}:{children:(n:any)=>React.ReactNode;count?:numb
 export function DemoSelect({scale=2,variant='surface',disabled=false,alignItemWithTrigger=true,highContrast=false,readOnly=false,invalid=false}:{scale?:1|2|3;variant?:string;disabled?:boolean;alignItemWithTrigger?:boolean;highContrast?:boolean;readOnly?:boolean;invalid?:boolean}) {return <Select defaultValue="apple" items={[{label:'Apple',value:'apple'},{label:'Banana',value:'banana'},{label:'Blueberry',value:'blueberry'}]} disabled={disabled} readOnly={readOnly}><SelectTrigger aria-invalid={invalid||undefined} aria-label={highContrast?"High contrast fruit":readOnly?"Read only fruit":invalid?"Invalid fruit":"Fruit"} data-scale={scale} data-variant={variant}><SelectValue/></SelectTrigger><SelectContent data-high-contrast={highContrast||undefined} alignItemWithTrigger={alignItemWithTrigger}><SelectGroup><SelectLabel>Fruit</SelectLabel><SelectItem value="apple">Apple</SelectItem><SelectItem value="banana">Banana</SelectItem><SelectItem value="blueberry">Blueberry</SelectItem><SelectItem value="grape" disabled>Grape</SelectItem></SelectGroup></SelectContent></Select>}
 export function DemoDialog({alert=false,size=3}:{alert?:boolean;size?:number}) {
  const [deleted,setDeleted]=React.useState(false)
- if(alert)return <AlertDialog><AlertDialogTrigger render={<Button color="red" variant="soft"/>}>Open</AlertDialogTrigger><AlertDialogContent data-scale={size}><AlertDialogTitle>Revoke access</AlertDialogTitle><AlertDialogDescription>Are you sure? This application will no longer have access to your account.</AlertDialogDescription><AlertDialogFooter><AlertDialogCancel variant="soft" color="gray">Cancel</AlertDialogCancel><AlertDialogAction color="red" onClick={()=>{setDeleted(true);toast.success('Access revoked in this demo')}}>Revoke access</AlertDialogAction></AlertDialogFooter></AlertDialogContent>{deleted&&<span role="status">Access revoked</span>}</AlertDialog>
+ if (alert) {
+  const triggerSize = String(size) as '1' | '2' | '3' | '4'
+  const actionSize = size === 1 ? '1' : size === 4 ? '3' : '2'
+  return (
+    <AlertDialog>
+      <AlertDialogTrigger render={<Button size={triggerSize} />}>Open</AlertDialogTrigger>
+      <AlertDialogContent className="playground-alert-dialog" data-scale={size}>
+        <AlertDialogTitle>Revoke access</AlertDialogTitle>
+        <AlertDialogDescription>
+          Are you sure? This application will no longer be accessible and any existing sessions will be expired.
+        </AlertDialogDescription>
+        <AlertDialogFooter>
+          <AlertDialogCancel size={actionSize} variant="soft" color="gray">Cancel</AlertDialogCancel>
+          <AlertDialogAction size={actionSize} color="red" onClick={() => {
+            setDeleted(true)
+            toast.success('Access revoked in this demo')
+          }}>
+            Revoke
+          </AlertDialogAction>
+        </AlertDialogFooter>
+      </AlertDialogContent>
+      {deleted && <span role="status">Access revoked</span>}
+    </AlertDialog>
+  )
+ }
  return <Dialog><DialogTrigger render={<Button variant="soft"/>}>Open</DialogTrigger><DialogContent data-scale={size} showCloseButton={false}><DialogTitle>Edit profile</DialogTitle><DialogDescription size={2}>Make changes to your profile.</DialogDescription><form onSubmit={e=>{e.preventDefault();announce()}}><label className="field-label">Name<Input name="name" defaultValue="Pedro Duarte" required/></label><label className="field-label">Email<Input name="email" type="email" defaultValue="pedro@example.com" required/></label><DialogFooter><DialogClose render={<Button variant="soft" color="gray"/>}>Cancel</DialogClose><DialogClose render={<Button/>} onClick={announce}>Save changes</DialogClose></DialogFooter></form></DialogContent></Dialog>
 }
 export function MenuDemo({variant='solid',scale=2,highContrast=false}:{variant?:'solid'|'soft';scale?:number;highContrast?:boolean}) {const [bookmarked,setBookmarked]=React.useState(true);return <DropdownMenu><DropdownMenuTrigger aria-label={highContrast?"High contrast options":undefined} render={<Button variant="soft"/>}>Options <MoreHorizontal size={14}/></DropdownMenuTrigger><DropdownMenuContent data-high-contrast={highContrast||undefined} data-variant={variant} data-scale={scale}><DropdownMenuItem onClick={()=>toast('New tab opened in this local demo')}>New tab <DropdownMenuShortcut>⌘T</DropdownMenuShortcut></DropdownMenuItem><DropdownMenuItem disabled>New window</DropdownMenuItem><DropdownMenuSub><DropdownMenuSubTrigger>More tools</DropdownMenuSubTrigger><DropdownMenuSubContent data-high-contrast={highContrast||undefined}><DropdownMenuItem onClick={()=>toast('Bookmark added')}>Bookmark page</DropdownMenuItem></DropdownMenuSubContent></DropdownMenuSub><DropdownMenuSeparator/><DropdownMenuCheckboxItem checked={bookmarked} onCheckedChange={setBookmarked}>Show bookmarks</DropdownMenuCheckboxItem><DropdownMenuRadioGroup defaultValue="comfortable"><DropdownMenuRadioItem value="compact">Compact</DropdownMenuRadioItem><DropdownMenuRadioItem value="comfortable">Comfortable</DropdownMenuRadioItem></DropdownMenuRadioGroup><DropdownMenuSeparator/><DropdownMenuItem variant="destructive" onClick={()=>toast('Item deleted from demo')}>Delete</DropdownMenuItem></DropdownMenuContent></DropdownMenu>}

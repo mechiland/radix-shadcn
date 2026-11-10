@@ -41,7 +41,8 @@ export function ComparisonFixture({id}:{id:string}) {let sample
  case 'text-field':sample=<>{variants.map(v=><Input key={v} variant={v} placeholder="Search the docs…" style={{width:210}} aria-label={v}/>)}</>;break
  case 'text-area':sample=<>{variants.map(v=><Textarea key={v} variant={v} placeholder="Reply to comment…" style={{width:210}} aria-label={v}/>)}</>;break
  case 'select':sample=<DemoSelect alignItemWithTrigger={new URLSearchParams(location.search).get('position')!=='popper'}/>;break
- case 'dialog':case 'alert-dialog':sample=<DemoDialog alert={id==='alert-dialog'}/>;break
+ case 'dialog':sample=<DemoDialog/>;break
+ case 'alert-dialog':sample=[1,2,3,4].map(size=><DemoDialog key={size} alert size={size}/>);break
  case 'dropdown-menu':sample=<MenuDemo/>;break
  case 'context-menu':sample=<ContextMenu><ContextMenuTrigger style={{padding:32,border:'1px dashed var(--gray-a7)',borderRadius:'var(--radius-3)'}}>Right click here</ContextMenuTrigger><ContextMenuContent><ContextMenuItem>Open</ContextMenuItem><ContextMenuItem>Copy link</ContextMenuItem></ContextMenuContent></ContextMenu>;break
  case 'popover':sample=<Popover><PopoverTrigger render={<Button variant="soft"/>}>Comment</PopoverTrigger><PopoverContent><Heading size={3}>Add a comment</Heading><Textarea placeholder="Write a comment…" aria-label="Comment"/></PopoverContent></Popover>;break

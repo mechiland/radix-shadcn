@@ -15,9 +15,23 @@ async function pair(name,selectors,prepare){const images=[];const geometry=[]
 for(const appearance of ['light','dark'])for(const item of inventory.radix.filter(x=>!process.env.COMPONENTS||process.env.COMPONENTS.split(',').includes(x.id))){const theme={accentColor:'indigo',grayColor:'auto',appearance,radius:'medium',scaling:'100%',panelBackground:'translucent'},q=encodeURIComponent(JSON.stringify(theme))
  await Promise.all([pages[0].goto(`http://localhost:5174/?component=${item.id}&theme=${q}`),pages[1].goto(`http://localhost:5173/?fixture=1&component=${item.id}&theme=${q}`)])
  await pair(`${item.id}-${appearance}`,['#comparison-fixture','#comparison-fixture'])
- if(appearance==='light'&&['dialog','alert-dialog','dropdown-menu','context-menu','popover','hover-card','select','tooltip'].includes(item.id)){
-  const open=async page=>{switch(item.id){case 'dialog':case 'alert-dialog':await page.getByRole('button',{name:'Open',exact:true}).click();break;case 'dropdown-menu':await page.getByRole('button',{name:/Options/}).click();break;case 'context-menu':await page.getByText('Right click here',{exact:true}).click({button:'right'});break;case 'popover':await page.getByRole('button',{name:'Comment',exact:true}).click();break;case 'hover-card':await page.getByRole('link',{name:'Radix UI'}).hover();break;case 'select':await page.getByRole('combobox',{name:'Fruit'}).press('ArrowDown');break;case 'tooltip':await page.getByRole('button',{name:'Hover me'}).hover();break}}
-  const refs={'dialog':'.rt-BaseDialogContent','alert-dialog':'.rt-BaseDialogContent','dropdown-menu':'.rt-DropdownMenuContent','context-menu':'.rt-ContextMenuContent','popover':'.rt-PopoverContent','hover-card':'.rt-HoverCardContent','select':'.rt-SelectContent','tooltip':'.rt-TooltipContent'}
+ if (item.id === 'alert-dialog') {
+  for (const size of [1, 2, 3, 4]) {
+   await pair(`alert-dialog-size-${size}-${appearance}-open`, ['.rt-AlertDialogContent', '[data-slot=alert-dialog-content]'],
+    async page => {
+     await page.getByRole('button', { name: 'Open', exact: true }).nth(size - 1).click()
+     // Base UI removes its starting style after the first paint.
+     await page.locator('[data-slot=alert-dialog-content][data-starting-style]').waitFor({ state: 'detached' })
+    })
+   await Promise.all(pages.map(async page => {
+    await page.keyboard.press('Escape')
+    await page.getByRole('alertdialog').waitFor({ state: 'hidden' })
+   }))
+  }
+ }
+ if(appearance==='light'&&['dialog','dropdown-menu','context-menu','popover','hover-card','select','tooltip'].includes(item.id)){
+  const open=async page=>{switch(item.id){case 'dialog':await page.getByRole('button',{name:'Open',exact:true}).click();break;case 'dropdown-menu':await page.getByRole('button',{name:/Options/}).click();break;case 'context-menu':await page.getByText('Right click here',{exact:true}).click({button:'right'});break;case 'popover':await page.getByRole('button',{name:'Comment',exact:true}).click();break;case 'hover-card':await page.getByRole('link',{name:'Radix UI'}).hover();break;case 'select':await page.getByRole('combobox',{name:'Fruit'}).press('ArrowDown');break;case 'tooltip':await page.getByRole('button',{name:'Hover me'}).hover();break}}
+  const refs={'dialog':'.rt-BaseDialogContent','dropdown-menu':'.rt-DropdownMenuContent','context-menu':'.rt-ContextMenuContent','popover':'.rt-PopoverContent','hover-card':'.rt-HoverCardContent','select':'.rt-SelectContent','tooltip':'.rt-TooltipContent'}
   await pair(`${item.id}-open`,[refs[item.id],`[data-slot=${item.id==='select'?'select':item.id}-content]`],open)
  }
  if(appearance==='light'&&item.id==='select'){

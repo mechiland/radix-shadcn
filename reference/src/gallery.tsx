@@ -1,4 +1,4 @@
-import { Button,IconButton,Badge,Avatar,Checkbox,CheckboxCards,Radio,RadioGroup,RadioCards,Switch,TextField,TextArea,Select,Dialog,AlertDialog,DropdownMenu,ContextMenu,Popover,HoverCard,Tooltip,Card,Callout,DataList,Progress,Slider,ScrollArea,Separator,Skeleton,Spinner,AspectRatio,Inset,Kbd,Em,Quote,Strong,Code,Link,Heading,Blockquote,Text,Tabs,SegmentedControl,TabNav,Table } from '@radix-ui/themes'
+import { Button,IconButton,Badge,Avatar,Checkbox,CheckboxCards,Radio,RadioGroup,RadioCards,Switch,TextField,TextArea,Select,Dialog,AlertDialog,Flex,DropdownMenu,ContextMenu,Popover,HoverCard,Tooltip,Card,Callout,DataList,Progress,Slider,ScrollArea,Separator,Skeleton,Spinner,AspectRatio,Inset,Kbd,Em,Quote,Strong,Code,Link,Heading,Blockquote,Text,Tabs,SegmentedControl,TabNav,Table } from '@radix-ui/themes'
 const variants=['classic','surface','soft'] as const
 const text='The quick brown fox jumps over the lazy dog.'
 export function Gallery({id}:{id:string}){let sample
@@ -15,7 +15,31 @@ export function Gallery({id}:{id:string}){let sample
  case 'text-area':sample=<>{variants.map(v=><TextArea key={v} variant={v} placeholder="Reply to comment…" style={{width:210}}/>)}</>;break
  case 'select':sample=<Select.Root defaultValue="apple"><Select.Trigger aria-label="Fruit"/><Select.Content position={new URLSearchParams(location.search).get("position")==="popper"?"popper":"item-aligned"}><Select.Group><Select.Label>Fruit</Select.Label><Select.Item value="apple">Apple</Select.Item><Select.Item value="banana">Banana</Select.Item><Select.Item value="blueberry">Blueberry</Select.Item><Select.Item disabled value="grape">Grape</Select.Item></Select.Group></Select.Content></Select.Root>;break
  case 'dialog':sample=<Dialog.Root><Dialog.Trigger><Button variant="soft">Open</Button></Dialog.Trigger><Dialog.Content size="3" maxWidth="450px"><Dialog.Title>Edit profile</Dialog.Title><Dialog.Description size="2" mb="4">Make changes to your profile.</Dialog.Description><form><label style={{display:"flex",flexDirection:"column",gap:8,marginBottom:16,fontSize:14,fontWeight:500,lineHeight:"20px"}}>Name<TextField.Root defaultValue="Pedro Duarte"/></label><label style={{display:"flex",flexDirection:"column",gap:8,marginBottom:16,fontSize:14,fontWeight:500,lineHeight:"20px"}}>Email<TextField.Root defaultValue="pedro@example.com"/></label><div style={{display:'flex',gap:12,justifyContent:'end',marginTop:16}}><Dialog.Close><Button variant="soft" color="gray">Cancel</Button></Dialog.Close><Dialog.Close><Button>Save changes</Button></Dialog.Close></div></form></Dialog.Content></Dialog.Root>;break
- case 'alert-dialog':sample=<AlertDialog.Root><AlertDialog.Trigger><Button color="red" variant="soft">Open</Button></AlertDialog.Trigger><AlertDialog.Content size="3" maxWidth="450px"><AlertDialog.Title>Revoke access</AlertDialog.Title><AlertDialog.Description>Are you sure? This application will no longer have access to your account.</AlertDialog.Description><div style={{display:'flex',gap:12,justifyContent:'end',marginTop:24}}><AlertDialog.Cancel><Button variant="soft" color="gray">Cancel</Button></AlertDialog.Cancel><AlertDialog.Action><Button color="red">Revoke access</Button></AlertDialog.Action></div></AlertDialog.Content></AlertDialog.Root>;break
+ case 'alert-dialog': {
+  // The four Alert Dialog examples in the pinned Radix Themes Playground.
+  const sizes = [
+    { size: '1', width: 300, title: '2', titleMargin: '1', description: '1', margin: '3', gap: '2', action: '1' },
+    { size: '2', width: 400, title: '5', titleMargin: '2', description: '2', margin: '4', gap: '3', action: '2' },
+    { size: '3', width: 400, title: '5', titleMargin: '3', description: '2', margin: '4', gap: '3', action: '2' },
+    { size: '4', width: 450, title: '6', titleMargin: '3', description: '3', margin: '5', gap: '3', action: '3' },
+  ] as const
+  sample = sizes.map(({ size, width, title, titleMargin, description, margin, gap, action }) => (
+    <AlertDialog.Root key={size}>
+      <AlertDialog.Trigger><Button size={size}>Open</Button></AlertDialog.Trigger>
+      <AlertDialog.Content size={size} style={{ width: `calc(${width}px * var(--scaling))` }}>
+        <AlertDialog.Title size={title} mb={titleMargin}>Revoke access</AlertDialog.Title>
+        <AlertDialog.Description size={description} mb={margin}>
+          Are you sure? This application will no longer be accessible and any existing sessions will be expired.
+        </AlertDialog.Description>
+        <Flex gap={gap} mt={margin} justify="end">
+          <AlertDialog.Cancel><Button size={action} variant="soft" color="gray">Cancel</Button></AlertDialog.Cancel>
+          <AlertDialog.Action><Button size={action} color="red">Revoke</Button></AlertDialog.Action>
+        </Flex>
+      </AlertDialog.Content>
+    </AlertDialog.Root>
+  ))
+  break
+ }
  case 'dropdown-menu':sample=<DropdownMenu.Root><DropdownMenu.Trigger><Button variant="soft">Options <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></svg></Button></DropdownMenu.Trigger><DropdownMenu.Content><DropdownMenu.Item shortcut="⌘T">New tab</DropdownMenu.Item><DropdownMenu.Item disabled>New window</DropdownMenu.Item><DropdownMenu.Sub><DropdownMenu.SubTrigger>More tools</DropdownMenu.SubTrigger><DropdownMenu.SubContent><DropdownMenu.Item>Bookmark page</DropdownMenu.Item></DropdownMenu.SubContent></DropdownMenu.Sub><DropdownMenu.Separator/><DropdownMenu.CheckboxItem checked>Show bookmarks</DropdownMenu.CheckboxItem><DropdownMenu.RadioGroup value="comfortable"><DropdownMenu.RadioItem value="compact">Compact</DropdownMenu.RadioItem><DropdownMenu.RadioItem value="comfortable">Comfortable</DropdownMenu.RadioItem></DropdownMenu.RadioGroup><DropdownMenu.Separator/><DropdownMenu.Item color="red">Delete</DropdownMenu.Item></DropdownMenu.Content></DropdownMenu.Root>;break
  case 'context-menu':sample=<ContextMenu.Root><ContextMenu.Trigger><div style={{padding:32,border:'1px dashed var(--gray-a7)',borderRadius:'var(--radius-3)'}}>Right click here</div></ContextMenu.Trigger><ContextMenu.Content><ContextMenu.Item>Open</ContextMenu.Item><ContextMenu.Item>Copy link</ContextMenu.Item></ContextMenu.Content></ContextMenu.Root>;break
  case 'popover':sample=<Popover.Root><Popover.Trigger><Button variant="soft">Comment</Button></Popover.Trigger><Popover.Content><Heading size="3">Add a comment</Heading><TextArea placeholder="Write a comment…"/></Popover.Content></Popover.Root>;break
