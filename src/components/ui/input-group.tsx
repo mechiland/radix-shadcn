@@ -4,16 +4,16 @@
 import * as React from "react"
 import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "cn"
-import { visualAttrs, type VisualProps } from "@/lib/theme/visual-props"
+import { visualAttrs, type RadixSize, type VisualProps } from "@/lib/theme/visual-props"
 
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 
-function InputGroup({ className, color, highContrast, variant, scale, ...props }: Omit<React.ComponentProps<"div">, "color"> & VisualProps) {
+function InputGroup({ className, color, highContrast, variant, scale, size, ...props }: Omit<React.ComponentProps<"div">, "color"> & VisualProps & { size?: RadixSize<1 | 2 | 3> }) {
   return (
     <div
-      {...visualAttrs({ color, highContrast, variant, scale })}
+      {...visualAttrs({ color, highContrast, variant, scale, size })}
       data-slot="input-group"
       role="group"
       className={cn(
@@ -122,7 +122,7 @@ function InputGroupText({ className, ...props }: React.ComponentProps<"span">) {
 function InputGroupInput({
   className,
   ...props
-}: React.ComponentProps<"input">) {
+}: React.ComponentProps<typeof Input>) {
   return (
     <Input
       data-slot="input-group-control"

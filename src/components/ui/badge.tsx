@@ -1,4 +1,4 @@
-import { visualAttrs, type VisualProps } from "@/lib/theme/visual-props"
+import { visualAttrs, type RadixSize, type VisualProps } from "@/lib/theme/visual-props"
 import { mergeProps } from "@base-ui/react/merge-props"
 import { useRender } from "@base-ui/react/use-render"
 import { cva, type VariantProps } from "class-variance-authority"
@@ -31,14 +31,14 @@ const badgeVariants = cva(
 function Badge({
   className,
   variant = "default",
-  render, color, highContrast, scale,
+  render, color, highContrast, scale, size,
   ...props
-}: useRender.ComponentProps<"span"> & VariantProps<typeof badgeVariants> & Omit<VisualProps,"variant">) {
+}: useRender.ComponentProps<"span"> & VariantProps<typeof badgeVariants> & Omit<VisualProps,"variant"> & { size?: RadixSize<1 | 2 | 3> }) {
   return useRender({
     defaultTagName: "span",
     props: mergeProps<"span">(
       {
-        ...visualAttrs({color,highContrast,scale}),
+        ...visualAttrs({color,highContrast,scale,size}),
         ...{ "data-variant":variant },
         className: cn(badgeVariants({ variant }), className),
       },

@@ -1,8 +1,9 @@
 import type { ComponentProps } from "react"
 import { cn } from "cn"
+import { radixScale, type RadixSize } from "@/lib/theme/visual-props"
 
-function TabNav({ className, size = 2, ...props }: ComponentProps<"nav"> & { size?: 1 | 2 }) {
-  return <nav data-slot="tab-nav" data-scale={size} className={cn("ds-tab-nav", className)} {...props} />
+function TabNav({ className, size = 2, ...props }: ComponentProps<"nav"> & { size?: RadixSize<1 | 2> }) {
+  return <nav data-slot="tab-nav" data-scale={radixScale(size)} className={cn("ds-tab-nav", className)} {...props} />
 }
 
 function TabNavLink({ active, className, children, ...props }: ComponentProps<"a"> & { active?: boolean }) {

@@ -4,15 +4,21 @@
 import { Tabs as TabsPrimitive } from "@base-ui/react/tabs"
 import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "cn"
+import { radixScale, type RadixSize } from "@/lib/theme/visual-props"
 
 function Tabs({
   className,
   orientation = "horizontal",
+  size,
   ...props
-}: TabsPrimitive.Root.Props) {
+}: TabsPrimitive.Root.Props & {
+  /** Radix Tabs use sizes 1-2; the Segmented Control (default list) also uses 3. */
+  size?: RadixSize<1 | 2 | 3>
+}) {
   return (
     <TabsPrimitive.Root
       data-slot="tabs"
+      data-scale={radixScale(size)}
       data-orientation={orientation}
       className={cn(
         "group/tabs flex gap-2 data-horizontal:flex-col",

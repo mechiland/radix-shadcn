@@ -1,6 +1,7 @@
 "use client"
 
 import { useThemePortal } from "@/lib/theme/theme"
+import { radixScale, type RadixSize } from "@/lib/theme/visual-props"
 
 import * as React from "react"
 import { ContextMenu as ContextMenuPrimitive } from "@base-ui/react/context-menu"
@@ -30,18 +31,24 @@ function ContextMenuTrigger({
   )
 }
 
+// Submenus inherit the Radix size of the menu that opens them.
+const ContextMenuSizeContext = React.createContext<RadixSize<1 | 2> | undefined>(undefined)
+
 function ContextMenuContent({
   className,
   align = "start",
   alignOffset = 4,
   side = "right",
   sideOffset = 0,
+  size,
   ...props
-}: ContextMenuPrimitive.Popup.Props &
+}: { size?: RadixSize<1 | 2> } & ContextMenuPrimitive.Popup.Props &
   Pick<
     ContextMenuPrimitive.Positioner.Props,
     "align" | "alignOffset" | "side" | "sideOffset"
   >) {
+  const inheritedSize = React.useContext(ContextMenuSizeContext)
+  const menuSize = size ?? inheritedSize
   return (
     <ContextMenuPrimitive.Portal container={useThemePortal()}>
       <ContextMenuPrimitive.Positioner
@@ -51,11 +58,14 @@ function ContextMenuContent({
         side={side}
         sideOffset={sideOffset}
       >
-        <ContextMenuPrimitive.Popup
-          data-slot="context-menu-content"
-          className={cn("z-50 max-h-(--available-height) min-w-36 origin-(--transform-origin) overflow-x-hidden overflow-y-auto rounded-lg bg-popover p-1 text-popover-foreground shadow-md ring-1 ring-foreground/10 duration-100 outline-none data-[side=bottom]:slide-in-from-top-2 data-[side=inline-end]:slide-in-from-left-2 data-[side=inline-start]:slide-in-from-right-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 data-open:animate-in data-open:fade-in-0 data-open:zoom-in-95 data-closed:animate-out data-closed:fade-out-0 data-closed:zoom-out-95", className )}
-          {...props}
-        />
+        <ContextMenuSizeContext.Provider value={menuSize}>
+          <ContextMenuPrimitive.Popup
+            data-slot="context-menu-content"
+            data-scale={radixScale(menuSize)}
+            className={cn("z-50 max-h-(--available-height) min-w-36 origin-(--transform-origin) overflow-x-hidden overflow-y-auto rounded-lg bg-popover p-1 text-popover-foreground shadow-md ring-1 ring-foreground/10 duration-100 outline-none data-[side=bottom]:slide-in-from-top-2 data-[side=inline-end]:slide-in-from-left-2 data-[side=inline-start]:slide-in-from-right-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 data-open:animate-in data-open:fade-in-0 data-open:zoom-in-95 data-closed:animate-out data-closed:fade-out-0 data-closed:zoom-out-95", className )}
+            {...props}
+          />
+        </ContextMenuSizeContext.Provider>
       </ContextMenuPrimitive.Positioner>
     </ContextMenuPrimitive.Portal>
   )

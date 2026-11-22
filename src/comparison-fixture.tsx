@@ -32,7 +32,7 @@ export function ComparisonFixture({id}:{id:string}) {let sample
  switch(id){
  case 'button':case 'icon-button':sample=<>{(['classic','solid','soft','surface','outline','ghost'] as const).map(v=><Button variant={v} key={v} size={id==='icon-button'?'icon':'default'} aria-label={v}>{id==='icon-button'?<Star/>:'Next'}</Button>)}</>;break
  case 'badge':sample=<>{(['solid','soft','surface','outline'] as const).map(v=><Badge variant={v} key={v}>New</Badge>)}</>;break
- case 'avatar':sample=<>{[1,2,3,4,5].map(n=><Avatar data-scale={n} key={n}><AvatarFallback>JD</AvatarFallback></Avatar>)}</>;break
+ case 'avatar':sample=<>{([1,2,3,4,5] as const).map(n=><Avatar size={n} key={n}><AvatarFallback>JD</AvatarFallback></Avatar>)}</>;break
  case 'checkbox':case 'checkbox-group':sample=<>{variants.map(v=><div key={v} style={{display:'flex',gap:12}}><Checkbox variant={v} aria-label={v}/><Checkbox variant={v} defaultChecked aria-label={v+' checked'}/><Checkbox variant={v} indeterminate aria-label={v+' mixed'}/></div>)}</>;break
  case 'checkbox-cards':sample=<><CheckboxCard defaultChecked>Next.js</CheckboxCard><CheckboxCard>Remix</CheckboxCard></>;break
  case 'radio-cards':sample=<RadioGroup defaultValue="next" style={{display:'flex',gap:16}}><RadioCard value="next">Next.js</RadioCard><RadioCard value="remix">Remix</RadioCard></RadioGroup>;break
@@ -42,7 +42,7 @@ export function ComparisonFixture({id}:{id:string}) {let sample
  case 'text-area':sample=<>{variants.map(v=><Textarea key={v} variant={v} placeholder="Reply to comment…" style={{width:210}} aria-label={v}/>)}</>;break
  case 'select':sample=<DemoSelect alignItemWithTrigger={new URLSearchParams(location.search).get('position')!=='popper'}/>;break
  case 'dialog':sample=<DemoDialog/>;break
- case 'alert-dialog':sample=[1,2,3,4].map(size=><DemoDialog key={size} alert size={size}/>);break
+ case 'alert-dialog':sample=([1,2,3,4] as const).map(size=><DemoDialog key={size} alert size={size}/>);break
  case 'dropdown-menu':sample=<MenuDemo/>;break
  case 'context-menu':sample=<ContextMenu><ContextMenuTrigger style={{padding:32,border:'1px dashed var(--gray-a7)',borderRadius:'var(--radius-3)'}}>Right click here</ContextMenuTrigger><ContextMenuContent><ContextMenuItem>Open</ContextMenuItem><ContextMenuItem>Copy link</ContextMenuItem></ContextMenuContent></ContextMenu>;break
  case 'popover':sample=<Popover><PopoverTrigger render={<Button variant="soft"/>}>Comment</PopoverTrigger><PopoverContent><Heading size={3}>Add a comment</Heading><Textarea placeholder="Write a comment…" aria-label="Comment"/></PopoverContent></Popover>;break
@@ -56,10 +56,10 @@ export function ComparisonFixture({id}:{id:string}) {let sample
  case 'scroll-area':sample=<ScrollArea style={{boxSizing:'border-box',width:260,height:140,padding:16,border:'1px solid var(--gray-a5)'}}>{Array.from({length:10},(_,i)=><p key={i}>{text}</p>)}</ScrollArea>;break
  case 'separator':sample=<div style={{width:400,display:'flex',flexDirection:'column',gap:16}}><span>Tools for thought</span><Separator/><span>Made for the web</span></div>;break
  case 'skeleton':sample=<div style={{display:'flex',gap:16,alignItems:'center'}}><Skeleton style={{width:48,height:48,borderRadius:'50%'}}/><div style={{display:'grid',gap:8}}><Skeleton style={{width:180,height:12}}/><Skeleton style={{width:120,height:12}}/></div></div>;break
- case 'spinner':sample=<>{([1,2,3] as const).map(n=><Spinner key={n} scale={n}/>)}</>;break
+ case 'spinner':sample=<>{([1,2,3] as const).map(n=><Spinner key={n} size={n}/>)}</>;break
  case 'aspect-ratio':sample=<>{[2/3,1,16/9].map(r=><div style={{width:180}} key={r}><AspectRatio ratio={r}><img src="./images/canyon.jpg" alt="Red canyon" style={{width:'100%',height:'100%',objectFit:'cover'}}/></AspectRatio></div>)}</>;break
  case 'inset':sample=<Card style={{width:320}}><CardContent><Inset side="top"><img src="./images/canyon.jpg" alt="Red canyon" style={{width:'100%',height:140,objectFit:'cover'}}/></Inset><p style={{marginTop:32}}>A window into the natural world.</p></CardContent></Card>;break
- case 'kbd':sample=<>{[1,2,3].map(n=><Kbd data-scale={n} key={n}>⌘ Tab</Kbd>)}</>;break
+ case 'kbd':sample=<>{([1,2,3] as const).map(n=><Kbd size={n} key={n}>⌘ Tab</Kbd>)}</>;break
  case 'em':sample=<p>The <Em>quick brown fox</Em> jumps over the lazy dog.</p>;break
  case 'quote':sample=<p><Quote>Perfect typography is certainly the most elusive of all arts.</Quote></p>;break
  case 'strong':sample=<p>The most important thing is to <Strong>keep going</Strong>.</p>;break

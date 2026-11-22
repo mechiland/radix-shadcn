@@ -1,4 +1,4 @@
-import { visualAttrs, type VisualProps } from "@/lib/theme/visual-props"
+import { shadcnSize, visualAttrs, type RadixSize, type VisualProps } from "@/lib/theme/visual-props"
 import * as React from "react"
 import { Avatar as AvatarPrimitive } from "@base-ui/react/avatar"
 import { cn } from "cn"
@@ -9,13 +9,13 @@ function Avatar({
   size = "default",
   ...props
 }: AvatarPrimitive.Root.Props & VisualProps & {
-  size?: "default" | "sm" | "lg"
+  size?: "default" | "sm" | "lg" | RadixSize<1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9>
 }) {
   return (
     <AvatarPrimitive.Root
-      {...visualAttrs({color, highContrast, variant, scale})}
+      {...visualAttrs({color, highContrast, variant, scale, size})}
       data-slot="avatar"
-      data-size={size}
+      data-size={shadcnSize(size, "default")}
       className={cn(
         "group/avatar relative flex size-8 shrink-0 rounded-full select-none  data-[size=lg]:size-10 data-[size=sm]:size-6 dark:after:mix-blend-lighten",
         className

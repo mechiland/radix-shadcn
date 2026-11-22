@@ -1,6 +1,7 @@
 "use client"
 
 import { useThemePortal } from "@/lib/theme/theme"
+import { radixScale, type RadixSize } from "@/lib/theme/visual-props"
 
 import * as React from "react"
 import { Dialog as DialogPrimitive } from "@base-ui/react/dialog"
@@ -45,8 +46,9 @@ function DialogContent({
   className,
   children,
   showCloseButton = true,
+  size,
   ...props
-}: DialogPrimitive.Popup.Props & {
+}: { size?: RadixSize<1 | 2 | 3 | 4> } & DialogPrimitive.Popup.Props & {
   showCloseButton?: boolean
 }) {
   return (
@@ -54,6 +56,7 @@ function DialogContent({
       <DialogOverlay />
       <DialogPrimitive.Popup
         data-slot="dialog-content"
+        data-scale={radixScale(size)}
         className={cn(
           "fixed top-1/2 left-1/2 z-50 grid w-full max-w-[calc(100%-2rem)] -translate-x-1/2 -translate-y-1/2 gap-4 rounded-xl bg-popover p-4 text-sm text-popover-foreground ring-1 ring-foreground/10 duration-100 outline-none sm:max-w-sm data-open:animate-in data-open:fade-in-0 data-open:zoom-in-95 data-closed:animate-out data-closed:fade-out-0 data-closed:zoom-out-95",
           className
@@ -135,10 +138,10 @@ function DialogTitle({ className, ...props }: DialogPrimitive.Title.Props) {
 function DialogDescription({
   className, size=3,
   ...props
-}: DialogPrimitive.Description.Props & {size?:1|2|3}) {
+}: DialogPrimitive.Description.Props & {size?:RadixSize<1|2|3>}) {
   return (
     <DialogPrimitive.Description
-      data-slot="dialog-description" data-scale={size}
+      data-slot="dialog-description" data-scale={radixScale(size)}
       className={cn(
         "text-sm text-muted-foreground *:[a]:underline *:[a]:underline-offset-3 *:[a]:hover:text-foreground",
         className

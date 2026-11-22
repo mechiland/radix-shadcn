@@ -125,7 +125,7 @@ const SettingSwitch = ({
         </Text>
       </span>
       <Switch
-        scale={3}
+        size={3}
         variant="classic"
         tabIndex={tabIndex}
         defaultChecked={defaultChecked}
@@ -167,7 +167,7 @@ const SettingSlider = ({
         {min}
       </Text>
       <div className="grow">
-        <Slider tabIndex={tabIndex} data-radius="full" scale={1} defaultValue={[value]} />
+        <Slider tabIndex={tabIndex} data-radius="full" size={1} defaultValue={[value]} />
       </div>
       <Text color="gray" size={1} style={{ width: 32 }}>
         {max}
@@ -278,7 +278,7 @@ export const ExampleThemesMusicApp = ({ focusable = true, align = "center", clas
   return (
     <div className={cn("music-app flex gap-(--space-6)", className)} style={{ alignItems: align, ...style }} {...props}>
       <div className="flex shrink-0 flex-col gap-(--space-6)" style={{ width: 416 }}>
-        <Card scale={3}>
+        <Card size={3}>
           <CardContent>
             <div className="flex items-center justify-between" style={{ marginBottom: "var(--space-5)" }}>
               <Heading as="h3" size={4} className="music-trim-both">
@@ -302,7 +302,7 @@ export const ExampleThemesMusicApp = ({ focusable = true, align = "center", clas
           </CardContent>
         </Card>
 
-        <Card scale={3}>
+        <Card size={3}>
           <CardContent>
             <div className="flex items-center justify-between" style={{ marginBottom: "var(--space-5)" }}>
               <Heading as="h3" size={4} className="music-trim-start">
@@ -335,13 +335,13 @@ export const ExampleThemesMusicApp = ({ focusable = true, align = "center", clas
           </CardContent>
         </Card>
 
-        <Card scale={3}>
+        <Card size={3}>
           <CardContent>
             <div className="flex items-center justify-between" style={{ marginBottom: "var(--space-6)" }}>
               <Text as="label" size={4} weight="bold" className="music-trim-start">
                 <span className="flex gap-(--space-2)" style={{ marginBlock: "calc(-1 * var(--space-1))" }}>
                   Equalizer
-                  <Switch variant="classic" tabIndex={tabIndex} defaultChecked scale={1} style={{ marginTop: 1 }} />
+                  <Switch variant="classic" tabIndex={tabIndex} defaultChecked size={1} style={{ marginTop: 1 }} />
                 </span>
               </Text>
               <div className="flex gap-(--space-4)" style={{ marginBlock: "calc(-1 * var(--space-1))" }}>
@@ -370,7 +370,7 @@ export const ExampleThemesMusicApp = ({ focusable = true, align = "center", clas
                   >
                     <Slider
                       tabIndex={tabIndex}
-                      scale={1}
+                      size={1}
                       data-radius="small"
                       color="gray"
                       variant="soft"
@@ -385,7 +385,7 @@ export const ExampleThemesMusicApp = ({ focusable = true, align = "center", clas
           </CardContent>
         </Card>
 
-        <Card scale={3}>
+        <Card size={3}>
           <CardContent>
             <div className="flex items-center justify-between" style={{ marginBottom: "var(--space-5)" }}>
               <Heading as="h3" size={4} className="music-trim-both">
@@ -408,7 +408,7 @@ export const ExampleThemesMusicApp = ({ focusable = true, align = "center", clas
       </div>
 
       <div className="flex shrink-0 flex-col gap-(--space-6)" style={{ width: 1312 }}>
-        <Card scale={4} style={{ height: 896 }}>
+        <Card size={4} style={{ height: 896 }}>
           <CardContent>
             <div
               className="absolute top-0 left-0 flex items-center justify-between"
@@ -442,7 +442,7 @@ export const ExampleThemesMusicApp = ({ focusable = true, align = "center", clas
                 <MixerHorizontalIcon />
               </Button>
               <Button tabIndex={tabIndex} size="icon-xs" variant="ghost" data-radius="full" color="gray">
-                <Avatar scale={2} data-radius="full">
+                <Avatar size={2} data-radius="full">
                   <AvatarImage src={allPeople[23].image} />
                   <AvatarFallback>{allPeople[23]?.name[0].toUpperCase()}</AvatarFallback>
                 </Avatar>
@@ -590,7 +590,7 @@ export const ExampleThemesMusicApp = ({ focusable = true, align = "center", clas
 
         <div className="flex shrink-0 gap-(--space-6)">
           <div className="flex shrink-0 flex-col gap-(--space-6)" style={{ width: 416 }}>
-            <Card scale={3}>
+            <Card size={3}>
               <CardContent>
                 <Heading as="h3" size={4} className="music-trim-both" style={{ marginBottom: "var(--space-5)" }}>
                   Settings
@@ -638,7 +638,7 @@ export const ExampleThemesMusicApp = ({ focusable = true, align = "center", clas
               </CardContent>
             </Card>
 
-            <Card scale={3}>
+            <Card size={3}>
               <CardContent>
                 <div className="flex items-center justify-between" style={{ marginBottom: "var(--space-5)" }}>
                   <Heading as="h3" size={4} className="music-trim-both">
@@ -681,7 +681,7 @@ export const ExampleThemesMusicApp = ({ focusable = true, align = "center", clas
           </div>
 
           <div className="flex shrink-0 flex-col gap-(--space-6)" style={{ width: 416 }}>
-            <Card scale={3}>
+            <Card size={3}>
               <CardContent>
                 <div className="flex items-center justify-between" style={{ marginBottom: "var(--space-5)" }}>
                   <Heading as="h3" size={4} className="music-trim-both">
@@ -730,7 +730,7 @@ export const ExampleThemesMusicApp = ({ focusable = true, align = "center", clas
               </CardContent>
             </Card>
 
-            <Card scale={3}>
+            <Card size={3}>
               <CardContent>
                 <div className="flex items-center justify-between" style={{ marginBottom: "var(--space-5)" }}>
                   <Heading as="h3" size={4} className="music-trim-both">
@@ -765,7 +765,7 @@ export const ExampleThemesMusicApp = ({ focusable = true, align = "center", clas
           </div>
 
           <div className="flex shrink-0 flex-col gap-(--space-6)" style={{ width: 416 }}>
-            <Card scale={3}>
+            <Card size={3}>
               <CardContent>
                 <div className="relative flex justify-center" style={{ margin: "var(--space-4)" }}>
                   <img
@@ -804,7 +804,7 @@ export const ExampleThemesMusicApp = ({ focusable = true, align = "center", clas
               </CardContent>
             </Card>
 
-            <Card scale={3}>
+            <Card size={3}>
               <CardContent>
                 <div
                   className="relative overflow-hidden"
@@ -960,7 +960,7 @@ const AlbumCard = ({
   <div className="music-hover-root">
     <div style={{ padding: "var(--space-3)", margin: "calc(-1 * var(--space-3))" }}>
       <div className="relative" style={{ marginBottom: "var(--space-2)" }}>
-        <Card scale={1} style={{ boxShadow: `0 8px 48px -16px ${color.replace("%)", "%, 0.6)")}` }}>
+        <Card size={1} style={{ boxShadow: `0 8px 48px -16px ${color.replace("%)", "%, 0.6)")}` }}>
           <CardContent>
             <Inset>
               <AspectRatio ratio={1}>

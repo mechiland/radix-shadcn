@@ -23,16 +23,44 @@ import { Button } from '@/components/ui/button'
 
 shadcn `--accent` 表示中性轻交互面，不能等同于主题 accentColor。浅亮强调色使用原版 contrast 数据。色阶来自官方 `@radix-ui/colors@3.0.0`；当前视觉基线是 sRGB。
 
-`Button` 支持 classic / solid / soft / surface / outline / ghost，尺寸 1–4，另保留 default / secondary / destructive / link 和 icon 等 shadcn 别名。Checkbox、CheckboxGroup、Switch、Input、Textarea、Badge、Avatar、Slider、Progress 及适配组件提供 `color`、`highContrast`、`variant`、`scale` 中适用的属性，具体见类型与覆盖表。原生 Base UI 的 checked/value、readOnly、disabled、表单与事件语义保留。
+`Button` 支持 classic / solid / soft / surface / outline / ghost，另保留 default / secondary / destructive / link 等 shadcn 别名。Checkbox、CheckboxGroup、Switch、Input、Textarea、Badge、Avatar、Slider、Progress 及适配组件提供 `color`、`highContrast`、`variant` 中适用的属性，具体见类型与覆盖表。原生 Base UI 的 checked/value、readOnly、disabled、表单与事件语义保留。
+
+### 尺寸
+
+Radix Themes 中带 `size` 的组件，都在同一个 `size` 属性里同时接受 shadcn 的尺寸名和 Radix 的数字尺寸；数字可以写成 `2` 或 `"2"`。数字尺寸输出 `data-scale`，shadcn 尺寸名保持 shadcn 原有行为。旧的 `scale` 属性仍可用，但已标记为 deprecated。
+
+| 组件 | Radix 尺寸 | 同时保留的 shadcn 尺寸 |
+| --- | --- | --- |
+| Button | 1–4；IconButton 用 `icon-1`–`icon-4` | default、xs、sm、lg、icon、icon-xs、icon-sm、icon-lg |
+| AlertDialogContent | 1–4（同时决定宽度、标题/描述字号和底部按钮默认尺寸） | default、sm |
+| DialogContent、PopoverContent | 1–4 | — |
+| HoverCardContent | 1–3 | — |
+| DropdownMenuContent、ContextMenuContent | 1–2（子菜单继承） | — |
+| Select（Root，传给 trigger 和 content）、SelectTrigger、SelectContent | 1–3 | SelectTrigger：default、sm |
+| Avatar | 1–9 | default、sm、lg |
+| Card | 1–5 | default、sm |
+| Switch | 1–3 | default、sm |
+| Badge、Callout、Checkbox、CheckboxGroup、CheckboxCard、RadioGroup、RadioCard、DataList、Input、InputGroup、Textarea、Progress、Slider、Spinner、ScrollArea、Table | 1–3 | — |
+| Tabs | 1–2（分段控件 1–3） | — |
+| TabNav | 1–2 | — |
+| Separator | 1–4 | — |
+| Kbd、Text、Heading、Link、Code、Blockquote | 1–9 | — |
+
+```tsx
+<Button size="sm">shadcn</Button>
+<Button size={3}>Radix</Button>
+<Button size="icon-2" aria-label="Add"><Plus /></Button>
+<Select size={1}>{/* SelectTrigger、SelectContent 都是 size 1 */}</Select>
+```
 
 部分组合组件通过明确的公开属性扩展，例如：
 
 ```tsx
-<Tabs defaultValue="account" data-scale="2" data-high-contrast="true">
+<Tabs defaultValue="account" size={2} data-high-contrast="true">
   <TabsList variant="line">{/* TabsTrigger */}</TabsList>
 </Tabs>
 <SelectContent data-high-contrast="true">{/* SelectItem */}</SelectContent>
-<DropdownMenuContent data-variant="soft" data-scale="1">
+<DropdownMenuContent data-variant="soft" size={1}>
   {/* DropdownMenuItem */}
 </DropdownMenuContent>
 ```
