@@ -1,22 +1,22 @@
 "use client"
 
-import { visualAttrs, type VisualProps } from "@/lib/theme/visual-props"
+import { visualAttrs, type RadixSize, type VisualProps } from "@/lib/theme/visual-props"
 
 import { Progress as ProgressPrimitive } from "@base-ui/react/progress"
 import { cn } from "cn"
 
 function Progress({
-  color, highContrast, variant, scale,
+  color, highContrast, variant, scale, size,
   className,
   children,
   value,
   ...props
-}: ProgressPrimitive.Root.Props & VisualProps) {
+}: ProgressPrimitive.Root.Props & VisualProps & { size?: RadixSize<1 | 2 | 3> }) {
   return (
     <ProgressPrimitive.Root
       value={value}
       aria-label={props["aria-label"]??(props["aria-labelledby"]?undefined:"Progress")}
-      {...visualAttrs({color, highContrast, variant, scale})}
+      {...visualAttrs({color, highContrast, variant, scale, size})}
       data-slot="progress"
       className={cn("flex flex-wrap gap-3", className)}
       {...props}

@@ -1,7 +1,8 @@
 import type { ComponentProps, CSSProperties, ElementType, ReactNode } from 'react'
 import { cn } from 'cn'
 import type { AccentColor } from '@/lib/theme/theme'
-type TypographyProps = {as?:ElementType;size?:1|2|3|4|5|6|7|8|9;color?:AccentColor;highContrast?:boolean;weight?:'light'|'regular'|'medium'|'bold';children?:ReactNode;className?:string;href?:string;target?:string;rel?:string;style?:CSSProperties}
+import type { RadixSize } from '@/lib/theme/visual-props'
+type TypographyProps = {as?:ElementType;size?:RadixSize<1|2|3|4|5|6|7|8|9>;color?:AccentColor;highContrast?:boolean;weight?:'light'|'regular'|'medium'|'bold';children?:ReactNode;className?:string;href?:string;target?:string;rel?:string;style?:CSSProperties}
 // Like Radix, an unsized Text inherits its size; an uncoloured Text inherits its colour.
 function Text({as:Tag='span',size,color,highContrast,weight,className,style,...props}:TypographyProps& Omit<ComponentProps<'span'>,'color'>) {
  return <Tag {...props} data-color={color} data-high-contrast={highContrast||undefined} data-weight={weight} data-size={size} className={cn('ds-typography',className)} style={size?{'--type-size':`var(--font-size-${size})`,'--type-line':`var(--line-height-${size})`,'--type-spacing':`var(--letter-spacing-${size})`,...style}:style}/>

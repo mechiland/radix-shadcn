@@ -1,7 +1,8 @@
 import * as React from "react"
 import { cn } from "cn"
+import { radixScale, type RadixSize } from "@/lib/theme/visual-props"
 
-function Table({ className, ...props }: React.ComponentProps<"table">) {
+function Table({ className, size, ...props }: React.ComponentProps<"table"> & { size?: RadixSize<1 | 2 | 3> }) {
   return (
     <div
       data-slot="table-container"
@@ -10,6 +11,7 @@ function Table({ className, ...props }: React.ComponentProps<"table">) {
     >
       <table
         data-slot="table"
+        data-scale={radixScale(size)}
         className={cn("w-full caption-bottom text-sm", className)}
         {...props}
       />

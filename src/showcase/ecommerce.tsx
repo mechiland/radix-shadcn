@@ -133,7 +133,7 @@ export const ExampleThemesEcommerce = ({ focusable = true, align = "center", sty
     >
       {/* Column 1 */}
       <div style={{ display: "flex", flexDirection: "column", flexShrink: 0, gap: space(6), width: 304 }}>
-        <Card scale={1}>
+        <Card size={1}>
           <CardContent>
             <div style={{ display: "flex", marginBottom: space(2) }}>
               <img src="images/radix-home/a2b643074228.jpg" width="280" height="212" style={{ borderRadius: "var(--radius-1)", width: 280, height: 212 }} alt="" />
@@ -157,7 +157,7 @@ export const ExampleThemesEcommerce = ({ focusable = true, align = "center", sty
           </CardContent>
         </Card>
 
-        <Card scale={1}>
+        <Card size={1}>
           <CardContent>
             <div style={{ display: "flex", position: "relative", marginBottom: space(2) }}>
               <img width="280" height="270" src="images/radix-home/fed20f39edef.jpg" style={{ borderRadius: "var(--radius-1)", width: 280, height: 270 }} alt="" />
@@ -185,7 +185,7 @@ export const ExampleThemesEcommerce = ({ focusable = true, align = "center", sty
             </Text>
 
             <div>
-              <Separator data-scale={4} style={{ marginBlock: space(4) }} />
+              <Separator size={4} style={{ marginBlock: space(4) }} />
             </div>
 
             <div style={{ display: "flex", gap: space(2), alignItems: "flex-end" }}>
@@ -225,7 +225,7 @@ export const ExampleThemesEcommerce = ({ focusable = true, align = "center", sty
           </CardContent>
         </Card>
 
-        <Card scale={1}>
+        <Card size={1}>
           <CardContent>
             <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
               <div>
@@ -285,7 +285,7 @@ export const ExampleThemesEcommerce = ({ focusable = true, align = "center", sty
           </CardContent>
         </Card>
 
-        <Card scale={1}>
+        <Card size={1}>
           <CardContent>
             <Heading as="h3" size={3} style={{ marginBottom: space(3) }}>
               Shopping cart
@@ -315,7 +315,7 @@ export const ExampleThemesEcommerce = ({ focusable = true, align = "center", sty
 
                   <div style={{ display: "flex", flexDirection: "column", width: 48 }}>
                     <Select defaultValue={item.count}>
-                      <SelectTrigger tabIndex={tabIndex} data-scale={1} className="w-full">
+                      <SelectTrigger tabIndex={tabIndex} size={1} className="w-full">
                         <SelectValue />
                       </SelectTrigger>
                       <SelectContent data-variant="soft" alignItemWithTrigger={false}>
@@ -338,7 +338,7 @@ export const ExampleThemesEcommerce = ({ focusable = true, align = "center", sty
             </div>
 
             <div>
-              <Separator data-scale={4} style={{ marginBlock: space(4) }} />
+              <Separator size={4} style={{ marginBlock: space(4) }} />
             </div>
 
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginTop: space(4) }}>
@@ -355,7 +355,7 @@ export const ExampleThemesEcommerce = ({ focusable = true, align = "center", sty
 
       {/* Column 2 */}
       <div style={{ display: "flex", flexDirection: "column", flexShrink: 0, gap: space(6), width: 304 }}>
-        <Card scale={1}>
+        <Card size={1}>
           <CardContent>
             <div style={{ display: "flex", position: "relative", marginBottom: space(2) }}>
               <img width="280" height="270" src="images/radix-home/69de92cd4b26.jpg" style={{ borderRadius: "var(--radius-1)", width: 280, height: 270 }} alt="" />
@@ -383,7 +383,7 @@ export const ExampleThemesEcommerce = ({ focusable = true, align = "center", sty
             </Text>
 
             <div>
-              <Separator data-scale={4} style={{ marginBlock: space(4) }} />
+              <Separator size={4} style={{ marginBlock: space(4) }} />
             </div>
 
             <div style={{ display: "flex", gap: space(2), alignItems: "flex-end" }}>
@@ -423,7 +423,7 @@ export const ExampleThemesEcommerce = ({ focusable = true, align = "center", sty
           </CardContent>
         </Card>
 
-        <Card scale={1}>
+        <Card size={1}>
           <CardContent>
             <div style={{ display: "flex", marginBottom: space(2) }}>
               <img src="images/radix-home/1a9fbfaf6383.jpg" width="280" height="212" style={{ borderRadius: "var(--radius-1)", width: 280, height: 212 }} alt="" />
@@ -447,7 +447,7 @@ export const ExampleThemesEcommerce = ({ focusable = true, align = "center", sty
           </CardContent>
         </Card>
 
-        <Card scale={1}>
+        <Card size={1}>
           <CardContent>
             <div style={{ display: "flex", marginBottom: space(3) }}>
               <Heading as="h3" size={3}>
@@ -497,7 +497,7 @@ export const ExampleThemesEcommerce = ({ focusable = true, align = "center", sty
           </CardContent>
         </Card>
 
-        <Card scale={1}>
+        <Card size={1}>
           <CardContent>
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: space(2) }}>
               <Heading as="h3" size={3}>
@@ -731,7 +731,7 @@ export const ExampleThemesEcommerce = ({ focusable = true, align = "center", sty
                 </Text>
               </div>
 
-              <Separator data-scale={4} />
+              <Separator size={4} />
 
               {(
                 [

@@ -1,11 +1,13 @@
 import { Radio as RadioPrimitive } from "@base-ui/react/radio"
 import { RadioGroup as RadioGroupPrimitive } from "@base-ui/react/radio-group"
 import { cn } from "cn"
+import { radixScale, type RadixSize } from "@/lib/theme/visual-props"
 
-function RadioGroup({ className, ...props }: RadioGroupPrimitive.Props) {
+function RadioGroup({ className, size, ...props }: RadioGroupPrimitive.Props & { size?: RadixSize<1 | 2 | 3> }) {
   return (
     <RadioGroupPrimitive
       data-slot="radio-group"
+      data-scale={radixScale(size)}
       className={cn("grid w-full gap-2", className)}
       {...props}
     />

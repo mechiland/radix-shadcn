@@ -1,9 +1,9 @@
-import { visualAttrs, type VisualProps } from "@/lib/theme/visual-props"
+import { visualAttrs, type RadixSize, type VisualProps } from "@/lib/theme/visual-props"
 import { Slider as SliderPrimitive } from "@base-ui/react/slider"
 import { cn } from "cn"
 
 function Slider({
-  color, highContrast, variant, scale,
+  color, highContrast, variant, scale, size,
   className,
   defaultValue,
   value,
@@ -11,7 +11,7 @@ function Slider({
   max = 100,
   getAriaLabel,
   ...props
-}: SliderPrimitive.Root.Props & VisualProps & {getAriaLabel?:(index:number)=>string}) {
+}: SliderPrimitive.Root.Props & VisualProps & {size?: RadixSize<1 | 2 | 3>; getAriaLabel?:(index:number)=>string}) {
   const _values = Array.isArray(value)
     ? value
     : Array.isArray(defaultValue)
@@ -21,7 +21,7 @@ function Slider({
   return (
     <SliderPrimitive.Root
       className={cn("data-horizontal:w-full data-vertical:h-full data-vertical:min-h-0 data-vertical:grow", className)}
-      {...visualAttrs({color, highContrast, variant, scale})}
+      {...visualAttrs({color, highContrast, variant, scale, size})}
       data-slot="slider"
       defaultValue={defaultValue}
       value={value}

@@ -1,14 +1,17 @@
 import { ScrollArea as ScrollAreaPrimitive } from "@base-ui/react/scroll-area"
 import { cn } from "cn"
+import { radixScale, type RadixSize } from "@/lib/theme/visual-props"
 
 function ScrollArea({
   className,
   children,
+  size,
   ...props
-}: ScrollAreaPrimitive.Root.Props) {
+}: ScrollAreaPrimitive.Root.Props & { size?: RadixSize<1 | 2 | 3> }) {
   return (
     <ScrollAreaPrimitive.Root
       data-slot="scroll-area"
+      data-scale={radixScale(size)}
       className={cn("relative", className)}
       {...props}
     >

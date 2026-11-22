@@ -60,7 +60,7 @@ const Marker = ({ size = 16, style, ...props }: React.ComponentProps<"span"> & {
 )
 
 const PersonAvatar = ({ index, scale }: { index: number; scale?: 3 }) => (
-  <Avatar scale={scale}>
+  <Avatar size={scale}>
     <AvatarImage src={allPeople[index]?.image} alt="" />
     <AvatarFallback>{allPeople[index]?.name[0].toUpperCase()}</AvatarFallback>
   </Avatar>
@@ -68,7 +68,7 @@ const PersonAvatar = ({ index, scale }: { index: number; scale?: 3 }) => (
 
 /** Radix `<Card size="4">` with its padding box. */
 const DashCard = ({ children }: { children: React.ReactNode }) => (
-  <Card scale={4}>
+  <Card size={4}>
     <CardContent>{children}</CardContent>
   </Card>
 )

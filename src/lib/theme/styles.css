@@ -547,8 +547,8 @@
 .ds-theme [data-slot=kbd][data-variant=soft] {background:var(--gray-a3);box-shadow:none}
 .ds-theme :is([data-slot=checkbox],[data-slot=switch],[data-slot=radio-group-item])[aria-invalid=true] {outline:1px solid var(--palette-red-8);outline-offset:1px}
 .ds-theme :is([data-slot=dropdown-menu-content],[data-slot=context-menu-content])[data-variant=soft] [data-highlighted] {background:var(--accent-a4);color:var(--accent-11)}
-.ds-theme :is([data-slot=dropdown-menu-content],[data-slot=context-menu-content])[data-scale="1"] {padding:var(--space-1);border-radius:var(--radius-3)}
-.ds-theme :is([data-slot=dropdown-menu-content],[data-slot=context-menu-content])[data-scale="1"] [role^=menuitem] {height:var(--space-5);min-height:var(--space-5);font-size:var(--font-size-1);border-radius:var(--radius-1)}
+.ds-theme :is([data-slot=dropdown-menu-content],[data-slot=dropdown-menu-sub-content],[data-slot=context-menu-content],[data-slot=context-menu-sub-content])[data-scale="1"] {padding:var(--space-1);border-radius:var(--radius-3)}
+.ds-theme :is([data-slot=dropdown-menu-content],[data-slot=dropdown-menu-sub-content],[data-slot=context-menu-content],[data-slot=context-menu-sub-content])[data-scale="1"] [role^=menuitem] {height:var(--space-5);min-height:var(--space-5);font-size:var(--font-size-1);border-radius:var(--radius-1)}
 .ds-theme [data-slot=scroll-area][data-scale="1"] [data-slot=scroll-area-scrollbar] {width:calc(6px * var(--scaling))}
 .ds-theme [data-slot=scroll-area][data-scale="2"] [data-slot=scroll-area-scrollbar] {width:calc(10px * var(--scaling))}
 .ds-theme [data-slot=scroll-area][data-scale="3"] [data-slot=scroll-area-scrollbar] {width:calc(14px * var(--scaling))}
@@ -561,6 +561,20 @@
 .ds-theme [data-slot=dialog-description][data-scale="2"] {font-size:var(--font-size-2);line-height:var(--line-height-2)}
 .ds-theme [data-slot=alert-dialog-description] {color:var(--gray-12);margin-bottom:0}
 .ds-theme [data-slot=alert-dialog-footer] {margin-top:var(--space-5)}
+/* Alert Dialog sizes 1-4 also set the width, type scale and spacing. */
+.ds-theme [data-slot=alert-dialog-content][data-scale] {width:calc(400px * var(--scaling));max-width:calc(100% - 2 * var(--space-4))}
+.ds-theme [data-slot=alert-dialog-content][data-scale="1"] {width:calc(300px * var(--scaling))}
+.ds-theme [data-slot=alert-dialog-content][data-scale="4"] {width:calc(450px * var(--scaling))}
+.ds-theme [data-slot=alert-dialog-content][data-scale] [data-slot=alert-dialog-description] {text-wrap:wrap}
+.ds-theme [data-slot=alert-dialog-content][data-scale="1"] [data-slot=alert-dialog-title] {margin-bottom:var(--space-1);font-size:var(--font-size-2);line-height:var(--heading-line-height-2);letter-spacing:var(--letter-spacing-2)}
+.ds-theme [data-slot=alert-dialog-content][data-scale="1"] [data-slot=alert-dialog-title]::before {margin-bottom:calc(var(--heading-leading-trim-start) - var(--heading-line-height-2) / 2)}
+.ds-theme [data-slot=alert-dialog-content][data-scale="1"] [data-slot=alert-dialog-description] {font-size:var(--font-size-1);line-height:var(--line-height-1);letter-spacing:var(--letter-spacing-1)}
+.ds-theme [data-slot=alert-dialog-content][data-scale="1"] [data-slot=alert-dialog-footer] {margin-top:var(--space-3);gap:var(--space-2)}
+.ds-theme [data-slot=alert-dialog-content][data-scale="2"] [data-slot=alert-dialog-title] {margin-bottom:var(--space-2)}
+.ds-theme [data-slot=alert-dialog-content]:is([data-scale="2"],[data-scale="3"]) [data-slot=alert-dialog-footer] {margin-top:var(--space-4)}
+.ds-theme [data-slot=alert-dialog-content][data-scale="4"] [data-slot=alert-dialog-title] {font-size:var(--font-size-6);line-height:var(--heading-line-height-6);letter-spacing:var(--letter-spacing-6)}
+.ds-theme [data-slot=alert-dialog-content][data-scale="4"] [data-slot=alert-dialog-title]::before {margin-bottom:calc(var(--heading-leading-trim-start) - var(--heading-line-height-6) / 2)}
+.ds-theme [data-slot=alert-dialog-content][data-scale="4"] [data-slot=alert-dialog-description] {font-size:var(--font-size-3);line-height:var(--line-height-3)}
 .ds-theme [data-slot=select-content] {overflow:hidden}
 .ds-theme [data-slot=select-list] {max-height:inherit;overflow-y:auto;scrollbar-width:thin;scrollbar-color:var(--gray-a8) transparent}
 .ds-theme :is([data-slot=select-scroll-up-button],[data-slot=select-scroll-down-button]) {position:absolute;inset-inline:0;height:var(--space-5);padding:0;background:var(--panel-solid)}
