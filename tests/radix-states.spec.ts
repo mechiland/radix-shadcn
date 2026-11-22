@@ -198,3 +198,59 @@ test('soft Slider uses the Radix range tint and keeps the focus ring on its visi
   await expect(slider).toBeFocused()
   await expect(root.locator('[data-slot=slider-thumb]')).toHaveCSS('box-shadow', /0px 0px 0px 5px/)
 })
+
+test('Destructive Alert Dialog aligns ghost Cancel and solid Delete buttons', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'reduce' })
+  await page.goto('/#examples/alert-dialog-example')
+  await page.getByRole('button', { name: 'Delete Chat', exact: true }).click()
+  const dialog = page.getByRole('alertdialog', { name: 'Delete chat?' })
+  await expect(dialog).toBeVisible()
+  const cancel = dialog.getByRole('button', { name: 'Cancel', exact: true })
+  const confirm = dialog.getByRole('button', { name: 'Delete', exact: true })
+  await expect(cancel).toHaveCSS('box-sizing', 'border-box')
+  await expect(cancel).toHaveCSS('margin', '0px')
+  const cancelBox = (await cancel.boundingBox())!
+  const confirmBox = (await confirm.boundingBox())!
+  expect(cancelBox.y).toBeCloseTo(confirmBox.y, 0)
+  expect(cancelBox.height).toBeCloseTo(confirmBox.height, 0)
+  expect(cancelBox.width).toBeCloseTo(confirmBox.width, 0)
+  expect(Math.round(confirmBox.x - (cancelBox.x + cancelBox.width))).toBe(12)
+})
+
+test('Context Menu and Dropdown Menu follow Radix highlight, icon, checkbox and destructive colors', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'reduce' })
+
+  await page.goto('/#examples/context-menu-example')
+  await page.locator('[data-slot=example]').filter({ hasText: 'With Icons' }).locator('[data-slot=context-menu-trigger]').click({ button: 'right' })
+  const copy = page.getByRole('menuitem', { name: 'Copy', exact: true })
+  await copy.hover()
+  await expect(copy).toHaveCSS('background-color', 'rgb(62, 99, 221)')
+  await expect(copy).toHaveCSS('color', 'rgb(255, 255, 255)')
+  await expect(copy.locator('svg')).toHaveCSS('color', 'rgb(255, 255, 255)')
+  const del = page.getByRole('menuitem', { name: 'Delete', exact: true })
+  await del.hover()
+  await expect(del).toHaveCSS('background-color', 'rgb(229, 72, 77)')
+  await expect(del).toHaveCSS('color', 'rgb(255, 255, 255)')
+  await expect(del.locator('svg')).toHaveCSS('color', 'rgb(255, 255, 255)')
+
+  await page.goto('/#examples/dropdown-menu-example')
+  await page.getByRole('button', { name: 'Notifications', exact: true }).click()
+  const email = page.getByRole('menuitemcheckbox', { name: 'Email notifications', exact: true })
+  await email.hover()
+  await expect(email).toHaveCSS('background-color', 'rgb(62, 99, 221)')
+  await expect(email).toHaveCSS('color', 'rgb(255, 255, 255)')
+  const [indBox, iconBox] = await Promise.all([
+    email.locator('[data-slot=dropdown-menu-checkbox-item-indicator]').boundingBox(),
+    email.locator(':scope > svg').boundingBox(),
+  ])
+  expect(indBox!.x + indBox!.width).toBeLessThanOrEqual(iconBox!.x + 0.5)
+  await page.keyboard.press('Escape')
+
+  await page.getByRole('button', { name: 'Complex Menu', exact: true }).click()
+  const signOut = page.getByRole('menuitem', { name: /Sign Out/ })
+  await signOut.hover()
+  await expect(signOut).toHaveCSS('background-color', 'rgb(229, 72, 77)')
+  await expect(signOut).toHaveCSS('color', 'rgb(255, 255, 255)')
+  await expect(signOut.locator('svg')).toHaveCSS('color', 'rgb(255, 255, 255)')
+  await expect(signOut.locator('[data-slot=dropdown-menu-shortcut]')).toHaveCSS('color', 'rgb(255, 255, 255)')
+})
